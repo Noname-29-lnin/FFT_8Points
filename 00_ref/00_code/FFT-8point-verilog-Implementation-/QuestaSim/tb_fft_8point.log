@@ -1,0 +1,42 @@
+# vsim -lib ./..//QuestaSim/work -debugDB -l ./..//QuestaSim/tb_fft_8point.log -voptargs="+acc" -assertdebug -c tb_fft_8point -wlf ./..//QuestaSim/tb_fft_8point.wlf -do "cd ./..//QuestaSim; log -r /*; run -all;" 
+# Start time: 20:20:25 on Dec 19,2025
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_fft_8point(fast)
+# Loading work.fft_8point(fast)
+# Loading work.butterfly(fast)
+# Loading work.fp_multiplier(fast)
+# Loading work.fp_adder_combined(fast)
+# ** Note: (vsim-8716) Reusing existing debug database ./..//QuestaSim/tb_fft_8point.dbg.
+# cd ./..//QuestaSim
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+#  log -r /*
+#  run -all
+# FFT Output for input [1 2 3 4 4 3 2 1]:
+# X(0) = 41a00000 + 00000000j
+# X(1) = c0ba8279 + c01a827aj
+# X(2) = 00000000 + 00000000j
+# X(3) = be2fb0e0 + bed413d0j
+# X(4) = 00000000 + 00000000j
+# X(5) = be2fb0e0 + 3ed413d0j
+# X(6) = 00000000 + 00000000j
+# X(7) = c0ba8279 + 401a827aj
+# ** Note: $finish    : /home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv(58)
+#    Time: 60 ns  Iteration: 0  Instance: /tb_fft_8point
+# End time: 20:20:26 on Dec 19,2025, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

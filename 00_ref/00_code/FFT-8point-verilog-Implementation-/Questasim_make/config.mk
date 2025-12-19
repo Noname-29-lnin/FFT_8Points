@@ -1,0 +1,4 @@
+TOPMODULE=fft_8point
+INC_DIR=./../
+LIB_DIR=./../
+RADIX=HEX

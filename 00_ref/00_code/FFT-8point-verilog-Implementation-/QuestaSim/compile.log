@@ -1,0 +1,13 @@
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 20:20:25 on Dec 19,2025
+vlog -f ./..//flist.f 
+-- Compiling module tb_fft_8point
+-- Compiling module fft_8point
+-- Compiling module fp_adder_combined
+-- Compiling module fp_multiplier
+-- Compiling module butterfly
+
+Top level modules:
+	tb_fft_8point
+End time: 20:20:25 on Dec 19,2025, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
