@@ -1,8 +1,10 @@
 m255
 K4
 z2
-!s12c _opt
-Z0 !s99 nomlopt
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
 !s11f vlog 2024.3 2024.09, Sep 10 2024
 13
 !s112 1.1
@@ -10,13 +12,13 @@ Z0 !s99 nomlopt
 !i10e 25
 !i10f 100
 cModel Technology
-Z1 d/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/Questasim
+d/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/Questasim
 T_opt
-!s110 1766150376
-VUV[F=b5eU@YV?NlT0hJ^02
+!s110 1766194409
+VUekY_25XYW@gbRo]l5Q0;0
 04 13 4 work tb_fft_8point fast 0
-=1-000ae431a4f1-694550e8-94e11-6cc2
-R0
+=1-000ae431a4f1-6945fce9-150a0-20d8
+R1
 !s12f OEM100
 !s12b OEM100
 !s124 OEM10U134 
@@ -25,75 +27,74 @@ o-quiet -auto_acc_if_foreign -work ./..//QuestaSim/work -debugdb +acc
 Z2 tCvgOpt 0
 n@_opt
 OL;O;2024.3;79
-R1
 vbutterfly
 Z3 2/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v
-Z4 !s110 1766150425
+Z4 !s110 1766194408
 !i10b 1
 !s100 =bonog<AW6Che@zJR<NBb0
 IhKOKzl1;dEeOcC50F@nkG1
 Z5 d/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/Questasim_make
-w1766150145
+w1766151801
 8/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v
 F/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v
-!i122 1
+!i122 2
 L0 1 25
 Z6 VDg1SIo80bB@j0V0VzS_@n1
 Z7 OL;L;2024.3;79
 r1
 !s85 0
 31
-Z8 !s108 1766150425.000000
-!s107 /home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv|
-Z9 !s90 -f|./..//flist.f|
+Z8 !s108 1766194408.000000
+Z9 !s107 /home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv|
+Z10 !s90 -f|./..//flist.f|
 !i113 0
-Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 vfft_8point
 R3
 R4
 !i10b 1
-!s100 XUh]_3c[afbkE>0l73X`12
-Ik1@IiWIHRgHhI<]f97SCh1
+!s100 KFOk;m=Dzh5=JG[@E<NWj3
+Iz>k4L5n6C8=WAH:7_@Jb<2
 R5
-w1766149566
+w1766158281
 8/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v
 F/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v
-!i122 1
-L0 1 142
+!i122 2
+L0 1 143
 R6
 R7
 r1
 !s85 0
 31
 R8
-Z11 !s107 /home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/butterfly.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fft_8point.v|/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv|
 R9
-!i113 0
 R10
+!i113 0
+R11
 R2
 vfp_adder_combined
 R3
 R4
 !i10b 1
-!s100 fONIPX7:H4Q`?i4<2KLk]0
-IXVk9QHe?Bd9<>eOO3EPdA3
+!s100 IOo8ElMX?]GNe6BzGN2o`3
+I=P=eKI72cmhWPdTY>U?PC0
 R5
-w1766149991
+w1766151899
 8/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v
 F/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_adder_combined.v
-!i122 1
-L0 1 74
+!i122 2
+L0 1 100
 R6
 R7
 r1
 !s85 0
 31
 R8
-R11
 R9
-!i113 0
 R10
+!i113 0
+R11
 R2
 vfp_multiplier
 R3
@@ -102,10 +103,10 @@ R4
 !s100 j2eO_gFebWBoY_IKTQH>d3
 IGEoa:gUUz;=iUK<V8o_UQ3
 R5
-w1766150142
+w1766161382
 8/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v
 F/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/fp_multiplier.v
-!i122 1
+!i122 2
 L0 1 33
 R6
 R7
@@ -113,10 +114,10 @@ r1
 !s85 0
 31
 R8
-R11
 R9
-!i113 0
 R10
+!i113 0
+R11
 R2
 vtb_fft_8point
 R3
@@ -130,7 +131,7 @@ R5
 w1766150217
 8/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv
 F/home/noname/Documents/project_tiny/FFT_8Points/00_ref/00_code/FFT-8point-verilog-Implementation-/tb_fft_8point.sv
-!i122 1
+!i122 2
 L0 1 60
 R6
 R7
@@ -138,8 +139,8 @@ r1
 !s85 0
 31
 R8
-R11
 R9
-!i113 0
 R10
+!i113 0
+R11
 R2
