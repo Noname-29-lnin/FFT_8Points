@@ -1,0 +1,39 @@
+Questa Intel Starter FPGA Edition-64 vlog 2024.3 Compiler 2024.09 Sep 10 2024
+Start time: 15:32:52 on Dec 24,2025
+vlog "+incdir+./../FPU_ADD_SUB/lib" -f ./../FPU_ADD_SUB/flist.f 
+-- Compiling package tb_FPU_add_sub_sv_unit
+-- Compiling module tb_FPU_add_sub
+-- Compiling module ADD_SUB_EXP_adjust
+-- Compiling module ADD_SUB_EXP_comp
+-- Compiling module ADD_SUB_EXP_rounding
+-- Compiling module ADD_SUB_EXP_sub
+-- Compiling module ADD_SUB_EXP_swap
+-- Compiling module ADD_SUB_MAN_ALU
+-- Compiling module ADD_SUB_MAN_rounding
+-- Compiling module ADD_SUB_MAN_swap
+-- Compiling module ADD_SUB_NOR_unit
+-- Compiling module ADD_SUB_PSC_unit
+-- Compiling module ADD_SUB_SIGN_unit
+-- Compiling module FPU_add_sub
+-- Compiling module CLA_4bit
+-- Compiling module CLA_8bit
+-- Compiling module CLA_24bit
+-- Compiling module CLS_4bit
+-- Compiling module COMP_4bit
+-- Compiling module COMP_8bit
+-- Compiling module COMP_24bit
+-- Compiling module COMP_CLA_24bit
+-- Compiling module COMP_CLA_4bit
+-- Compiling module LOPD_4bit
+-- Compiling module LOPD_8bit
+-- Compiling module LOPD_16bit
+-- Compiling module LOPD_24bit
+-- Compiling module SHF_left
+-- Compiling module SHF_right
+
+Top level modules:
+	tb_FPU_add_sub
+	COMP_CLA_24bit
+	LOPD_4bit
+End time: 15:32:53 on Dec 24,2025, Elapsed time: 0:00:01
+Errors: 0, Warnings: 0

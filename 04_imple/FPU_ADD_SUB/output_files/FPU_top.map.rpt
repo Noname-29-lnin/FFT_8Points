@@ -1,0 +1,559 @@
+Analysis & Elaboration report for FPU_top
+Wed Dec 24 14:17:46 2025
+Quartus Prime Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Elaboration Summary
+  3. Parallel Compilation
+  4. Parameter Settings for User Entity Instance: Top-level Entity: |FPU_top
+  5. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT
+  6. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT
+  7. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT
+  8. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_swap:EXP_SWAP
+  9. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB
+ 10. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_swap:MAN_SWAP_PRE
+ 11. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|SHF_right:SHF_RIGHT_MAN
+ 12. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|COMP_24bit:MAN_COMP_24BIT
+ 13. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_swap:MAN_SWAP
+ 14. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_ALU:MAN_ALU
+ 15. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|LOPD_24bit:LOPD_24BIT
+ 16. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST
+ 17. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT
+ 18. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT|SHF_left:SHF_left_unit
+ 19. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_rounding:MAN_RND
+ 20. Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_rounding:EXP_RND
+ 21. Analysis & Elaboration Settings
+ 22. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_rounding:MAN_RND"
+ 23. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT"
+ 24. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST|CLA_8bit:CLA_8BIT_UNIT"
+ 25. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST"
+ 26. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|CLS_4bit:MAN_ALU_PROC_RND"
+ 27. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|COMP_24bit:MAN_COMP_24BIT|COMP_4bit:u_i_data_0"
+ 28. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|SHF_right:SHF_RIGHT_MAN"
+ 29. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB|CLA_8bit:CLA_8BIT_UNIT"
+ 30. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB"
+ 31. Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT|COMP_4bit:u_low"
+ 32. Analysis & Elaboration Messages
+ 33. Analysis & Elaboration Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2025  Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Altera and sold by Altera or its authorized distributors.  Please
+refer to the Altera Software License Subscription Agreements 
+on the Quartus Prime software download page.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Elaboration Summary                                                  ;
++-------------------------------+-------------------------------------------------+
+; Analysis & Elaboration Status ; Successful - Wed Dec 24 14:17:46 2025           ;
+; Quartus Prime Version         ; 24.1std.0 Build 1077 03/04/2025 SC Lite Edition ;
+; Revision Name                 ; FPU_top                                         ;
+; Top-level Entity Name         ; FPU_top                                         ;
+; Family                        ; Cyclone V                                       ;
+; Logic utilization (in ALMs)   ; N/A until Partition Merge                       ;
+; Total registers               ; N/A until Partition Merge                       ;
+; Total pins                    ; N/A until Partition Merge                       ;
+; Total virtual pins            ; N/A until Partition Merge                       ;
+; Total block memory bits       ; N/A until Partition Merge                       ;
+; Total PLLs                    ; N/A until Partition Merge                       ;
+; Total DLLs                    ; N/A until Partition Merge                       ;
++-------------------------------+-------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Top-level Entity: |FPU_top ;
++----------------+-------+------------------------------------------------+
+; Parameter Name ; Value ; Type                                           ;
++----------------+-------+------------------------------------------------+
+; NUM_OP         ; 1     ; Signed Integer                                 ;
++----------------+-------+------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT ;
++----------------+-------+--------------------------------------------------+
+; Parameter Name ; Value ; Type                                             ;
++----------------+-------+--------------------------------------------------+
+; NUM_OP         ; 1     ; Signed Integer                                   ;
++----------------+-------+--------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                                                          ;
++----------------+-------+---------------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_swap:EXP_SWAP ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; SIZE_EXP_SUB   ; 8     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_swap:MAN_SWAP_PRE ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; SIZE_MAN       ; 24    ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|SHF_right:SHF_RIGHT_MAN ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; SIZE_DATA      ; 32    ; Signed Integer                                                           ;
+; SIZE_SHIFT     ; 5     ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|COMP_24bit:MAN_COMP_24BIT ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; SIZE_DATA      ; 24    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_swap:MAN_SWAP ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; SIZE_MAN       ; 24    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_ALU:MAN_ALU ;
++----------------+-------+--------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                     ;
++----------------+-------+--------------------------------------------------------------------------+
+; NUM_OP         ; 1     ; Signed Integer                                                           ;
+; SIZE_MAN       ; 24    ; Signed Integer                                                           ;
++----------------+-------+--------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|LOPD_24bit:LOPD_24BIT ;
++----------------+-------+------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                   ;
++----------------+-------+------------------------------------------------------------------------+
+; SIZE_DATA      ; 24    ; Signed Integer                                                         ;
+; SIZE_LOPD      ; 5     ; Signed Integer                                                         ;
++----------------+-------+------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST ;
++----------------+-------+--------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                           ;
++----------------+-------+--------------------------------------------------------------------------------+
+; SIZE_EXP       ; 8     ; Signed Integer                                                                 ;
+; SIZE_LOPD      ; 8     ; Signed Integer                                                                 ;
++----------------+-------+--------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT ;
++----------------+-------+----------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                       ;
++----------------+-------+----------------------------------------------------------------------------+
+; SIZE_LOPD      ; 5     ; Signed Integer                                                             ;
+; SIZE_DATA      ; 32    ; Signed Integer                                                             ;
++----------------+-------+----------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT|SHF_left:SHF_left_unit ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                                              ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+; SIZE_DATA      ; 32    ; Signed Integer                                                                                    ;
+; SIZE_SHIFT     ; 5     ; Signed Integer                                                                                    ;
++----------------+-------+---------------------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_rounding:MAN_RND ;
++-----------------+-------+------------------------------------------------------------------------------+
+; Parameter Name  ; Value ; Type                                                                         ;
++-----------------+-------+------------------------------------------------------------------------------+
+; SIZE_MAN        ; 32    ; Signed Integer                                                               ;
+; SIZE_MAN_RESULT ; 24    ; Signed Integer                                                               ;
++-----------------+-------+------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_rounding:EXP_RND ;
++----------------+-------+-------------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                          ;
++----------------+-------+-------------------------------------------------------------------------------+
+; SIZE_DATA      ; 8     ; Signed Integer                                                                ;
++----------------+-------+-------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Elaboration Settings                                                                                           ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; FPU_top            ; FPU_top            ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_rounding:MAN_RND"                                      ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port             ; Type   ; Severity ; Details                                                                             ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+; o_man_result[23] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT" ;
++------------------+-------+----------+----------------------------------------------+
+; Port             ; Type  ; Severity ; Details                                      ;
++------------------+-------+----------+----------------------------------------------+
+; i_mantissa[3..0] ; Input ; Info     ; Stuck at GND                                 ;
++------------------+-------+----------+----------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST|CLA_8bit:CLA_8BIT_UNIT" ;
++---------+--------+----------+---------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                         ;
++---------+--------+----------+---------------------------------------------------------------------------------+
+; o_carry ; Output ; Info     ; Explicitly unconnected                                                          ;
++---------+--------+----------+---------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST" ;
++--------------------+-------+----------+------------------------------------------------+
+; Port               ; Type  ; Severity ; Details                                        ;
++--------------------+-------+----------+------------------------------------------------+
+; i_lopd_value[7..5] ; Input ; Info     ; Stuck at GND                                   ;
++--------------------+-------+----------+------------------------------------------------+
+
+
++------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|CLS_4bit:MAN_ALU_PROC_RND" ;
++------+-------+----------+----------------------------------------------------------+
+; Port ; Type  ; Severity ; Details                                                  ;
++------+-------+----------+----------------------------------------------------------+
+; A    ; Input ; Info     ; Stuck at GND                                             ;
+; Bin  ; Input ; Info     ; Stuck at GND                                             ;
++------+-------+----------+----------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|COMP_24bit:MAN_COMP_24BIT|COMP_4bit:u_i_data_0"           ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                             ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+; o_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|SHF_right:SHF_RIGHT_MAN"                                       ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; i_data[7..0] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; o_data[3..0] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB|CLA_8bit:CLA_8BIT_UNIT" ;
++---------+--------+----------+---------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                   ;
++---------+--------+----------+---------------------------------------------------------------------------+
+; i_carry ; Input  ; Info     ; Stuck at VCC                                                              ;
+; o_carry ; Output ; Info     ; Explicitly unconnected                                                    ;
++---------+--------+----------+---------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB"                                      ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                             ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+; o_sub[7..5] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT|COMP_4bit:u_low" ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------+
+; Port    ; Type   ; Severity ; Details                                                                                           ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------+
+; o_equal ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.               ;
++---------+--------+----------+---------------------------------------------------------------------------------------------------+
+
+
++---------------------------------+
+; Analysis & Elaboration Messages ;
++---------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Elaboration
+    Info: Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+    Info: Processing started: Wed Dec 24 14:17:40 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off FPU_top -c FPU_top --analysis_and_elaboration
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+    Info (12023): Found entity 1: ADD_SUB_SIGN_unit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+    Info (12023): Found entity 1: FPU_add_sub File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+    Info (12023): Found entity 1: ADD_SUB_PSC_unit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+    Info (12023): Found entity 1: ADD_SUB_NOR_unit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+    Info (12023): Found entity 1: ADD_SUB_MAN_swap File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+    Info (12023): Found entity 1: ADD_SUB_MAN_rounding File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+    Info (12023): Found entity 1: ADD_SUB_MAN_ALU File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+    Info (12023): Found entity 1: ADD_SUB_EXP_swap File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+    Info (12023): Found entity 1: ADD_SUB_EXP_sub File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+    Info (12023): Found entity 1: ADD_SUB_EXP_rounding File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+    Info (12023): Found entity 1: ADD_SUB_EXP_comp File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+    Info (12023): Found entity 1: ADD_SUB_EXP_adjust File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
+    Info (12023): Found entity 1: SHF_right File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv
+    Info (12023): Found entity 1: SHF_left File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv
+    Info (12023): Found entity 1: LOPD_8bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv
+    Info (12023): Found entity 1: LOPD_4bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv
+    Info (12023): Found entity 1: LOPD_24bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv
+    Info (12023): Found entity 1: LOPD_16bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv Line: 1
+Info (12021): Found 2 design units, including 2 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+    Info (12023): Found entity 1: COMP_CLA_24bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv Line: 1
+    Info (12023): Found entity 2: COMP_CLA_4bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv Line: 55
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv
+    Info (12023): Found entity 1: COMP_8bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv
+    Info (12023): Found entity 1: COMP_4bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv
+    Info (12023): Found entity 1: COMP_24bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv
+    Info (12023): Found entity 1: CLS_4bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv
+    Info (12023): Found entity 1: CLA_8bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv
+    Info (12023): Found entity 1: CLA_4bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv
+    Info (12023): Found entity 1: CLA_24bit File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv Line: 1
+Warning (12125): Using design file FPU_top.sv, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: FPU_top File: /home/noname/Documents/project_tiny/FFT_8Points/04_imple/FPU_ADD_SUB/FPU_top.sv Line: 1
+Info (12127): Elaborating entity "FPU_top" for the top level hierarchy
+Info (12128): Elaborating entity "FPU_add_sub" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/04_imple/FPU_ADD_SUB/FPU_top.sv Line: 38
+Info (12128): Elaborating entity "ADD_SUB_EXP_comp" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 71
+Info (12128): Elaborating entity "COMP_8bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv Line: 15
+Info (12128): Elaborating entity "COMP_4bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_comp:EXP_COM_8BIT|COMP_8bit:COMP_LESS_UNIT|COMP_4bit:u_low" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv Line: 16
+Info (12128): Elaborating entity "ADD_SUB_EXP_swap" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_swap:EXP_SWAP" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 80
+Info (12128): Elaborating entity "ADD_SUB_EXP_sub" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 87
+Info (12128): Elaborating entity "CLA_8bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB|CLA_8bit:CLA_8BIT_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv Line: 18
+Info (12128): Elaborating entity "CLA_4bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_sub:EXP_SUB|CLA_8bit:CLA_8BIT_UNIT|CLA_4bit:CLA_4BIT_UNIT_0" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv Line: 20
+Info (12128): Elaborating entity "ADD_SUB_MAN_swap" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_swap:MAN_SWAP_PRE" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 96
+Info (12128): Elaborating entity "SHF_right" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|SHF_right:SHF_RIGHT_MAN" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 104
+Info (12128): Elaborating entity "COMP_24bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|COMP_24bit:MAN_COMP_24BIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 114
+Info (12128): Elaborating entity "ADD_SUB_SIGN_unit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_SIGN_unit:SIGN_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 121
+Info (12128): Elaborating entity "ADD_SUB_PSC_unit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_PSC_unit:PSC_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 132
+Info (12128): Elaborating entity "CLS_4bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|CLS_4bit:MAN_ALU_PROC_RND" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 150
+Info (12128): Elaborating entity "ADD_SUB_MAN_ALU" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_ALU:MAN_ALU" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 164
+Info (12128): Elaborating entity "CLA_24bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_ALU:MAN_ALU|CLA_24bit:ALU_SUB_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv Line: 35
+Info (12128): Elaborating entity "LOPD_24bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|LOPD_24bit:LOPD_24BIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 172
+Info (12128): Elaborating entity "LOPD_16bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|LOPD_24bit:LOPD_24BIT|LOPD_16bit:LOPD_16bit_UNIT_MSB" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv Line: 18
+Info (12128): Elaborating entity "LOPD_8bit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|LOPD_24bit:LOPD_24BIT|LOPD_16bit:LOPD_16bit_UNIT_MSB|LOPD_8bit:LOPD_8bit_unit_0" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv Line: 16
+Info (12128): Elaborating entity "ADD_SUB_EXP_adjust" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_adjust:EXP_ADJUST" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 183
+Info (12128): Elaborating entity "ADD_SUB_NOR_unit" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 194
+Info (12128): Elaborating entity "SHF_left" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_NOR_unit:NOR_UNIT|SHF_left:SHF_left_unit" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv Line: 21
+Info (12128): Elaborating entity "ADD_SUB_MAN_rounding" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_MAN_rounding:MAN_RND" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 203
+Info (12128): Elaborating entity "ADD_SUB_EXP_rounding" for hierarchy "FPU_add_sub:FPU_ADD_SUB_UNIT|ADD_SUB_EXP_rounding:EXP_RND" File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv Line: 210
+Info (144001): Generated suppressed messages file /home/noname/Documents/project_tiny/FFT_8Points/04_imple/FPU_ADD_SUB/output_files/FPU_top.map.smsg
+Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 723 megabytes
+    Info: Processing ended: Wed Dec 24 14:17:46 2025
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:14
+
+
++--------------------------------------------+
+; Analysis & Elaboration Suppressed Messages ;
++--------------------------------------------+
+The suppressed messages can be found in /home/noname/Documents/project_tiny/FFT_8Points/04_imple/FPU_ADD_SUB/output_files/FPU_top.map.smsg.
+
+

@@ -62,14 +62,14 @@ logic [23:0] MAN_RND_man;
 ////////////////////////////////////////////////////////////////
 
 // Exponent preprocessing
-EXP_comp #(
+ADD_SUB_EXP_comp #(
     .SIZE_DATA          (8)
 ) EXP_COM_8BIT (
     .i_data_a          (w_exponent_a),
     .i_data_b          (w_exponent_b),
     .o_compare         (EXP_COMP_o_compare) // a < b
 );
-EXP_swap #(
+ADD_SUB_EXP_swap #(
     .SIZE_DATA          (8)
 ) EXP_SWAP (
     .i_data_a           (w_exponent_a),
@@ -78,14 +78,14 @@ EXP_swap #(
     .o_less_data        (EXP_SWAP_o_min),
     .o_greater_data     (EXP_SWAP_o_max) 
 );
-EXP_sub #(
+ADD_SUB_EXP_sub #(
     .SIZE_EXP_SUB       (8)
 ) EXP_SUB (
     .i_data_a           (EXP_SWAP_o_max),
     .i_data_b           (EXP_SWAP_o_min),
     .o_sub              (EXP_SUB_o_sub)        
 );
-MAN_swap #(
+ADD_SUB_MAN_swap #(
     .SIZE_MAN           (24)
 ) MAN_SWAP_PRE (
     .i_man_a            (w_mantissa_a),
@@ -112,14 +112,14 @@ COMP_24bit #(
     .i_data_b           (MAN_SWAP_PRE_SHF_man_min),
     .o_less             (MAN_COM_o_compare)
 );
-SIGN_unit SIGN_UNIT (
+ADD_SUB_SIGN_unit SIGN_UNIT (
     .i_add_sub          (i_add_sub),
     .i_comp_man         (MAN_COM_o_compare | EXP_COMP_o_compare),
     .i_sign_man_a       (w_sign_a),
     .i_sign_man_b       (w_sign_b),
     .o_sign_s           (w_sign_result) 
 );
-PSC_unit PSC_UNIT(
+ADD_SUB_PSC_unit PSC_UNIT(
     .i_add_sub          (i_add_sub),
     .i_sign_a           (w_sign_a),
     .i_exp_a            (w_exponent_a),
@@ -130,7 +130,7 @@ PSC_unit PSC_UNIT(
     .o_sel_exp          (PSC_sel_exp),
     .o_sel_man          (PSC_sel_man) 
 );
-MAN_swap #(
+ADD_SUB_MAN_swap #(
     .SIZE_MAN           (24)
 ) MAN_SWAP (
     .i_man_a            (MAN_SWAP_PRE_man_max),
@@ -149,7 +149,7 @@ CLS_4bit MAN_ALU_PROC_RND (
     .Bout               (CLS_MAN_ALU_bout) 
 );
 
-MAN_ALU #(
+ADD_SUB_MAN_ALU #(
     .NUM_OP             (NUM_OP),
     .SIZE_MAN           (24)
 ) MAN_ALU (
@@ -170,7 +170,7 @@ LOPD_24bit #(
     .o_one_position     (LOPD_o_one_position),
     .o_zero_flag        (LOPD_o_zero_flag) 
 );
-EXP_adjust #(
+ADD_SUB_EXP_adjust #(
     .SIZE_EXP           (8),
     .SIZE_LOPD          (8)      
 ) EXP_ADJUST (
@@ -182,7 +182,7 @@ EXP_adjust #(
     .o_exp_result       (EXP_ADJUST_exp_result)
 );
 
-NOR_unit #(
+ADD_SUB_NOR_unit #(
     .SIZE_LOPD          (5) ,
     .SIZE_DATA          (32)
 ) NOR_UNIT (
@@ -193,7 +193,7 @@ NOR_unit #(
     .o_mantissa         (NOR_o_man) 
 );
 
-MAN_rounding #(
+ADD_SUB_MAN_rounding #(
     .SIZE_MAN           (32),
     .SIZE_MAN_RESULT    (24)
 ) MAN_RND (
@@ -201,7 +201,7 @@ MAN_rounding #(
     .o_man_result       (MAN_RND_man),
     .o_ov_flow          (MAN_RND_ov_flag) 
 );
-EXP_rounding #(
+ADD_SUB_EXP_rounding #(
     .SIZE_DATA          (8) 
 ) EXP_RND (
     .i_carry_rounding   (MAN_RND_ov_flag),

@@ -1,0 +1,816 @@
+m255
+K4
+z2
+!s12c _opt6
+Z0 !s99 nomlopt
+!s11f vlog 2024.3 2024.09, Sep 10 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 d/home/noname/Documents/project_tiny/FFT_8Points/03_verif/Questasim
+T_opt6
+!s110 1766565174
+VQ4iUHlYSbVT0ZzjfMA4i40
+04 14 4 work tb_FPU_add_sub fast 0
+=1-000ae431a4f1-694ba535-d31c1-17145
+R0
+!s12f OEM100
+!s12b OEM100
+!s124 OEM10U45 
+!s135 nogc
+o-quiet -auto_acc_if_foreign -work ./../FPU_ADD_SUB/QuestaSim/work -debugdb +acc
+Z2 tCvgOpt 0
+n@_opt6
+OL;O;2024.3;79
+vADD_SUB_EXP_adjust
+Z3 2/home/noname/Documents/project_tiny/FFT_8Points/03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
+Z4 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z5 !s110 1766565173
+!i10b 1
+!s100 [J6k`0CzzfN3hkh4F]:R]1
+I9P9e^6FAiNPDPPeYTo6cX1
+S1
+R1
+w1766560129
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+!i122 0
+Z6 L0 1 35
+Z7 VDg1SIo80bB@j0V0VzS_@n1
+Z8 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z9 !s108 1766565172.000000
+Z10 !s107 ./../FPU_ADD_SUB/lib/gen_clock.svh|./../FPU_ADD_SUB/lib/display.svh|./../FPU_ADD_SUB/lib/Cal_funs.svh|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv|/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv|/home/noname/Documents/project_tiny/FFT_8Points/03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv|
+Z11 !s90 +incdir+./../FPU_ADD_SUB/lib|-f|./../FPU_ADD_SUB/flist.f|
+!i113 0
+Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z13 !s92 +incdir+./../FPU_ADD_SUB/lib +incdir+./../FPU_ADD_SUB/lib/ -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@a@d@d_@s@u@b_@e@x@p_adjust
+vADD_SUB_EXP_comp
+R3
+R4
+R5
+!i10b 1
+!s100 WKINXCdC:2[ES[ZY9:Qk31
+I[DMA:7CX7zB_<Q_DQH6b_1
+S1
+R1
+w1766560146
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+!i122 0
+L0 1 17
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@e@x@p_comp
+vADD_SUB_EXP_rounding
+R3
+R4
+R5
+!i10b 1
+!s100 1gM@3M;OWVZWD>;70;;>U1
+I>`L48We4PaOK=hEE<HDAB2
+S1
+R1
+w1766560157
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+!i122 0
+Z14 L0 1 19
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@e@x@p_rounding
+vADD_SUB_EXP_sub
+R3
+R4
+R5
+!i10b 1
+!s100 fTA0zkA5moNK`J`bLFYT?2
+I]k[N;JfW5hUb1EWgf^G[Z3
+S1
+R1
+w1766560169
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+!i122 0
+L0 1 20
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@e@x@p_sub
+vADD_SUB_EXP_swap
+R3
+R4
+R5
+!i10b 1
+!s100 `MN=UHlBESoj7V>ZjhC4X0
+I:3Og]JhURKcj4Ukz[UAgb3
+S1
+R1
+w1766560256
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+!i122 0
+Z15 L0 1 14
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@e@x@p_swap
+vADD_SUB_MAN_ALU
+R3
+R4
+R5
+!i10b 1
+!s100 h6V^[J^I7e<`3G6R]IF:l0
+IUV2:^447hQYiKGmUmI5XA1
+S1
+R1
+w1766560266
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+!i122 0
+L0 1 41
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@m@a@n_@a@l@u
+vADD_SUB_MAN_rounding
+R3
+R4
+R5
+!i10b 1
+!s100 lB4feQ@I^d>Nj3=Lb;fFg3
+Ii0RH?;=0f0jU<bC@OJ:Ji3
+S1
+R1
+w1766560274
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+!i122 0
+L0 1 32
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@m@a@n_rounding
+vADD_SUB_MAN_swap
+R3
+R4
+R5
+!i10b 1
+!s100 =nN_AhXHbFiQ5U7;a;;2k2
+Io@3ME]MzkmPHY55YhU:Ym2
+S1
+R1
+w1766560283
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+!i122 0
+R15
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@m@a@n_swap
+vADD_SUB_NOR_unit
+R3
+R4
+R5
+!i10b 1
+!s100 [Snza_adz<W<zN:m_NV]H0
+IT960346V1ZB_:>XB_OHP>0
+S1
+R1
+w1766560291
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+!i122 0
+L0 1 25
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@n@o@r_unit
+vADD_SUB_PSC_unit
+R3
+R4
+R5
+!i10b 1
+!s100 gUSl@z96hz;zO7AQRcW^j0
+INYhgPmYCGDj7aW?HQ;5NT2
+S1
+R1
+w1766560136
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+!i122 0
+L0 1 27
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@p@s@c_unit
+vADD_SUB_SIGN_unit
+R3
+R4
+R5
+!i10b 1
+!s100 o4DL8I6fVh1^@I1ICQR]Q2
+I;Q]mfT22mIomN;PiV=1XC0
+S1
+R1
+w1766560633
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+!i122 0
+L0 1 11
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@a@d@d_@s@u@b_@s@i@g@n_unit
+vCLA_24bit
+R3
+R4
+R5
+!i10b 1
+!s100 F1Qd:B<TeVFe:>F8[Bk[C3
+I;fNh?3LNFT<2[lb]ZH_9K3
+S1
+R1
+w1764217310
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv
+!i122 0
+L0 1 64
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@l@a_24bit
+vCLA_4bit
+R3
+R4
+R5
+!i10b 1
+!s100 K4nQ9>NEU5ZKo<Q?QE:531
+I^cDe`7mX>2;WN;cT:;o2F3
+S1
+R1
+w1764208475
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv
+!i122 0
+Z16 L0 1 26
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@l@a_4bit
+vCLA_8bit
+R3
+R4
+R5
+!i10b 1
+!s100 hg?]T;mmS2_:;_6@miKH=3
+IdKcMdhozNmd5@kGgF;mAk3
+S1
+R1
+w1764208476
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv
+!i122 0
+R6
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@l@a_8bit
+vCLS_4bit
+R3
+R4
+R5
+!i10b 1
+!s100 KHWRz3mbaDMcgg2@SRY>63
+IE6IMY8V`=SgePPYi_R_KB1
+S1
+R1
+w1764230027
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/CLS_4bit.sv
+!i122 0
+L0 1 28
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@l@s_4bit
+vCOMP_24bit
+R3
+R4
+R5
+!i10b 1
+!s100 6fkgRoj_0:@PQVgW?N8hU1
+ImZ^`V>2d6>G=N_XER39NT1
+S1
+R1
+w1764208805
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv
+!i122 0
+L0 1 62
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@o@m@p_24bit
+vCOMP_4bit
+R3
+R4
+R5
+!i10b 1
+!s100 hea?`V`WM[kW?d2;zL[6=1
+I>O281?6Wc?:3jS2CKe]ze1
+S1
+R1
+w1764214707
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_4bit.sv
+!i122 0
+L0 1 12
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@o@m@p_4bit
+vCOMP_8bit
+R3
+R4
+R5
+!i10b 1
+!s100 e@Ji`hT;WR=PgJ8N>_mX`1
+IK;6V7:VMWQ0CJeNKjb7>g3
+S1
+R1
+w1764208483
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_8bit.sv
+!i122 0
+R16
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@o@m@p_8bit
+vCOMP_CLA_24bit
+R3
+R4
+R5
+!i10b 1
+!s100 zDDSeG0EOgRd02YY0A;am1
+Ig_WMUBU@D3b5TfZ4QB2=63
+S1
+R1
+Z17 w1764208803
+Z18 8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+Z19 F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+!i122 0
+L0 1 53
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@o@m@p_@c@l@a_24bit
+vCOMP_CLA_4bit
+R3
+R4
+R5
+!i10b 1
+!s100 Qa`6?MP0AIKfWo=o015351
+IFO>Xk@9>NzhzC8`9i4KQR1
+S1
+R1
+R17
+R18
+R19
+!i122 0
+L0 55 24
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@c@o@m@p_@c@l@a_4bit
+vFPU_add_sub
+R3
+R4
+R5
+!i10b 1
+!s100 i_UeJXDZYZKB`bJJVbH8b0
+Il;nLNKQ7M]OAk>UMo6TAD2
+S1
+R1
+w1766560597
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+!i122 0
+L0 1 216
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@f@p@u_add_sub
+vLOPD_16bit
+R3
+R4
+R5
+!i10b 1
+!s100 PGg=8U5dl^SLXAGJWOajF1
+I2`j2ImQb0?^6eW5m^g<X[2
+S1
+R1
+Z20 w1764209064
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_16bit.sv
+!i122 0
+L0 1 40
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@l@o@p@d_16bit
+vLOPD_24bit
+R3
+R4
+R5
+!i10b 1
+!s100 b=2g^Fl2ec^@S?gbRkiRQ2
+I5o1B3O3<jESciTAKlFB`S1
+S1
+R1
+R20
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv
+!i122 0
+L0 1 39
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@l@o@p@d_24bit
+vLOPD_4bit
+R3
+R4
+R5
+!i10b 1
+!s100 Idi^z5a[AUI]`TTXnkA8S0
+IMz8b5ioIV@1ennjf5kH0P0
+S1
+R1
+R20
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_4bit.sv
+!i122 0
+R14
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@l@o@p@d_4bit
+vLOPD_8bit
+R3
+R4
+R5
+!i10b 1
+!s100 BQkbY=bgbbWQiT3T=<O861
+IToB1PV;=?6d_PBi=HUGDQ2
+S1
+R1
+R20
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv
+!i122 0
+L0 1 43
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@l@o@p@d_8bit
+vSHF_left
+R3
+R4
+R5
+!i10b 1
+!s100 KUH]DmmzHdM:UCoFoG;k42
+IE;0H_en:Qo?:=_6QaGDfI3
+S1
+R1
+w1764217699
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv
+!i122 0
+R16
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@s@h@f_left
+vSHF_right
+R3
+R4
+R5
+!i10b 1
+!s100 M`0[0HD4]jXfaNb0WkA;D3
+I^cF?`_LLH[90za>bk_7zc2
+S1
+R1
+w1764209588
+8/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
+F/home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
+!i122 0
+L0 1 23
+R7
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+n@s@h@f_right
+vtb_FPU_add_sub
+R3
+R4
+DXx4 work 22 tb_FPU_add_sub_sv_unit 0 22 0nTAF4e2=l5?ID<I]l3RO0
+R5
+R7
+r1
+!s85 0
+!i10b 1
+!s100 PgE[IMJJh8N18`SRCh[U[1
+I[JRClI6CORHn2z4;NTX6@2
+!s105 tb_FPU_add_sub_sv_unit
+S1
+R1
+Z21 w1766564876
+Z22 8/home/noname/Documents/project_tiny/FFT_8Points/03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv
+Z23 F/home/noname/Documents/project_tiny/FFT_8Points/03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv
+!i122 0
+L0 10 231
+R8
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+ntb_@f@p@u_add_sub
+Xtb_FPU_add_sub_sv_unit
+R3
+R4
+R5
+V0nTAF4e2=l5?ID<I]l3RO0
+r1
+!s85 0
+!i10b 1
+!s100 m;S[TVF1a8BNSgSWB[ZRM3
+I0nTAF4e2=l5?ID<I]l3RO0
+!i103 1
+S1
+R1
+R21
+R22
+R23
+F./../FPU_ADD_SUB/lib/Cal_funs.svh
+F./../FPU_ADD_SUB/lib/display.svh
+F./../FPU_ADD_SUB/lib/gen_clock.svh
+!i122 0
+L0 1 0
+R8
+31
+R9
+R10
+R11
+!i113 0
+R12
+R13
+R2
+ntb_@f@p@u_add_sub_sv_unit

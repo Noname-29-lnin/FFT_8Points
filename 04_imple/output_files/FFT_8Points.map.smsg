@@ -1,1 +1,0 @@
-Info (10281): Verilog HDL Declaration information at COMP_CLA_24bit.sv(57): object "B" differs only in case from object "b" in the same scope File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_ADD_SUB/COMP_CLA_24bit.sv Line: 57

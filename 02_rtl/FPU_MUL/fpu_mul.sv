@@ -21,8 +21,8 @@ assign w_exp_b      = i_32_b[30:23];
 assign w_man_a      = {1'b1, i_32_a[22:0]};
 assign w_man_b      = {1'b1, i_32_b[22:0]};
 
-logic [7:0] w_add_exp_sum;
 logic [7:0] w_sub_exp_sub;
+
 logic [23:0] w_man_mul;
 logic        w_man_over_flag;
 logic        w_man_rounding;
@@ -44,23 +44,15 @@ logic           w_sign_result;
 logic [7:0]     w_exp_result;
 logic [23:0]    w_man_result;
 
-EXP_ADD_8bit #(
-    .SIZE_DATA          (8)
-) ADD_EXP_UNIT (
-    .i_data_a           (w_exp_a),
-    .i_data_b           (w_exp_b),
-    .o_data_sum         (w_add_exp_sum) 
+MUL_EXP_unit #(
+    .SIZE_EXP       (8)
+) MUL_EXP_UNIT (
+    .i_exp_a        (w_exp_a),
+    .i_exp_b        (w_exp_b),
+    .o_exp_pre      (w_sub_exp_sub) 
 );
 
-EXP_SUB_8bit #(
-    .SIZE_DATA          (8) 
-) SUB_EXP_UNIT (
-    .i_data_a           (w_add_exp_sum),
-    .i_data_b           (8'd127),
-    .o_data_sub         (w_sub_exp_sub) 
-);
-
-MAN_mul #(
+MUL_MAN_mul #(
     .SIZE_DATA          (24)    
 ) MAN_MUL_UNIT (
     .i_data_a           (w_man_a),
@@ -79,7 +71,7 @@ LOPD_24bit #(
     .o_zero_flag        (w_lopd_zero_flag) 
 );
 
-NOR_unit #(
+MUL_NOR_unit #(
     .SIZE_LOPD          (5) ,
     .SIZE_DATA          (32)
 ) NOR_UNIT (
@@ -89,7 +81,7 @@ NOR_unit #(
     .i_mantissa         (w_man_mul),
     .o_mantissa         (w_nor_man) 
 );
-MAN_rounding #(
+MUL_MAN_rounding #(
     .SIZE_MAN           (24)
 ) MAN_ROUNDING_UNIT (
     .i_rounding_bit     (w_man_rounding),
@@ -97,7 +89,7 @@ MAN_rounding #(
     .o_man_result       (w_man_rnd),
     .o_ov_flow          (w_rounding_man_over_flag) 
 );
-EXP_rounding #(
+MUL_EXP_rounding #(
     .SIZE_DATA      (8) 
 ) EXP_ROUNDING_UNIT (
     .i_carry_rounding   (w_rounding_man_over_flag),
@@ -105,7 +97,7 @@ EXP_rounding #(
     .o_exp_result       (w_exp_rnd) 
 );
 
-PSC_unit #(
+MUL_PSC_unit #(
     .SIZE_EXP           (8),
     .SIZE_MAN           (24)
 ) PSC_UNIT (
@@ -117,8 +109,10 @@ PSC_unit #(
     .o_sel_man          (w_sel_man) 
 );
 assign w_sign_result    = w_sign_a ^ w_sign_b;
-assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_ZERO : EXP_INF) : (w_sel_exp[0] ? w_exp_rnd : w_exp_rnd);
-assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_ZERO : MAN_NAN) : (w_sel_man[0] ? w_man_rnd : w_man_rnd);
+// assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_ZERO : EXP_INF) : (w_sel_exp[0] ? w_exp_rnd : w_exp_rnd);
+assign w_exp_result     =  w_exp_rnd;
+// assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_ZERO : MAN_NAN) : (w_sel_man[0] ? w_man_rnd : w_man_rnd);
+assign w_man_result     =  w_man_rnd;
 assign o_32_mul = {w_sign_result, w_exp_result, w_man_result[22:0]};
 
 endmodule

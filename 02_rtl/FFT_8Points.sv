@@ -1,6 +1,4 @@
-// MODULE 2: FFT 8-POINT PIPELINED TOP MODULE
-// ============================================================================
-module FFT_8Points_Pipelined #(
+module FFT_8Points #(
     parameter NUM_POINTS    = 8 ,
     parameter WIDTH         = 32  // Dùng 32-bit Fixed Point Q16.16
 )(
@@ -47,10 +45,10 @@ module FFT_8Points_Pipelined #(
     // STAGE 1: Bit-Reversed Inputs
     // ====================================================================
     // Twiddle cho Stage 1 luôn là W_2^0 = 1
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly1_0 (.i_data_0_re(i_data_re[0]), .i_data_0_im(i_data_im[0]), .i_data_1_re(i_data_re[4]), .i_data_1_im(i_data_im[4]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[0]), .o_data_0_im(s1_comb_im[0]), .o_data_1_re(s1_comb_re[1]), .o_data_1_im(s1_comb_im[1]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly1_1 (.i_data_0_re(i_data_re[2]), .i_data_0_im(i_data_im[2]), .i_data_1_re(i_data_re[6]), .i_data_1_im(i_data_im[6]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[2]), .o_data_0_im(s1_comb_im[2]), .o_data_1_re(s1_comb_re[3]), .o_data_1_im(s1_comb_im[3]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly1_2 (.i_data_0_re(i_data_re[1]), .i_data_0_im(i_data_im[1]), .i_data_1_re(i_data_re[5]), .i_data_1_im(i_data_im[5]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[4]), .o_data_0_im(s1_comb_im[4]), .o_data_1_re(s1_comb_re[5]), .o_data_1_im(s1_comb_im[5]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly1_3 (.i_data_0_re(i_data_re[3]), .i_data_0_im(i_data_im[3]), .i_data_1_re(i_data_re[7]), .i_data_1_im(i_data_im[7]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[6]), .o_data_0_im(s1_comb_im[6]), .o_data_1_re(s1_comb_re[7]), .o_data_1_im(s1_comb_im[7]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly1_0 (.i_data_0_re(i_data_re[0]), .i_data_0_im(i_data_im[0]), .i_data_1_re(i_data_re[4]), .i_data_1_im(i_data_im[4]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[0]), .o_data_0_im(s1_comb_im[0]), .o_data_1_re(s1_comb_re[1]), .o_data_1_im(s1_comb_im[1]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly1_1 (.i_data_0_re(i_data_re[2]), .i_data_0_im(i_data_im[2]), .i_data_1_re(i_data_re[6]), .i_data_1_im(i_data_im[6]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[2]), .o_data_0_im(s1_comb_im[2]), .o_data_1_re(s1_comb_re[3]), .o_data_1_im(s1_comb_im[3]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly1_2 (.i_data_0_re(i_data_re[1]), .i_data_0_im(i_data_im[1]), .i_data_1_re(i_data_re[5]), .i_data_1_im(i_data_im[5]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[4]), .o_data_0_im(s1_comb_im[4]), .o_data_1_re(s1_comb_re[5]), .o_data_1_im(s1_comb_im[5]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly1_3 (.i_data_0_re(i_data_re[3]), .i_data_0_im(i_data_im[3]), .i_data_1_re(i_data_re[7]), .i_data_1_im(i_data_im[7]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s1_comb_re[6]), .o_data_0_im(s1_comb_im[6]), .o_data_1_re(s1_comb_re[7]), .o_data_1_im(s1_comb_im[7]));
 
     // Register Stage 1
     always_ff @(posedge i_clk or negedge i_rst_n) begin
@@ -62,10 +60,10 @@ module FFT_8Points_Pipelined #(
     // STAGE 2
     // ====================================================================
     // W4^0 = 1, W4^1 = -j
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly2_0 (.i_data_0_re(s1_reg_re[0]), .i_data_0_im(s1_reg_im[0]), .i_data_1_re(s1_reg_re[2]), .i_data_1_im(s1_reg_im[2]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s2_comb_re[0]), .o_data_0_im(s2_comb_im[0]), .o_data_1_re(s2_comb_re[2]), .o_data_1_im(s2_comb_im[2]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly2_1 (.i_data_0_re(s1_reg_re[1]), .i_data_0_im(s1_reg_im[1]), .i_data_1_re(s1_reg_re[3]), .i_data_1_im(s1_reg_im[3]), .i_twiddle_re(ZERO), .i_twiddle_im(NEG_ONE), .o_data_0_re(s2_comb_re[1]), .o_data_0_im(s2_comb_im[1]), .o_data_1_re(s2_comb_re[3]), .o_data_1_im(s2_comb_im[3]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly2_2 (.i_data_0_re(s1_reg_re[4]), .i_data_0_im(s1_reg_im[4]), .i_data_1_re(s1_reg_re[6]), .i_data_1_im(s1_reg_im[6]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s2_comb_re[4]), .o_data_0_im(s2_comb_im[4]), .o_data_1_re(s2_comb_re[6]), .o_data_1_im(s2_comb_im[6]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly2_3 (.i_data_0_re(s1_reg_re[5]), .i_data_0_im(s1_reg_im[5]), .i_data_1_re(s1_reg_re[7]), .i_data_1_im(s1_reg_im[7]), .i_twiddle_re(ZERO), .i_twiddle_im(NEG_ONE), .o_data_0_re(s2_comb_re[5]), .o_data_0_im(s2_comb_im[5]), .o_data_1_re(s2_comb_re[7]), .o_data_1_im(s2_comb_im[7]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly2_0 (.i_data_0_re(s1_reg_re[0]), .i_data_0_im(s1_reg_im[0]), .i_data_1_re(s1_reg_re[2]), .i_data_1_im(s1_reg_im[2]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s2_comb_re[0]), .o_data_0_im(s2_comb_im[0]), .o_data_1_re(s2_comb_re[2]), .o_data_1_im(s2_comb_im[2]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly2_1 (.i_data_0_re(s1_reg_re[1]), .i_data_0_im(s1_reg_im[1]), .i_data_1_re(s1_reg_re[3]), .i_data_1_im(s1_reg_im[3]), .i_twiddle_re(ZERO), .i_twiddle_im(NEG_ONE), .o_data_0_re(s2_comb_re[1]), .o_data_0_im(s2_comb_im[1]), .o_data_1_re(s2_comb_re[3]), .o_data_1_im(s2_comb_im[3]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly2_2 (.i_data_0_re(s1_reg_re[4]), .i_data_0_im(s1_reg_im[4]), .i_data_1_re(s1_reg_re[6]), .i_data_1_im(s1_reg_im[6]), .i_twiddle_re(ONE), .i_twiddle_im(ZERO), .o_data_0_re(s2_comb_re[4]), .o_data_0_im(s2_comb_im[4]), .o_data_1_re(s2_comb_re[6]), .o_data_1_im(s2_comb_im[6]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly2_3 (.i_data_0_re(s1_reg_re[5]), .i_data_0_im(s1_reg_im[5]), .i_data_1_re(s1_reg_re[7]), .i_data_1_im(s1_reg_im[7]), .i_twiddle_re(ZERO), .i_twiddle_im(NEG_ONE), .o_data_0_re(s2_comb_re[5]), .o_data_0_im(s2_comb_im[5]), .o_data_1_re(s2_comb_re[7]), .o_data_1_im(s2_comb_im[7]));
 
     // Register Stage 2
     always_ff @(posedge i_clk or negedge i_rst_n) begin
@@ -77,10 +75,10 @@ module FFT_8Points_Pipelined #(
     // STAGE 3 (Final)
     // ====================================================================
     // W8^0=1, W8^1=(0.707 -j0.707), W8^2=-j, W8^3=(-0.707 -j0.707)
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly3_0 (.i_data_0_re(s2_reg_re[0]), .i_data_0_im(s2_reg_im[0]), .i_data_1_re(s2_reg_re[4]), .i_data_1_im(s2_reg_im[4]), .i_twiddle_re(ONE),    .i_twiddle_im(ZERO),    .o_data_0_re(s3_comb_re[0]), .o_data_0_im(s3_comb_im[0]), .o_data_1_re(s3_comb_re[4]), .o_data_1_im(s3_comb_im[4]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly3_1 (.i_data_0_re(s2_reg_re[1]), .i_data_0_im(s2_reg_im[1]), .i_data_1_re(s2_reg_re[5]), .i_data_1_im(s2_reg_im[5]), .i_twiddle_re(P_0707), .i_twiddle_im(N_0707),  .o_data_0_re(s3_comb_re[1]), .o_data_0_im(s3_comb_im[1]), .o_data_1_re(s3_comb_re[5]), .o_data_1_im(s3_comb_im[5]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly3_2 (.i_data_0_re(s2_reg_re[2]), .i_data_0_im(s2_reg_im[2]), .i_data_1_re(s2_reg_re[6]), .i_data_1_im(s2_reg_im[6]), .i_twiddle_re(ZERO),    .i_twiddle_im(NEG_ONE), .o_data_0_re(s3_comb_re[2]), .o_data_0_im(s3_comb_im[2]), .o_data_1_re(s3_comb_re[6]), .o_data_1_im(s3_comb_im[6]));
-    Butterfly_Unit #(.WIDTH(WIDTH)) bfly3_3 (.i_data_0_re(s2_reg_re[3]), .i_data_0_im(s2_reg_im[3]), .i_data_1_re(s2_reg_re[7]), .i_data_1_im(s2_reg_im[7]), .i_twiddle_re(N_0707), .i_twiddle_im(N_0707),  .o_data_0_re(s3_comb_re[3]), .o_data_0_im(s3_comb_im[3]), .o_data_1_re(s3_comb_re[7]), .o_data_1_im(s3_comb_im[7]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly3_0 (.i_data_0_re(s2_reg_re[0]), .i_data_0_im(s2_reg_im[0]), .i_data_1_re(s2_reg_re[4]), .i_data_1_im(s2_reg_im[4]), .i_twiddle_re(ONE),    .i_twiddle_im(ZERO),    .o_data_0_re(s3_comb_re[0]), .o_data_0_im(s3_comb_im[0]), .o_data_1_re(s3_comb_re[4]), .o_data_1_im(s3_comb_im[4]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly3_1 (.i_data_0_re(s2_reg_re[1]), .i_data_0_im(s2_reg_im[1]), .i_data_1_re(s2_reg_re[5]), .i_data_1_im(s2_reg_im[5]), .i_twiddle_re(P_0707), .i_twiddle_im(N_0707),  .o_data_0_re(s3_comb_re[1]), .o_data_0_im(s3_comb_im[1]), .o_data_1_re(s3_comb_re[5]), .o_data_1_im(s3_comb_im[5]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly3_2 (.i_data_0_re(s2_reg_re[2]), .i_data_0_im(s2_reg_im[2]), .i_data_1_re(s2_reg_re[6]), .i_data_1_im(s2_reg_im[6]), .i_twiddle_re(ZERO),    .i_twiddle_im(NEG_ONE), .o_data_0_re(s3_comb_re[2]), .o_data_0_im(s3_comb_im[2]), .o_data_1_re(s3_comb_re[6]), .o_data_1_im(s3_comb_im[6]));
+    Butterfly_Unit #(.SIZE_DATA(WIDTH)) bfly3_3 (.i_data_0_re(s2_reg_re[3]), .i_data_0_im(s2_reg_im[3]), .i_data_1_re(s2_reg_re[7]), .i_data_1_im(s2_reg_im[7]), .i_twiddle_re(N_0707), .i_twiddle_im(N_0707),  .o_data_0_re(s3_comb_re[3]), .o_data_0_im(s3_comb_im[3]), .o_data_1_re(s3_comb_re[7]), .o_data_1_im(s3_comb_im[7]));
 
     // Output Register
     always_ff @(posedge i_clk or negedge i_rst_n) begin
