@@ -1,0 +1,235 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Dec 24, 2025 at 20:56:23 EST
+xrun
+	+xm64bit
+	-sv
+	-f ./../FPU_MUL/flist.f
+		+incdir+./../FPU_MUL/lib/
+		./../FPU_MUL/tb_fpu_mul.sv
+		./../../02_rtl/FPU_MUL/fpu_mul.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+		./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+		./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+		./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+		./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+		./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+		./../../02_rtl/FPU_COMMON/SHF_left.sv
+		./../../02_rtl/FPU_COMMON/SHF_right.sv
+	-top tb_fpu_mul
+	-access +rwc
+	-clean
+	-log ./../FPU_MUL/Xcelium/compile.log
+	+nctimescale+1ns/1ps
+	+ntb_random_seed=automatic
+	-allowredefinition
+	-v93
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+xrun: *W,OPDEPRREN: Command Line Option (+nctimescale+1ns/1ps) is deprecated. Use (+xmtimescale+1ns/1ps) instead.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: ./../FPU_MUL/tb_fpu_mul.sv
+	module worklib.tb_fpu_mul:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/fpu_mul.sv
+	module worklib.fpu_mul:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+	module worklib.MUL_EXP_adjust:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+	module worklib.MUL_EXP_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+	module worklib.MUL_EXP_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+	module worklib.MUL_MAN_mul:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+	module worklib.MUL_MAN_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+	module worklib.MUL_NOR_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+	module worklib.MUL_PSC_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+	module worklib.CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+	module worklib.CLA_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+	module worklib.CLA_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+	module worklib.COMP_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+	module worklib.COMP_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+	module worklib.COMP_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+	module worklib.COMP_CLA_24bit:sv
+		errors: 0, warnings: 0
+	module worklib.COMP_CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+	module worklib.LOPD_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+	module worklib.LOPD_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+	module worklib.LOPD_16bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+	module worklib.LOPD_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_left.sv
+	module worklib.SHF_left:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_right.sv
+	module worklib.SHF_right:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory ./../FPU_MUL/lib/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		$unit_0x3d621c77
+		tb_fpu_mul
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+    .i_mantissa         (w_man_mul),
+                                 |
+xmelab: *W,CUVMPW (/home/admin/shared/project_tiny/BigProject/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv,85|33): port sizes differ in port connection(24/32) for the instance(tb_fpu_mul.DUT) .
+    .o_mantissa         (w_nor_man) 
+                                 |
+xmelab: *W,CUVMPW (/home/admin/shared/project_tiny/BigProject/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv,86|33): port sizes differ in port connection(24/32) for the instance(tb_fpu_mul.DUT) .
+    .i_one_pos      (w_lopd_one_pos),
+                                  |
+xmelab: *W,CUVMPW (/home/admin/shared/project_tiny/BigProject/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv,103|34): port sizes differ in port connection(5/8) for the instance(tb_fpu_mul.DUT) .
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.MUL_PSC_unit:sv <0x4e1a78a1>
+			streams:  10, words:  5672
+		worklib.MUL_EXP_adjust:sv <0x10dcac55>
+			streams:   6, words:  1863
+		worklib.MUL_NOR_unit:sv <0x77b6cc99>
+			streams:   2, words:   917
+		worklib.LOPD_8bit:sv <0x0149d3ed>
+			streams:   5, words:  2314
+		worklib.LOPD_8bit:sv <0x6f4d32bc>
+			streams:   5, words:  2314
+		worklib.LOPD_16bit:sv <0x0547d804>
+			streams:  10, words:  3832
+		worklib.LOPD_24bit:sv <0x7fd6fc21>
+			streams:  15, words:  5494
+		worklib.MUL_MAN_mul:sv <0x795d2249>
+			streams:  11, words:  4282
+		worklib.CLA_4bit:sv <0x6c2d0268>
+			streams:   9, words:  3384
+		worklib.CLA_8bit:sv <0x4c5b0c0d>
+			streams:  13, words:  4418
+		worklib.MUL_EXP_unit:sv <0x34aac51c>
+			streams:   6, words:  1317
+		worklib.fpu_mul:sv <0x13176b5b>
+			streams:  38, words:  9936
+		worklib.tb_fpu_mul:sv <0x7d34ab50>
+			streams:  14, words: 23191
+		worklib.SHF_left:sv <0x24492a93>
+			streams:   7, words:  3911
+		worklib.MUL_MAN_rounding:sv <0x61b84e49>
+			streams:  26, words: 11680
+		worklib.MUL_EXP_rounding:sv <0x6113f575>
+			streams:   9, words:  3824
+		worklib.\$unit_0x3d621c77 :compilation_unit <0x6865e39d>
+			streams:  11, words: 10288
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                24      15
+		Registers:             216     170
+		Scalar wires:          174       -
+		Expanded wires:         16       1
+		Vectored wires:        129       -
+		Always blocks:           2       2
+		Initial blocks:          6       6
+		Parallel blocks:         1       1
+		Cont. assignments:     167      76
+		Pseudo assignments:     84      62
+		Compilation units:       1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_fpu_mul:sv
+Loading snapshot worklib.tb_fpu_mul:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+==========[ Value ]==========
+[VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_m=3f800000 (1.000000000000000000000000)
+=> PASS: expect=1.000000000000000000000000 (3f800000), dut=1.000000000000000000000000 (3f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Value ]==========
+[VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=403f5c29 (2.990000009536743164062500) 	| o_32_m=403f5c29 (2.990000009536743164062500)
+=> PASS: expect=2.990000009536743164062500 (403f5c29), dut=2.990000009536743164062500 (403f5c29), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=5177b21a (66490310656.000000000000000000000000) * i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_m=6345e441 (3650456009834915430400.000000000000000000000000)
+=> FAIL: expect=2578545818275162357760.000000000000000000000000 (630bc883), dut=3650456009834915430400.000000000000000000000000 (6345e441), rounding_error=41.57033539 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=5177b21a (66490310656.000000000000000000000000) * i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_m=6345e441 (3650456009834915430400.000000000000000000000000)
+=> FAIL: expect=2578545818275162357760.000000000000000000000000 (630bc883), dut=3650456009834915430400.000000000000000000000000 (6345e441), rounding_error=41.57033539 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=5203778f (141161644032.000000000000000000000000) * i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_m=629ced4b (1447395417954466136064.000000000000000000000000)
+=> PASS: expect=1447395417954466136064.000000000000000000000000 (629ced4b), dut=1447395417954466136064.000000000000000000000000 (629ced4b), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=d02cf5b3 (-11607133184.000000000000000000000000) * i_32_b=510d38a4 (37908791296.000000000000000000000000) 	| o_32_m=e1bed330 (-440012379643212464128.000000000000000000000000)
+=> PASS: expect=-440012379643212464128.000000000000000000000000 (e1bed330), dut=-440012379643212464128.000000000000000000000000 (e1bed330), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=52024077 (139856822272.000000000000000000000000) * i_32_b=50d6594e (28769415168.000000000000000000000000) 	| o_32_m=635a1ea7 (4023598942210930769920.000000000000000000000000)
+=> PASS: expect=4023598942210930769920.000000000000000000000000 (635a1ea7), dut=4023598942210930769920.000000000000000000000000 (635a1ea7), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=502905d8 (11342929920.000000000000000000000000) * i_32_b=50ac0ea1 (23093118976.000000000000000000000000) 	| o_32_m=6163332b (261943621590750068736.000000000000000000000000)
+=> PASS: expect=261943621590750068736.000000000000000000000000 (6163332b), dut=261943621590750068736.000000000000000000000000 (6163332b), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=5209db8a (148023443456.000000000000000000000000) * i_32_b=5109e83a (37019164672.000000000000000000000000) 	| o_32_m=63948716 (5479704181107243089920.000000000000000000000000)
+=> PASS: expect=5479704181107243089920.000000000000000000000000 (63948716), dut=5479704181107243089920.000000000000000000000000 (63948716), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=51630e49 (60949827584.000000000000000000000000) * i_32_b=500e6b88 (9557647360.000000000000000000000000) 	| o_32_m=61fca298 (582536952625676419072.000000000000000000000000)
+=> PASS: expect=582536952625676419072.000000000000000000000000 (61fca298), dut=582536952625676419072.000000000000000000000000 (61fca298), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=51fdd01b (136264769536.000000000000000000000000) * i_32_b=4f773d93 (4148007680.000000000000000000000000) 	| o_32_m=61fa906b (577761553723919695872.000000000000000000000000)
+=> FAIL: expect=565227297089133740032.000000000000000000000000 (61f520d6), dut=577761553723919695872.000000000000000000000000 (61fa906b), rounding_error=2.21756029 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][MUL]i_32_a=5194167f (79504072704.000000000000000000000000) * i_32_b=510faa5b (38564900864.000000000000000000000000) 	| o_32_m=63263639 (3066066670387506184192.000000000000000000000000)
+=> PASS: expect=3066066670387506184192.000000000000000000000000 (63263639), dut=3066066670387506184192.000000000000000000000000 (63263639), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+
+==================================
+========== TEST SUMMARY ==========
+Total test cases:     12
+Passed          :      9
+Failed          :      3
+Pass rate       : 75.00%
+==================================
+
+Simulation complete via $finish(1) at time 931 NS + 0
+../FPU_MUL/tb_fpu_mul.sv:190     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 24, 2025 at 20:56:24 EST  (total: 00:00:01)

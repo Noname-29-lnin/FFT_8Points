@@ -32,7 +32,10 @@ logic       w_lopd_zero_flag;
 
 logic [23:0] w_nor_man;
 
+logic w_man_mul_un_flag;
 logic w_rounding_man_over_flag;
+
+logic [7:0] w_exp_adjustion;
 
 logic [7:0] w_exp_rnd;
 logic [23:0] w_man_rnd;
@@ -59,6 +62,7 @@ MUL_MAN_mul #(
     .i_data_b           (w_man_b),
     .o_data_mul         (w_man_mul),
     .o_over_flag        (w_man_over_flag),
+    .o_under_flag       (w_man_mul_un_flag),
     .o_rounding         (w_man_rounding)
 );
 
@@ -89,11 +93,22 @@ MUL_MAN_rounding #(
     .o_man_result       (w_man_rnd),
     .o_ov_flow          (w_rounding_man_over_flag) 
 );
+MUL_EXP_adjust #(
+    .SIZE_DATA      (8),
+    .SIZE_LOPD      (8)  
+) MUL_EXP_ADJUST_UNIT (
+    .i_un_flag      (w_man_mul_un_flag),
+    .i_ov_flag      (w_man_over_flag),
+    .i_zero_flag    (w_lopd_zero_flag),
+    .i_one_pos      (w_lopd_one_pos),
+    .i_data_exp     (w_sub_exp_sub),
+    .o_exp_adjust   (w_exp_adjustion)
+);
 MUL_EXP_rounding #(
     .SIZE_DATA      (8) 
 ) EXP_ROUNDING_UNIT (
     .i_carry_rounding   (w_rounding_man_over_flag),
-    .i_exp_result       (w_sub_exp_sub),
+    .i_exp_result       (w_exp_adjustion),
     .o_exp_result       (w_exp_rnd) 
 );
 

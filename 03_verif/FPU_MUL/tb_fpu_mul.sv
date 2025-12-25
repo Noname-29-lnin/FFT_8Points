@@ -50,10 +50,10 @@ end
 //     $dumpfile("tb_fpu_mul.vcd");
 //     $dumpvars(0, tb_fpu_mul);
 // end
-// initial begin 
-//     $shm_open("tb_fpu_mul.shm");
-//     $shm_probe("ASM");
-// end
+initial begin 
+    $shm_open("tb_fpu_mul.shm");
+    $shm_probe("ASM");
+end
 
 task automatic Display_result_Error (
     string                      t_type      ,
