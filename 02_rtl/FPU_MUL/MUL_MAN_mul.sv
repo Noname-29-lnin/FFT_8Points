@@ -23,11 +23,11 @@ module MUL_MAN_mul #(
 
     logic [SIZE_DATA-1:0] mant_pre;
     logic guard, roundb, sticky;
-    assign guard = w_data_mul[23];
-    assign roundb = w_data_mul[22];
-    assign sticky   = |w_data_mul[21:0];
+    assign guard = w_data_mul[22];
+    assign roundb = w_data_mul[21];
+    assign sticky   = |w_data_mul[20:0];
 
     assign o_rounding = guard & (roundb | sticky);
     assign o_data_mul = w_data_mul[46:23];
-    
+
 endmodule

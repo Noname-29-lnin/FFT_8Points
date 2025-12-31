@@ -19,21 +19,19 @@ logic is_M_zero_b;
 
 assign is_E_one_a     = &(i_exp_a);
 assign is_E_one_b     = &(i_exp_b);
-assign is_E_zero_a    = ~|(i_exp_a); 
-assign is_E_zero_b    = ~|(i_exp_b); 
+assign is_E_zero_a    = ~|(i_exp_a[SIZE_EXP-1:1]); 
+assign is_E_zero_b    = ~|(i_exp_b[SIZE_EXP-1:1]);
 assign is_M_zero_a    = ~|(i_man_a[SIZE_MAN-2:0]); 
 assign is_M_zero_b    = ~|(i_man_b[SIZE_MAN-2:0]);
 
-// assign o_sel_exp[1] = (~is_E_one_a & ~is_E_one_b & is_E_zero_b & is_M_zero_b) | (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
-assign o_sel_exp[1] = (~is_E_one_a & ~is_E_one_b & is_E_zero_b & is_M_zero_b) | (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (~is_E_one_a & is_E_zero_a & is_M_zero_a & ~is_E_one_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
-
-// assign o_sel_exp[0] = (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
-// assign o_sel_exp[0] = (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_one_a & is_E_zero_a & is_M_zero_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b & is_E_zero_b & is_M_zero_b) | (is_E_one_a & ~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
+// assign o_sel_exp[1] = (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_one_a & ~is_E_one_b & is_E_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b) | (~is_E_one_a & is_E_zero_a & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b);
+// assign o_sel_exp[1] = (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
+assign o_sel_exp[1] = (~is_E_one_a & is_E_zero_a & ~is_E_one_b & is_E_zero_b) | (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
 assign o_sel_exp[0] = (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
 
-assign o_sel_man[1] = (~is_E_one_a & ~is_E_one_b & is_E_zero_b & is_M_zero_b) | (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (~is_E_one_a & is_E_zero_a & is_M_zero_a & ~is_E_one_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
-// assign o_sel_man[0] = (~is_E_zero_a & is_E_one_a & ~is_M_zero_a & ~is_E_one_b) | (~is_E_zero_a & is_E_one_a & is_E_zero_b & ~is_E_one_b & is_M_zero_b) | (is_E_zero_a & ~is_E_one_a & ~is_M_zero_a & ~is_E_zero_b & ~is_E_one_b & ~is_M_zero_b) | (is_E_zero_a & ~is_E_one_a & is_M_zero_a & ~is_E_zero_b & is_E_one_b) | (~is_E_zero_a & ~is_E_one_a & ~is_E_zero_b & is_E_one_b & ~is_M_zero_b) | (~is_E_zero_a & ~is_M_zero_a & ~is_E_zero_b & is_E_one_b & ~is_M_zero_b);
+// assign o_sel_man[1] = (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_one_a & ~is_E_one_b & is_E_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b) | (~is_E_one_a & is_E_zero_a & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b);
+// assign o_sel_man[1] = (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
+assign o_sel_man[1] = (~is_E_one_a & is_E_zero_a & ~is_E_one_b & is_E_zero_b) | (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_zero_a & is_E_one_b & ~is_E_zero_b);
 assign o_sel_man[0] = (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b) | (~is_E_one_a & is_E_zero_a & is_M_zero_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b & is_E_zero_b & is_M_zero_b);
-// assign o_sel_man[0] = (~is_E_one_a & is_E_one_b & ~is_E_zero_b) | (is_E_one_a & ~is_E_zero_a & ~is_M_zero_a) | (is_E_one_a & ~is_E_zero_a & ~is_E_one_b) | (is_E_one_b & ~is_E_zero_b & ~is_M_zero_b);
 
 endmodule

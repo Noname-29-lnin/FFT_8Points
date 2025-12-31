@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Dec 31, 2025 at 08:33:41 EST
+TOOL:	xrun(64)	20.09-s001: Started on Dec 31, 2025 at 09:21:57 EST
 xrun
 	+xm64bit
 	-sv
@@ -129,8 +129,8 @@ xmelab: *W,CUVMPW (/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_
 xmelab: *W,CUVMPW (/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv,95|34): port sizes differ in port connection(5/8) for the instance(tb_fpu_mul.DUT) .
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.MUL_PSC_unit:sv <0x22e07d44>
-			streams:  10, words:  5975
+		worklib.MUL_PSC_unit:sv <0x77459329>
+			streams:  10, words:  5783
 		worklib.MUL_EXP_adjust:sv <0x0a6ae21d>
 			streams:   6, words:  1863
 		worklib.MUL_NOR_unit:sv <0x04b5b127>
@@ -154,7 +154,7 @@ xmelab: *W,CUVMPW (/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_
 		worklib.fpu_mul:sv <0x18aea07a>
 			streams:  38, words: 10551
 		worklib.tb_fpu_mul:sv <0x524b0140>
-			streams:  14, words: 32480
+			streams:  14, words: 21566
 		worklib.SHF_left:sv <0x2e97bd9e>
 			streams:   7, words:  3911
 		worklib.MUL_MAN_rounding:sv <0x7de5ebef>
@@ -183,103 +183,19 @@ Loading snapshot worklib.tb_fpu_mul:sv .................... Done
 xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
 xcelium> run
-==========[ (0.0 & 0.0) ]==========
-[ZERO][MUL]i_32_a=00000000 (0.000000000000000000000000) * i_32_b=00000000 (0.000000000000000000000000) 	| o_32_m=00000000 (0.000000000000000000000000)
-=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (0.0 & -0.0) ]==========
-[ZERO][MUL]i_32_a=00000000 (0.000000000000000000000000) * i_32_b=80000000 (-0.000000000000000000000000) 	| o_32_m=80000000 (-0.000000000000000000000000)
-=> PASS: expect=-0.000000000000000000000000 (80000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (0.0 & -0.0) ]==========
-[ZERO][MUL]i_32_a=4016a197 (2.353612661361694335937500) * i_32_b=4016a197 (2.353612661361694335937500) 	| o_32_m=40b14386 (5.539492607116699218750000)
-=> PASS: expect=5.539492607116699218750000 (40b14386), dut=5.539492607116699218750000 (40b14386), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (0.0 & -0.0) ]==========
-[ZERO][MUL]i_32_a=40aed834 (5.463891983032226562500000) * i_32_b=40aed834 (5.463891983032226562500000) 	| o_32_m=41eed53a (29.854114532470703125000000)
-=> PASS: expect=29.854116439819335937500000 (41eed53b), dut=29.854114532470703125000000 (41eed53a), rounding_error=0.00000639 % (exp_error = 0.00001192 %)
-==========[ (inf & inf) ]==========
-[INF][MUL]i_32_a=7f800000 (inf) * i_32_b=7f800000 (inf) 	| o_32_m=7f800000 (inf)
-=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-inf & -inf) ]==========
-[INF][MUL]i_32_a=ff800000 (-inf) * i_32_b=ff800000 (-inf) 	| o_32_m=7f800000 (inf)
-=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (inf & -inf) ]==========
-[INF][MUL]i_32_a=ff800000 (-inf) * i_32_b=7f800000 (inf) 	| o_32_m=ff800000 (-inf)
-=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (inf & 0) ]==========
-[INF][MUL]i_32_a=7f800000 (inf) * i_32_b=00000000 (0.000000000000000000000000) 	| o_32_m=7fc00000 (nan)
-=> PASS: expect=-nan (ffc00000), dut=nan (7fc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-inf & 0) ]==========
-[INF][MUL]i_32_a=ff800000 (-inf) * i_32_b=00000000 (0.000000000000000000000000) 	| o_32_m=ffc00000 (-nan)
-=> PASS: expect=-nan (ffc00000), dut=-nan (ffc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (inf & Number) ]==========
-[INF][MUL]i_32_a=7f800000 (inf) * i_32_b=40533333 (3.299999952316284179687500) 	| o_32_m=7f800000 (inf)
-=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-inf & Number) ]==========
-[INF][MUL]i_32_a=ff800000 (-inf) * i_32_b=40533333 (3.299999952316284179687500) 	| o_32_m=ff800000 (-inf)
-=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (inf & -Number) ]==========
-[INF][MUL]i_32_a=7f800000 (inf) * i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_m=ff800000 (-inf)
-=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-inf & -Number) ]==========
-[INF][MUL]i_32_a=ff800000 (-inf) * i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_m=7f800000 (inf)
-=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (NaN & -Number) ]==========
-[NaN][MUL]i_32_a=7f800001 (nan) * i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_m=ffc00000 (-nan)
-=> PASS: expect=nan (7fc00001), dut=-nan (ffc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-NaN & -Number) ]==========
-[NaN][MUL]i_32_a=ff800001 (-nan) * i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_m=7fc00000 (nan)
-=> PASS: expect=-nan (ffc00001), dut=nan (7fc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (NaN &  Number) ]==========
-[NaN][MUL]i_32_a=ff800001 (-nan) * i_32_b=40533333 (3.299999952316284179687500) 	| o_32_m=ffc00000 (-nan)
-=> PASS: expect=-nan (ffc00001), dut=-nan (ffc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ (-NaN &  Number) ]==========
-[NaN][MUL]i_32_a=7f800001 (nan) * i_32_b=40533333 (3.299999952316284179687500) 	| o_32_m=7fc00000 (nan)
-=> PASS: expect=nan (7fc00001), dut=nan (7fc00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ APPR INF ]==========
-[APPRO][MUL]i_32_a=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) * i_32_b=007fffff (0.000000000000000000000000) 	| o_32_m=4021616e (2.521571636199951171875000)
-=> PASS: expect=2.521571636199951171875000 (4021616e), dut=2.521571636199951171875000 (4021616e), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ APPR INF ]==========
-[APPRO][MUL]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) * i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_m=40fffffe (7.999999046325683593750000)
-=> PASS: expect=7.999999046325683593750000 (40fffffe), dut=7.999999046325683593750000 (40fffffe), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ APPR INF ]==========
-[APPRO][MUL]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) * i_32_b=007fffff (0.000000000000000000000000) 	| o_32_m=407ffffe (3.999999523162841796875000)
-=> PASS: expect=3.999999284744262695312500 (407ffffd), dut=3.999999523162841796875000 (407ffffe), rounding_error=0.00000596 % (exp_error = 0.00001192 %)
-==========[ APPR ZERO ]==========
-[APPRO][MUL]i_32_a=00ffffff (0.000000000000000000000000) * i_32_b=007fffff (0.000000000000000000000000) 	| o_32_m=41fffffe (31.999996185302734375000000)
-=> FAIL: expect=0.000000000000000000000000 (00000000), dut=31.999996185302734375000000 (41fffffe), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
-==========[ APPR ZERO ]==========
-[APPRO][MUL]i_32_a=00ffffff (0.000000000000000000000000) * i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_m=427ffffe (63.999992370605468750000000)
-=> FAIL: expect=0.000000000000000000000000 (00000000), dut=63.999992370605468750000000 (427ffffe), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
-==========[ (-A + B) ]==========
-[SIGN][MUL]i_32_a=c00ccccd (-2.200000047683715820312500) * i_32_b=40533333 (3.299999952316284179687500) 	| o_32_m=c0e851ec (-7.260000228881835937500000)
-=> PASS: expect=-7.260000228881835937500000 (c0e851ec), dut=-7.260000228881835937500000 (c0e851ec), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ TEST SIGN ]==========
-[SIGN][MUL]i_32_a=c00ccccd (-2.200000047683715820312500) * i_32_b=c0533333 (-3.299999952316284179687500) 	| o_32_m=40e851ec (7.260000228881835937500000)
-=> PASS: expect=7.260000228881835937500000 (40e851ec), dut=7.260000228881835937500000 (40e851ec), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ TEST SIGN ]==========
-[SIGN][MUL]i_32_a=c00ccccd (-2.200000047683715820312500) * i_32_b=c1b1999a (-22.200000762939453125000000) 	| o_32_m=42435c2a (48.840003967285156250000000)
-=> PASS: expect=48.840003967285156250000000 (42435c2a), dut=48.840003967285156250000000 (42435c2a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
 ==========[ Overflow rouding ]==========
 [PRE_NOR_EXP][MUL]i_32_a=0cffffff (0.000000000000000000000000) * i_32_b=00f80000 (0.000000000000000000000000) 	| o_32_m=4e77ffff (1040187328.000000000000000000000000)
 => FAIL: expect=0.000000000000000000000000 (00000000), dut=1040187328.000000000000000000000000 (4e77ffff), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
-==========[ Value ]==========
-[VALUE][MUL]i_32_a=5203778f (141161644032.000000000000000000000000) * i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_m=629ced4c (1447395558691954491392.000000000000000000000000)
-=> PASS: expect=1447395417954466136064.000000000000000000000000 (629ced4b), dut=1447395558691954491392.000000000000000000000000 (629ced4c), rounding_error=0.00000972 % (exp_error = 0.00001192 %)
-==========[ Value ]==========
-[VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_m=3f800000 (1.000000000000000000000000)
-=> PASS: expect=1.000000000000000000000000 (3f800000), dut=1.000000000000000000000000 (3f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
-==========[ Value ]==========
-[VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=403f5c29 (2.990000009536743164062500) 	| o_32_m=403f5c29 (2.990000009536743164062500)
-=> PASS: expect=2.990000009536743164062500 (403f5c29), dut=2.990000009536743164062500 (403f5c29), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
 
 ==================================
 ========== TEST SUMMARY ==========
-Total test cases:     29
-Passed          :     26
-Failed          :      3
-Pass rate       : 89.66%
+Total test cases:      1
+Passed          :      0
+Failed          :      1
+Pass rate       : 0.00%
 ==================================
 
-Simulation complete via $finish(1) at time 1081 NS + 0
+Simulation complete via $finish(1) at time 521 NS + 0
 ../FPU_MUL/tb_fpu_mul.sv:190     $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Dec 31, 2025 at 08:33:42 EST  (total: 00:00:01)
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 31, 2025 at 09:21:58 EST  (total: 00:00:01)
