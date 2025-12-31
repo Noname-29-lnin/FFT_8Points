@@ -12,7 +12,7 @@ FLIST        	= $(INC_DIR)/flist.f
 LIB_INC      	= $(shell find $(LIB_DIR) -type f -name "*.svh" -exec dirname {} \; | sort -u)
 NAME_GATELEVEL	= $(DEF_GATELEVEL)
 NAME_ANNOTATION = $(DEF_ANNOTATION)
-NAME_WAVE		= $(TB_NAME).$(DEF_WAVE)
+NAME_WAVE		= $(WORK_DIR)/$(TB_NAME).$(DEF_WAVE)
 #============================================================
 # Targets
 #============================================================
@@ -109,17 +109,17 @@ compile_annotation:
 	@rm -rf ./*.vcd
 
 run:
-	@echo "-> Move file $(NAME_WAVE)"
-	@rm -rf $(WORK_DIR)/$(NAME_WAVE)
-	@mv $(NAME_WAVE) $(WORK_DIR) \
-	     && echo "<Pass> Move $(NAME_WAVE) to $(WORK_DIR)/$(NAME_WAVE)" || (echo "<False> Move $(NAME_WAVE) to $(WORK_DIR)/$(NAME_WAVE)" && exit 1)
+	@echo "-> Move file $(TB_NAME).shm"
+	@rm -rf $(WORK_DIR)/$(TB_NAME).shm
+	@mv $(TB_NAME).shm $(WORK_DIR) \
+	     && echo "<Pass> Move $(TB_NAME).shm to $(WORK_DIR)/$(TB_NAME)" || (echo "<False> Move $(TB_NAME).shm to $(WORK_DIR)/$(TB_NAME)" && exit 1)
 	@echo "-> Copy Xcelium..."
 	@cp -r ./xcelium.d $(WORK_DIR) \
 		&& echo "<Pass> Copy xcelium.d to $(WORK_DIR)/xcelium.d" || (echo "<False> Copy xcelium.d to $(WORK_DIR)/xcelium.d" && exit 1)
 
 gui:
 	@echo "-> SIMULATION WITH SIMVISION..."
-	@simvision -waves $(WORK_DIR)/$(NAME_WAVE) &> /dev/null &
+	@simvision -waves $(NAME_WAVE) &> /dev/null &
 
 clean:
 	@echo "-> Cleaning Xcelium files..."

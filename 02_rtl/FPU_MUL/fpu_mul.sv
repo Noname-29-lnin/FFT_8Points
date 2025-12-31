@@ -21,28 +21,20 @@ assign w_exp_b      = i_32_b[30:23];
 assign w_man_a      = {1'b1, i_32_a[22:0]};
 assign w_man_b      = {1'b1, i_32_b[22:0]};
 
-logic [7:0] w_sub_exp_sub;
-
-logic [23:0] w_man_mul;
-logic        w_man_over_flag;
-logic        w_man_rounding;
-
-logic [4:0] w_lopd_one_pos;
-logic       w_lopd_zero_flag;
-
-logic [23:0] w_nor_man;
-
-logic w_man_mul_un_flag;
-logic w_rounding_man_over_flag;
-
-logic [7:0] w_exp_adjustion;
-
-logic [7:0] w_exp_rnd;
-logic [23:0] w_man_rnd;
-
-logic [1:0] w_sel_exp;
-logic [1:0] w_sel_man;
-
+logic [7:0]     w_sub_exp_sub;
+logic [23:0]    w_man_mul;
+logic           w_man_over_flag;
+logic           w_man_rounding;
+logic [4:0]     w_lopd_one_pos;
+logic           w_lopd_zero_flag;
+logic [23:0]    w_nor_man;
+logic           w_man_mul_un_flag;
+logic           w_rounding_man_over_flag;
+logic [7:0]     w_exp_adjustion;
+logic [7:0]     w_exp_rnd;
+logic [23:0]    w_man_rnd;
+logic [1:0]     w_sel_exp;
+logic [1:0]     w_sel_man;
 logic           w_sign_result;
 logic [7:0]     w_exp_result;
 logic [23:0]    w_man_result;
@@ -124,10 +116,8 @@ MUL_PSC_unit #(
     .o_sel_man          (w_sel_man) 
 );
 assign w_sign_result    = w_sign_a ^ w_sign_b;
-// assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_ZERO : EXP_INF) : (w_sel_exp[0] ? w_exp_rnd : w_exp_rnd);
-assign w_exp_result     =  w_exp_rnd;
-// assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_ZERO : MAN_NAN) : (w_sel_man[0] ? w_man_rnd : w_man_rnd);
-assign w_man_result     =  w_man_rnd;
+assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_INF : EXP_ZERO) : w_exp_rnd;
+assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_NAN : MAN_ZERO) : w_man_rnd;
 assign o_32_mul = {w_sign_result, w_exp_result, w_man_result[22:0]};
 
 endmodule

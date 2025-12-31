@@ -148,42 +148,42 @@ initial begin
     #100;
     i_rst_n = 1;
     #100;
-    // TestCase_Display_result("ZERO", "(0.0 & 0.0)", 32'h00000000, 32'h00000000);
-    // TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h00000000, 32'h80000000);
-    // TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h4016A197, 32'h4016A197);
-    // TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h40AED834, 32'h40AED834);
-    // TestCase_Display_result("INF", "(inf & inf)", 32'h7f800000, 32'h7f800000);
-    // TestCase_Display_result("INF", "(-inf & -inf)", 32'hff800000, 32'hff800000);
-    // TestCase_Display_result("INF", "(inf & -inf)", 32'hff800000, 32'h7f800000);
-    // TestCase_Display_result("INF", "(inf & 0)", 32'h7f800000, 32'h00000000);
-    // TestCase_Display_result("INF", "(-inf & 0)", 32'hff800000, 32'h00000000);
-    // TestCase_Display_result("INF", "(inf & Number)", 32'h7f800000, 32'h40533333);
-    // TestCase_Display_result("INF", "(-inf & Number)", 32'hff800000, 32'h40533333);
-    // TestCase_Display_result("INF", "(inf & -Number)", 32'h7f800000, 32'hc00ccccd);
-    // TestCase_Display_result("INF", "(-inf & -Number)", 32'hff800000, 32'hc00ccccd);
-    // TestCase_Display_result("NaN", "(NaN & -Number)", 32'h7f800001, 32'hc00ccccd);
-    // TestCase_Display_result("NaN", "(-NaN & -Number)", 32'hff800001, 32'hc00ccccd);
-    // TestCase_Display_result("NaN", "(NaN &  Number)", 32'hff800001, 32'h40533333);
-    // TestCase_Display_result("NaN", "(-NaN &  Number)", 32'h7f800001, 32'h40533333);
-    // TestCase_Display_result("APPRO", "APPR INF", 32'h7f21616f, 32'h007fffff);
-    // TestCase_Display_result("APPRO", "APPR INF", 32'h7f7fffff, 32'h00ffffff);
-    // TestCase_Display_result("APPRO", "APPR INF", 32'h7f7fffff, 32'h007fffff);
-    // TestCase_Display_result("APPRO", "APPR ZERO", 32'h00ffffff, 32'h007fffff);
-    // TestCase_Display_result("APPRO", "APPR ZERO", 32'h00ffffff, 32'h00ffffff);
-    // TestCase_Display_result("SIGN", "(-A + B)", 32'hc00ccccd, 32'h40533333);
-    // TestCase_Display_result("SIGN", "TEST SIGN", 32'hc00ccccd, 32'hc0533333);
-    // TestCase_Display_result("SIGN", "TEST SIGN", 32'hc00ccccd, 32'hc1b1999a);
-    // TestCase_Display_result("PRE_NOR_EXP", "Overflow rouding", 32'h0cffffff, 32'h00f80000);
-    // TestCase_Display_result("VALUE", "Value", 32'h5203778f, 32'h5018c9da);
+    TestCase_Display_result("ZERO", "(0.0 & 0.0)", 32'h00000000, 32'h00000000);
+    TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h00000000, 32'h80000000);
+    TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h4016A197, 32'h4016A197);
+    TestCase_Display_result("ZERO", "(0.0 & -0.0)", 32'h40AED834, 32'h40AED834);
+    TestCase_Display_result("INF", "(inf & inf)", 32'h7f800000, 32'h7f800000);
+    TestCase_Display_result("INF", "(-inf & -inf)", 32'hff800000, 32'hff800000);
+    TestCase_Display_result("INF", "(inf & -inf)", 32'hff800000, 32'h7f800000);
+    TestCase_Display_result("INF", "(inf & 0)", 32'h7f800000, 32'h00000000);
+    TestCase_Display_result("INF", "(-inf & 0)", 32'hff800000, 32'h00000000);
+    TestCase_Display_result("INF", "(inf & Number)", 32'h7f800000, 32'h40533333);
+    TestCase_Display_result("INF", "(-inf & Number)", 32'hff800000, 32'h40533333);
+    TestCase_Display_result("INF", "(inf & -Number)", 32'h7f800000, 32'hc00ccccd);
+    TestCase_Display_result("INF", "(-inf & -Number)", 32'hff800000, 32'hc00ccccd);
+    TestCase_Display_result("NaN", "(NaN & -Number)", 32'h7f800001, 32'hc00ccccd);
+    TestCase_Display_result("NaN", "(-NaN & -Number)", 32'hff800001, 32'hc00ccccd);
+    TestCase_Display_result("NaN", "(NaN &  Number)", 32'hff800001, 32'h40533333);
+    TestCase_Display_result("NaN", "(-NaN &  Number)", 32'h7f800001, 32'h40533333);
+    TestCase_Display_result("APPRO", "APPR INF", 32'h7f21616f, 32'h007fffff);
+    TestCase_Display_result("APPRO", "APPR INF", 32'h7f7fffff, 32'h00ffffff);
+    TestCase_Display_result("APPRO", "APPR INF", 32'h7f7fffff, 32'h007fffff);
+    TestCase_Display_result("APPRO", "APPR ZERO", 32'h00ffffff, 32'h007fffff);
+    TestCase_Display_result("APPRO", "APPR ZERO", 32'h00ffffff, 32'h00ffffff);
+    TestCase_Display_result("SIGN", "(-A + B)", 32'hc00ccccd, 32'h40533333);
+    TestCase_Display_result("SIGN", "TEST SIGN", 32'hc00ccccd, 32'hc0533333);
+    TestCase_Display_result("SIGN", "TEST SIGN", 32'hc00ccccd, 32'hc1b1999a);
+    TestCase_Display_result("PRE_NOR_EXP", "Overflow rouding", 32'h0cffffff, 32'h00f80000);
+    TestCase_Display_result("VALUE", "Value", 32'h5203778f, 32'h5018c9da);
     TestCase_Display_result("VALUE", "Value", 32'h3f800000, 32'h3f800000);
     TestCase_Display_result("VALUE", "Value", 32'h3f800000, 32'h403f5c29);
     // repeat(2**SIZE_ADDR) begin
-    repeat(10) begin
-        TestCase_Display_result("Random", "Read data from ROM", w_o_data_rom_a, w_o_data_rom_b);
-        @(posedge i_clk);
-        #1;
-        w_i_addr = w_i_addr + 1;
-    end
+    // // repeat(10) begin
+    //     TestCase_Display_result("Random", "Read data from ROM", w_o_data_rom_a, w_o_data_rom_b);
+    //     @(posedge i_clk);
+    //     #1;
+    //     w_i_addr = w_i_addr + 1;
+    // end
     
     Display_SummaryResult(test_count, test_pass);
     #100;
