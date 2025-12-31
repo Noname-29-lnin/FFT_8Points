@@ -69,7 +69,7 @@ LOPD_24bit #(
 
 MUL_NOR_unit #(
     .SIZE_LOPD          (5) ,
-    .SIZE_DATA          (32)
+    .SIZE_DATA          (24)
 ) NOR_UNIT (
     .i_overflow         (w_man_over_flag),
     .i_zero_flag        (w_lopd_zero_flag),
@@ -92,7 +92,7 @@ MUL_EXP_adjust #(
     .i_un_flag      (w_man_mul_un_flag),
     .i_ov_flag      (w_man_over_flag),
     .i_zero_flag    (w_lopd_zero_flag),
-    .i_one_pos      (w_lopd_one_pos),
+    .i_one_pos      ({3'b0, w_lopd_one_pos}),
     .i_data_exp     (w_sub_exp_sub),
     .o_exp_adjust   (w_exp_adjustion)
 );

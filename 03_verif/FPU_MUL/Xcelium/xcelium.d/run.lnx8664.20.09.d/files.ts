@@ -1,12 +1,12 @@
-1767190911 /home/admin/shared/My_project/FFT_8Points/03_verif/FPU_MUL/tb_fpu_mul.sv
-1767188503 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv
-1766679333 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_adjust.sv
-1766569047 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_rounding.sv
-1766566638 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_unit.sv
+1767191806 /home/admin/shared/My_project/FFT_8Points/03_verif/FPU_MUL/tb_fpu_mul.sv
+1767194224 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv
+1767192180 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+1767192376 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+1767196521 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_unit.sv
 1767188568 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_MAN_mul.sv
 1766569043 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_MAN_rounding.sv
-1767188439 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_NOR_unit.sv
-1767190597 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_PSC_unit.sv
+1767192078 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_NOR_unit.sv
+1767191091 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_PSC_unit.sv
 1764208475 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/CLA_4bit.sv
 1764208476 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/CLA_8bit.sv
 1764217310 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/CLA_24bit.sv
@@ -20,3 +20,5 @@
 1767188428 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/LOPD_24bit.sv
 1764217699 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SHF_left.sv
 1764209588 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
+1767196206 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SUB_8bit.sv
+1767196271 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SUB_4bit.sv

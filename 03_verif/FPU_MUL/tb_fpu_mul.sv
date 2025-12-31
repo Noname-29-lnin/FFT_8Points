@@ -178,12 +178,12 @@ initial begin
     // TestCase_Display_result("VALUE", "Value", 32'h3f800000, 32'h3f800000);
     // TestCase_Display_result("VALUE", "Value", 32'h3f800000, 32'h403f5c29);
     // repeat(2**SIZE_ADDR) begin
-    // // repeat(10) begin
-    //     TestCase_Display_result("Random", "Read data from ROM", w_o_data_rom_a, w_o_data_rom_b);
-    //     @(posedge i_clk);
-    //     #1;
-    //     w_i_addr = w_i_addr + 1;
-    // end
+    repeat(10) begin
+        TestCase_Display_result("Random", "Read data from ROM", w_o_data_rom_a, w_o_data_rom_b);
+        @(posedge i_clk);
+        #1;
+        w_i_addr = w_i_addr + 1;
+    end
     
     Display_SummaryResult(test_count, test_pass);
     #100;

@@ -1,5 +1,5 @@
-+incdir+./../FPU_MUL/lib/
-./../FPU_MUL/tb_fpu_mul.sv
++incdir+./../../03_verif/FPU_MUL/lib/
+./../../03_verif/FPU_MUL/tb_fpu_mul.sv
 ./../../02_rtl/FPU_MUL/fpu_mul.sv
 ./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
 ./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
@@ -21,3 +21,17 @@
 ./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
 ./../../02_rtl/FPU_COMMON/SHF_left.sv
 ./../../02_rtl/FPU_COMMON/SHF_right.sv
+./../../02_rtl/FPU_COMMON/SUB_8bit.sv
+./../../02_rtl/FPU_COMMON/SUB_4bit.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv

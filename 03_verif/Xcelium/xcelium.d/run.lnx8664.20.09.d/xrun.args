@@ -5,14 +5,14 @@
 +xm64bit
 -sv
 -f
-./../FPU_MUL/flist.f
+./../FFT8_POINT/flist.f
 -top
-tb_fpu_mul
+tb_FFT_8Points
 -access
 +rwc
 -clean
 -log
-./../FPU_MUL/Xcelium/compile.log
+./../FFT8_POINT/Xcelium/compile.log
 +nctimescale+1ns/1ps
 +ntb_random_seed=automatic
 -allowredefinition

@@ -30,6 +30,8 @@
 ./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
 ./../../02_rtl/FPU_COMMON/SHF_left.sv
 ./../../02_rtl/FPU_COMMON/SHF_right.sv
+./../../02_rtl/FPU_COMMON/SUB_8bit.sv
+./../../02_rtl/FPU_COMMON/SUB_4bit.sv
 -ALLOWREDEFINITION
 -CDSLIB
 ./xcelium.d/run.lnx8664.20.09.d/cdsrun.lib

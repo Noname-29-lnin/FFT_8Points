@@ -3,7 +3,7 @@
 // Do not modify this file
 //
 
-tb_fpu_mul
+tb_FFT_8Points
 -ACCESS
 +rwc
 -timescale

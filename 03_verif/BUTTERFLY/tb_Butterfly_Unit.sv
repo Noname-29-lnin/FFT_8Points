@@ -19,6 +19,11 @@ Butterfly_Unit dut (
 );
 
 initial begin
+    $shm_open("tb_Butterfly_Unit.shm");
+    $shm_probe("ASM");
+end
+
+initial begin
     // TEST 1: W = 1
     a_re = 32'h3F800000; // 1.0
     a_im = 32'h40000000; // 2.0
@@ -46,7 +51,8 @@ initial begin
     w_im = 32'h00000000;
     #100;
 
-    $stop;
+    #100;
+    $finish;
 end
 
 endmodule
