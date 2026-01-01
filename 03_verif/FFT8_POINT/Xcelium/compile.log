@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Dec 31, 2025 at 11:31:23 EST
+TOOL:	xrun(64)	20.09-s001: Started on Dec 31, 2025 at 23:32:38 EST
 xrun
 	+xm64bit
 	-sv
@@ -387,4 +387,4 @@ X7: 3f800000 (Expect ~3F800000)
 Simulation complete via $finish(1) at time 515 NS + 0
 ../FFT8_POINT/tb_FFT_8Points.sv:156     $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Dec 31, 2025 at 11:31:36 EST  (total: 00:00:13)
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 31, 2025 at 23:32:50 EST  (total: 00:00:12)

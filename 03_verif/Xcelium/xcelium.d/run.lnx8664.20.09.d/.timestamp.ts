@@ -33,7 +33,7 @@
 1764209064 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/LOPD_8bit.sv
 1766560169 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
 1764926852 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
-1767183369 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+1767199107 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
 1764926852 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
 1766560136 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
 1759654256 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
@@ -49,4 +49,4 @@
 1767192180 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_adjust.sv
 1764208805 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/COMP_24bit.sv
 1767196640 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_PSC_unit.sv
-1767198529 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+1767198736 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
