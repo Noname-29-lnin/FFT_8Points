@@ -1,0 +1,1 @@
+s1(02Jan2026:04:06:08):  xrun +xm64bit -sv -f ./../BUTTERFLY/flist.f -top tb_Butterfly_Unit -access +rwc -clean -log ./../BUTTERFLY/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

@@ -30,6 +30,6 @@ CLA_8bit CLA_8BIT_UNIT (
     .o_carry    ()
 );
 
-assign o_exp_result = i_zero_flag ? 8'h00 : w_exp_result;
-// assign o_exp_result = w_exp_result;
+// assign o_exp_result = i_zero_flag ? 8'h00 : w_exp_result;
+assign o_exp_result = w_exp_result;
 endmodule

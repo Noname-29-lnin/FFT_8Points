@@ -115,9 +115,13 @@ MUL_PSC_unit #(
     .o_sel_exp          (w_sel_exp),
     .o_sel_man          (w_sel_man) 
 );
+logic w_zero_A, w_zero_B;
+assign w_zero_A = (~|w_exp_a) & (~|w_man_a[22:0]);
+assign w_zero_B = (~|w_exp_b) & (~|w_man_b[22:0]);
+
 assign w_sign_result    = w_sign_a ^ w_sign_b;
-assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_INF : EXP_ZERO) : w_exp_rnd;
-assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_NAN : MAN_ZERO) : w_man_rnd;
+assign w_exp_result     = w_sel_exp[1] ? (w_sel_exp[0] ? EXP_INF : EXP_ZERO) : (w_zero_A | w_zero_B ? '0 : w_exp_rnd);
+assign w_man_result     = w_sel_man[1] ? (w_sel_man[0] ? MAN_NAN : MAN_ZERO) : (w_zero_A | w_zero_B ? '0 : w_man_rnd);
 assign o_32_mul = {w_sign_result, w_exp_result, w_man_result[22:0]};
 
 endmodule

@@ -26,3 +26,15 @@
 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SHF_right.sv
 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SUB_8bit.sv
 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_COMMON/SUB_4bit.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+/home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv

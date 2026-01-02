@@ -1,0 +1,1 @@
+s1(31Dec2025:23:32:38):  xrun +xm64bit -sv -f ./../FFT8_POINT/flist.f -top tb_FFT_8Points -access +rwc -clean -log ./../FFT8_POINT/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

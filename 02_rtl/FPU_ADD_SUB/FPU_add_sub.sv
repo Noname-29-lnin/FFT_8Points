@@ -10,6 +10,12 @@ module FPU_add_sub #(
 ////////////////////////////////////////////////////////////////
 // Expact
 ////////////////////////////////////////////////////////////////
+
+localparam EXP_ZERO = 8'h00;
+localparam EXP_INF  = 8'hFF;
+localparam MAN_ZERO = 23'h000000;
+localparam MAN_NAN  = 23'h400000;
+
 logic w_sign_a, w_sign_b;
 logic [7:0] w_exponent_a, w_exponent_b;
 logic [23:0] w_mantissa_a, w_mantissa_b;
@@ -45,7 +51,7 @@ logic        CLS_MAN_ALU_bout;
 logic [23:0] MAN_ALU_man_alu;
 logic MAN_ALU_ov_flag;
 logic [1:0] PSC_sel_man;
-logic       PSC_sel_exp;
+logic [1:0] PSC_sel_exp;
 
 logic [4:0] LOPD_o_one_position;
 logic       LOPD_o_zero_flag;
@@ -157,6 +163,8 @@ ADD_SUB_MAN_ALU #(
     .i_sign_a           (w_sign_a),
     .i_sign_b           (w_sign_b),
     .i_carry            (CLS_MAN_ALU_bout),
+    .i_E_zero_A         (~|(w_exponent_a)),
+    .i_E_zero_B         (~|(w_exponent_a)),
     .i_man_max          (MAN_SWAP_max),
     .i_man_min          (MAN_SWAP_min),
     .o_man_alu          (MAN_ALU_man_alu),
@@ -209,8 +217,8 @@ ADD_SUB_EXP_rounding #(
     .o_exp_result       (EXP_RND_exp) 
 );
 
-assign w_exponent_result = PSC_sel_exp ? 8'hFF : EXP_RND_exp;
-assign w_mantissa_result = PSC_sel_man[1] ? (PSC_sel_man[0] ? 23'b10000000000000000000000 : 23'h000000) : MAN_RND_man[22:0];
+assign w_exponent_result = PSC_sel_exp[1] ? EXP_ZERO : (PSC_sel_exp[0] ? EXP_INF : EXP_RND_exp);
+assign w_mantissa_result = PSC_sel_man[1] ? (PSC_sel_man[0] ? MAN_NAN : MAN_ZERO) : MAN_RND_man[22:0];
 
 assign o_32_s = {w_sign_result, w_exponent_result, w_mantissa_result};
 endmodule

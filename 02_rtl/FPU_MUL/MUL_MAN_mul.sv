@@ -10,12 +10,12 @@ module MUL_MAN_mul #(
 );
 
     logic [(2*SIZE_DATA)-1:0] w_data_mul;
-    // assign w_data_mul = i_data_a * i_data_b; // 48-bit
-    Multiplier MUL_UNIT(
-        .A          (i_data_a),
-        .B          (i_data_b),
-        .Product    (w_data_mul)
-    );
+    assign w_data_mul = i_data_a * i_data_b; // 48-bit
+    // Multiplier MUL_UNIT(
+    //     .A          (i_data_a),
+    //     .B          (i_data_b),
+    //     .Product    (w_data_mul)
+    // );
 
     logic norm_shift;
     assign o_over_flag = w_data_mul[47];

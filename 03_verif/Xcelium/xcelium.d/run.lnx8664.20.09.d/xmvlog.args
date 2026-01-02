@@ -6,9 +6,7 @@
 ./xcelium.d/run.lnx8664.20.09.d
 -RUNMODE
 -sv
-./../../03_verif/FFT8_POINT/tb_FFT_8Points.sv
-./../../02_rtl/FFT_8Points.sv
-./../../02_rtl/Detect_edge.sv
+./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv
 ./../../02_rtl/Butterfly_Unit.sv
 ./../../02_rtl/FPU_MUL/fpu_mul.sv
 ./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv

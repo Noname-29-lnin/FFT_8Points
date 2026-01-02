@@ -187,6 +187,61 @@ task automatic TestCase_Display_result(
     end
 endtask //automatic
 
+task automatic TestCase_Display_result_Float(
+    string              t_type,
+    string              t_testcase,
+    input shortreal     t_i_fpu_a,
+    input shortreal     t_i_fpu_b
+);
+
+    logic [31:0] t_hex_fpu_a;
+    logic [31:0] t_hex_fpu_b;
+    t_hex_fpu_a = REAL_TO_HEX(t_i_fpu_a);
+    t_hex_fpu_b = REAL_TO_HEX(t_i_fpu_b);
+    begin
+        $display("==========[ %s ]==========", t_testcase);
+        $display("FPU_A = %h (%.4f)", t_hex_fpu_a, t_i_fpu_a);
+        $display("FPU_B = %h (%.4f)", t_hex_fpu_b, t_i_fpu_b);
+        @(posedge i_clk);
+        #1;
+        i_add_sub   = 1'b0;
+        i_32_a      = t_hex_fpu_a;
+        i_32_b      = t_hex_fpu_b;
+        o_ov_flow   = 1'b0;
+        o_un_flow   = 1'b0;
+        @(negedge i_clk);
+        #1;
+        Display_result_Error(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        // Display_result_Similar(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        @(posedge i_clk);
+        #1;
+        i_add_sub   = 1'b0;
+        i_32_a      = t_hex_fpu_b;
+        i_32_b      = t_hex_fpu_a;
+        @(negedge i_clk);
+        #1;
+        Display_result_Error(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        // Display_result_Similar(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        @(posedge i_clk);
+        #1;
+        i_add_sub   = 1'b1;
+        i_32_a      = t_hex_fpu_a;
+        i_32_b      = t_hex_fpu_b;
+        @(negedge i_clk);
+        #1;
+        Display_result_Error(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        // Display_result_Similar(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        @(posedge i_clk);
+        #1;
+        i_add_sub   = 1'b1;
+        i_32_a      = t_hex_fpu_b;
+        i_32_b      = t_hex_fpu_a;
+        @(negedge i_clk);
+        #1;
+        Display_result_Error(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+        // Display_result_Similar(t_type, i_add_sub, i_32_a, i_32_b, o_32_s, o_ov_flow, o_un_flow);
+    end
+endtask 
 
 initial begin
     i_rst_n = 0;
@@ -224,14 +279,35 @@ initial begin
     TestCase_Display_result("SIGN", "TEST SIGN", 32'hc00ccccd, 32'hc1b1999a);
     TestCase_Display_result("PRE_NOR_EXP", "Overflow rouding", 32'h0cffffff, 32'h00f80000);
     TestCase_Display_result("VALUE", "Value", 32'h5203778f, 32'h5018c9da);
-    repeat(2**SIZE_ADDR) begin
-    // repeat(10) begin
+    // // repeat(2**SIZE_ADDR) begin
+    repeat(10) begin
         TestCase_Display_result("Random", "Read data from ROM", w_o_data_rom_a, w_o_data_rom_b);
         @(posedge i_clk);
         #1;
         w_i_addr = w_i_addr + 1;
     end
-    
+
+    TestCase_Display_result_Float("ADD", "ADD_POS_POS", 1.5, 2.25);
+    TestCase_Display_result_Float("ADD", "ADD_NEG_NEG", -1.5, -2.25);
+    TestCase_Display_result_Float("ADD", "ADD_POS_NEG", 5.0, -3.0);
+    TestCase_Display_result_Float("ADD", "ADD_NEG_POS", -5.0, 3.0);
+    TestCase_Display_result_Float("ADD", "ADD_ZERO", 3.14, 0.0);
+    TestCase_Display_result_Float("ADD", "ADD_ZERO_REV", 0.0, -2.7);
+    TestCase_Display_result_Float("ADD", "ADD_CANCEL_1", 5.0, -5.0);
+    TestCase_Display_result_Float("ADD", "ADD_CANCEL_2", -100.25, 100.25);
+    TestCase_Display_result_Float("ADD", "ADD_EXP_DIFF_1", 1.0e20, 1.0);
+    TestCase_Display_result_Float("ADD", "ADD_EXP_DIFF_2", 1.0, 1.0e-20);
+    TestCase_Display_result_Float("ADD", "ADD_DENORM_1", 1.0e-45, 1.0e-45);
+    TestCase_Display_result_Float("ADD", "ADD_DENORM_2", 1.0e-45, 0.0);
+    TestCase_Display_result_Float("ADD", "ADD_OVERFLOW", 3.4e38, 3.4e38);
+    TestCase_Display_result_Float("ADD", "ADD_UNDERFLOW", 1.0e-38, -1.0e-38);
+    TestCase_Display_result_Float("ADD", "ADD_INF", 1.0/0.0, 5.0);
+    TestCase_Display_result_Float("ADD", "ADD_INF_NEG", -1.0/0.0, 2.0);
+    TestCase_Display_result_Float("ADD", "ADD_INF_INF", 1.0/0.0, 1.0/0.0);
+    TestCase_Display_result_Float("ADD", "ADD_INF_NINF", 1.0/0.0, -1.0/0.0);
+    TestCase_Display_result_Float("ADD", "ADD_NAN_1", 0.0/0.0, 1.0);
+    TestCase_Display_result_Float("ADD", "ADD_NAN_2", 0.0/0.0, 0.0/0.0);
+
     Display_SummaryResult(test_count, test_pass);
     #100;
     $finish;

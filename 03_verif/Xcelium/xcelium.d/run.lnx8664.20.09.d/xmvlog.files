@@ -2,9 +2,7 @@
 // File created by:  xrun
 // Do not modify this file
 //
-/home/admin/shared/My_project/FFT_8Points/03_verif/FFT8_POINT/tb_FFT_8Points.sv
-/home/admin/shared/My_project/FFT_8Points/02_rtl/FFT_8Points.sv
-/home/admin/shared/My_project/FFT_8Points/02_rtl/Detect_edge.sv
+/home/admin/shared/My_project/FFT_8Points/03_verif/BUTTERFLY/tb_Butterfly_Unit.sv
 /home/admin/shared/My_project/FFT_8Points/02_rtl/Butterfly_Unit.sv
 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv
 /home/admin/shared/My_project/FFT_8Points/02_rtl/FPU_MUL/MUL_EXP_adjust.sv

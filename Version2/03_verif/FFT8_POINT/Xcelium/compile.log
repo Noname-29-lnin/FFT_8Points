@@ -1,0 +1,390 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Dec 31, 2025 at 23:32:38 EST
+xrun
+	+xm64bit
+	-sv
+	-f ./../FFT8_POINT/flist.f
+		./../../03_verif/FFT8_POINT/tb_FFT_8Points.sv
+		./../../02_rtl/FFT_8Points.sv
+		./../../02_rtl/Detect_edge.sv
+		./../../02_rtl/Butterfly_Unit.sv
+		./../../02_rtl/FPU_MUL/fpu_mul.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+		./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+		./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+		./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+		./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+		./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+		./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/CLS_4bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+		./../../02_rtl/FPU_COMMON/SHF_left.sv
+		./../../02_rtl/FPU_COMMON/SHF_right.sv
+		./../../02_rtl/FPU_COMMON/SUB_4bit.sv
+		./../../02_rtl/FPU_COMMON/SUB_8bit.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+	-top tb_FFT_8Points
+	-access +rwc
+	-clean
+	-log ./../FFT8_POINT/Xcelium/compile.log
+	+nctimescale+1ns/1ps
+	+ntb_random_seed=automatic
+	-allowredefinition
+	-v93
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+xrun: *W,OPDEPRREN: Command Line Option (+nctimescale+1ns/1ps) is deprecated. Use (+xmtimescale+1ns/1ps) instead.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: ./../../03_verif/FFT8_POINT/tb_FFT_8Points.sv
+	module worklib.tb_FFT_8Points:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FFT_8Points.sv
+	module worklib.FFT_8Points:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/Detect_edge.sv
+	module worklib.Detect_edge:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/Butterfly_Unit.sv
+	module worklib.Butterfly_Unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/fpu_mul.sv
+	module worklib.fpu_mul:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+	module worklib.MUL_EXP_adjust:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+	module worklib.MUL_EXP_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+	module worklib.MUL_EXP_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+	module worklib.MUL_MAN_mul:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+	module worklib.MUL_MAN_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+	module worklib.MUL_NOR_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+	module worklib.MUL_PSC_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+	module worklib.CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+	module worklib.CLA_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+	module worklib.CLA_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLS_4bit.sv
+	module worklib.CLS_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+	module worklib.COMP_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+	module worklib.COMP_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+	module worklib.COMP_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+	module worklib.COMP_CLA_24bit:sv
+		errors: 0, warnings: 0
+	module worklib.COMP_CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+	module worklib.LOPD_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+	module worklib.LOPD_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+	module worklib.LOPD_16bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+	module worklib.LOPD_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_left.sv
+	module worklib.SHF_left:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_right.sv
+	module worklib.SHF_right:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SUB_4bit.sv
+	module worklib.SUB_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SUB_8bit.sv
+	module worklib.SUB_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+	module worklib.ADD_SUB_EXP_adjust:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+	module worklib.ADD_SUB_EXP_comp:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+	module worklib.ADD_SUB_EXP_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+	module worklib.ADD_SUB_EXP_sub:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+	module worklib.ADD_SUB_EXP_swap:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+	module worklib.ADD_SUB_MAN_ALU:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+	module worklib.ADD_SUB_MAN_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+	module worklib.ADD_SUB_MAN_swap:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+	module worklib.ADD_SUB_NOR_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+	module worklib.ADD_SUB_PSC_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+	module worklib.ADD_SUB_SIGN_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+	module worklib.FPU_add_sub:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+	module worklib.CLA_adder_top:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+	module worklib.cla_logic_tree_level:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+	module worklib.CLA_logic:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+	module worklib.FA_1bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+	module worklib.HA_1bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+	module worklib.Modified_booth:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+	module worklib.Multiplier:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+	module worklib.signed_area_computation:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+	module worklib.wallace_final_merge:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+	package worklib.wallace_pkg:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+	module worklib.wallace_stage:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+	module worklib.wallace_tree:sv
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		wallace_pkg
+		tb_FFT_8Points
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ADD_SUB_NOR_unit:sv <0x0a0c8010>
+			streams:   2, words:   917
+		worklib.ADD_SUB_EXP_adjust:sv <0x32ee9f47>
+			streams:   6, words:  1863
+		worklib.ADD_SUB_MAN_ALU:sv <0x55451582>
+			streams:   9, words:  2873
+		worklib.CLS_4bit:sv <0x376c01f3>
+			streams:   7, words:  2353
+		worklib.ADD_SUB_PSC_unit:sv <0x17684e3d>
+			streams:   7, words:  3000
+		worklib.ADD_SUB_SIGN_unit:sv <0x058a8e9a>
+			streams:   1, words:   370
+		worklib.COMP_24bit:sv <0x50e89c42>
+			streams:  13, words:  5452
+		worklib.ADD_SUB_MAN_swap:sv <0x51690054>
+			streams:   2, words:   562
+		worklib.ADD_SUB_EXP_sub:sv <0x52c78e55>
+			streams:   4, words:  1006
+		worklib.ADD_SUB_EXP_swap:sv <0x43a397a8>
+			streams:   2, words:   559
+		worklib.COMP_4bit:sv <0x7b7d3efa>
+			streams:   2, words:  1737
+		worklib.COMP_8bit:sv <0x0db78114>
+			streams:   5, words:  1802
+		worklib.ADD_SUB_EXP_comp:sv <0x51cbc3f5>
+			streams:   1, words:   393
+		worklib.FPU_add_sub:sv <0x0ee408c7>
+			streams:  67, words: 18212
+		worklib.MUL_PSC_unit:sv <0x2439b881>
+			streams:  10, words:  5783
+		worklib.CLA_4bit:sv <0x66547524>
+			streams:   9, words:  3384
+		worklib.CLA_8bit:sv <0x1578ecbe>
+			streams:  13, words:  4418
+		worklib.MUL_EXP_adjust:sv <0x6f4309ec>
+			streams:   6, words:  1863
+		worklib.MUL_NOR_unit:sv <0x2a2a9b15>
+			streams:   3, words:  1080
+		worklib.LOPD_8bit:sv <0x71b2dc9f>
+			streams:   5, words:  2314
+		worklib.LOPD_8bit:sv <0x1fb63dce>
+			streams:   5, words:  2314
+		worklib.LOPD_16bit:sv <0x08c6a31d>
+			streams:  10, words:  3832
+		worklib.LOPD_24bit:sv <0x27403545>
+			streams:  15, words:  5494
+		worklib.CLA_adder_top:sv <0x23e56bea>
+			streams:   4, words:  2277
+		worklib.FA_1bit:sv <0x6ea8838f>
+			streams:   0, words:     0
+		worklib.signed_area_computation:sv <0x2aa4b375>
+			streams:   2, words:  3229
+		worklib.Multiplier:sv <0x09b14d9b>
+			streams:  19, words:  6966
+		worklib.MUL_MAN_mul:sv <0x70178632>
+			streams:   8, words:  2118
+		worklib.MUL_EXP_unit:sv <0x4bb39a75>
+			streams:   3, words:   810
+		worklib.fpu_mul:sv <0x47b2660c>
+			streams:  39, words: 10580
+		worklib.Butterfly_Unit:sv <0x296b7d89>
+			streams:   6, words:  2164
+		worklib.Detect_edge:sv <0x630462fe>
+			streams:   4, words:   955
+		worklib.FFT_8Points:sv <0x537d3ad7>
+			streams: 129, words: 55935
+		worklib.tb_FFT_8Points:sv <0x611474b0>
+			streams:  39, words: 32891
+		worklib.Modified_booth:sv <0x5045adb8>
+			streams:   6, words:  4727
+		worklib.wallace_tree:sv <0x0a65120d>
+			streams: 198, words: 137457
+		worklib.wallace_final_merge:sv <0x58db7a78>
+			streams:   1, words:   199
+		worklib.cla_logic_tree_level:sv <0x4def47af>
+			streams:   7, words:  2525
+		worklib.MUL_MAN_rounding:sv <0x1878b887>
+			streams:  26, words: 11680
+		worklib.MUL_EXP_rounding:sv <0x75c9a6ba>
+			streams:   9, words:  3824
+		worklib.SHF_right:sv <0x49efdcf4>
+			streams:   7, words:  4020
+		worklib.CLA_24bit:sv <0x01d49d83>
+			streams:  44, words: 14667
+		worklib.SHF_left:sv <0x18f65f76>
+			streams:   7, words:  3911
+		worklib.ADD_SUB_MAN_rounding:sv <0x692d1a3e>
+			streams:  31, words: 12810
+		worklib.ADD_SUB_EXP_rounding:sv <0x540282aa>
+			streams:   9, words:  3824
+		worklib.wallace_stage:sv <0x229730e1>
+			streams: 102, words: 43273
+		worklib.wallace_stage:sv <0x522f1cfb>
+			streams:  68, words: 28735
+		worklib.wallace_stage:sv <0x03ac1301>
+			streams:  42, words: 17749
+		worklib.wallace_stage:sv <0x3e8834a7>
+			streams:  24, words: 10315
+		worklib.wallace_stage:sv <0x2d3edcc8>
+			streams:  16, words:  6763
+		worklib.wallace_stage:sv <0x38eba389>
+			streams:   9, words:  3903
+		worklib.wallace_pkg:sv <0x5a2ede1f>
+			streams:   6, words:  3349
+		worklib.cla_logic_tree_level:sv <0x27afca6e>
+			streams:   7, words:  2525
+		worklib.cla_logic_tree_level:sv <0x394699aa>
+			streams:   6, words:  2046
+		worklib.CLA_logic:sv <0x114ebbd9>
+			streams:  20, words:  6927
+		worklib.CLA_logic:sv <0x791231a8>
+			streams:  15, words:  5178
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 7791      46
+		Verilog packages:           1       1
+		Registers:             625417     444
+		Scalar wires:          182049       -
+		Expanded wires:         25680    1512
+		Vectored wires:         75048       -
+		Always blocks:           3226      15
+		Initial blocks:             3       3
+		Cont. assignments:     227977     192
+		Pseudo assignments:     15507     364
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.tb_FFT_8Points:sv
+Loading snapshot worklib.tb_FFT_8Points:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+--- System Reset Released ---
+
+--- Test Case 1: DC Input (All inputs = 1.0) ---
+Result Test Case 1:
+X0 (Real/Imag): 00000000 / 00000000 (Expect: 41000000 / 00000000 - Value 8.0)
+X1 (Real/Imag): 00f504f3 / 00000000
+X4 (Real/Imag): 00000000 / 00000000
+
+--- Test Case 2: Impulse Input (Only x0 = 1.0) ---
+Result Test Case 2:
+X0: 3f800000 (Expect ~3F800000)
+X1: 3f800000 (Expect ~3F800000)
+X2: 3f800000 (Expect ~3F800000)
+X7: 3f800000 (Expect ~3F800000)
+
+--- Simulation Finished ---
+Simulation complete via $finish(1) at time 515 NS + 0
+../FFT8_POINT/tb_FFT_8Points.sv:156     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Dec 31, 2025 at 23:32:50 EST  (total: 00:00:12)

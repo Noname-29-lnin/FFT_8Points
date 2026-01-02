@@ -1,0 +1,95 @@
+# vsim -lib ./../FPU_MUL/QuestaSim/work -debugDB -l ./../FPU_MUL/QuestaSim/tb_fpu_mul.log -voptargs="+acc" -assertdebug -c tb_fpu_mul -wlf ./../FPU_MUL/QuestaSim/tb_fpu_mul.wlf -do "cd ./../FPU_MUL/QuestaSim; log -r /*; run -all;" 
+# Start time: 16:30:14 on Dec 24,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2024.3 linux_x86_64 Sep 10 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# Loading sv_std.std
+# Loading work.tb_fpu_mul_sv_unit(fast)
+# Loading work.tb_fpu_mul(fast)
+# Loading work.fpu_mul(fast)
+# Loading work.MUL_EXP_unit(fast)
+# Loading work.CLA_8bit(fast)
+# Loading work.CLA_4bit(fast)
+# Loading work.MUL_MAN_mul(fast)
+# Loading work.LOPD_24bit(fast)
+# Loading work.LOPD_16bit(fast)
+# Loading work.LOPD_8bit(fast)
+# Loading work.MUL_NOR_unit(fast)
+# Loading work.SHF_left(fast)
+# Loading work.MUL_MAN_rounding(fast)
+# Loading work.MUL_EXP_rounding(fast)
+# Loading work.MUL_PSC_unit(fast)
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (24) for port 'i_mantissa'. The port definition is at: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_MUL/MUL_NOR_unit.sv(8).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpu_mul/DUT/NOR_UNIT File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv Line: 77
+# ** Warning: (vsim-3015) [PCDPC] - Port size (32) does not match connection size (24) for port 'o_mantissa'. The port definition is at: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_MUL/MUL_NOR_unit.sv(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb_fpu_mul/DUT/NOR_UNIT File: /home/noname/Documents/project_tiny/FFT_8Points/02_rtl/FPU_MUL/fpu_mul.sv Line: 77
+# ** Note: (vsim-8900) Creating design debug database ./../FPU_MUL/QuestaSim/tb_fpu_mul.dbg.
+# cd ./../FPU_MUL/QuestaSim
+# Cannot change directory while a simulation is in progress.
+# Use the "quit -sim" command to unload the design first.
+#  log -r /*
+#  run -all
+# ==========[ Value ]==========
+# [VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_m=3f800000 (1.000000000000000000000000)
+# => PASS: expect=1.000000000000000000000000 (3f800000), dut=1.000000000000000000000000 (3f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+# ==========[ Value ]==========
+# [VALUE][MUL]i_32_a=3f800000 (1.000000000000000000000000) * i_32_b=403f5c29 (2.990000009536743164062500) 	| o_32_m=403f5c29 (2.990000009536743164062500)
+# => PASS: expect=2.990000009536743164062500 (403f5c29), dut=2.990000009536743164062500 (403f5c29), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=5177b21a (66490310656.000000000000000000000000) * i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_m=628bc884 (1289273049875069534208.000000000000000000000000)
+# => FAIL: expect=2578545873508408229888.000000000000000000000000 (630bc883), dut=1289273049875069534208.000000000000000000000000 (628bc884), rounding_error=49.99999561 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=5177b21a (66490310656.000000000000000000000000) * i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_m=628bc884 (1289273049875069534208.000000000000000000000000)
+# => FAIL: expect=2578545873508408229888.000000000000000000000000 (630bc883), dut=1289273049875069534208.000000000000000000000000 (628bc884), rounding_error=49.99999561 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=5203778f (141161644032.000000000000000000000000) * i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_m=629ced4c (1447395558691954491392.000000000000000000000000)
+# => PASS: expect=1447395482923463344128.000000000000000000000000 (629ced4b), dut=1447395558691954491392.000000000000000000000000 (629ced4c), rounding_error=0.00000523 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=d02cf5b3 (-11607133184.000000000000000000000000) * i_32_b=510d38a4 (37908791296.000000000000000000000000) 	| o_32_m=e1bed331 (-440012414827584552960.000000000000000000000000)
+# => PASS: expect=-440012389417131966464.000000000000000000000000 (e1bed330), dut=-440012414827584552960.000000000000000000000000 (e1bed331), rounding_error=0.00000577 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=52024077 (139856822272.000000000000000000000000) * i_32_b=50d6594e (28769415168.000000000000000000000000) 	| o_32_m=635a1ea7 (4023598942210930769920.000000000000000000000000)
+# => PASS: expect=4023598984020357021696.000000000000000000000000 (635a1ea7), dut=4023598942210930769920.000000000000000000000000 (635a1ea7), rounding_error=0.00000104 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=502905d8 (11342929920.000000000000000000000000) * i_32_b=50ac0ea1 (23093118976.000000000000000000000000) 	| o_32_m=6163332c (261943639182936113152.000000000000000000000000)
+# => PASS: expect=261943630178990161920.000000000000000000000000 (6163332b), dut=261943639182936113152.000000000000000000000000 (6163332c), rounding_error=0.00000344 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=5209db8a (148023443456.000000000000000000000000) * i_32_b=5109e83a (37019164672.000000000000000000000000) 	| o_32_m=63948716 (5479704181107243089920.000000000000000000000000)
+# => PASS: expect=5479704228614144786432.000000000000000000000000 (63948716), dut=5479704181107243089920.000000000000000000000000 (63948716), rounding_error=0.00000087 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=51630e49 (60949827584.000000000000000000000000) * i_32_b=500e6b88 (9557647360.000000000000000000000000) 	| o_32_m=61fca298 (582536952625676419072.000000000000000000000000)
+# => PASS: expect=582536958700672778240.000000000000000000000000 (61fca298), dut=582536952625676419072.000000000000000000000000 (61fca298), rounding_error=0.00000104 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=51fdd01b (136264769536.000000000000000000000000) * i_32_b=4f773d93 (4148007680.000000000000000000000000) 	| o_32_m=617520d7 (282613666136752914432.000000000000000000000000)
+# => FAIL: expect=565227310548758036480.000000000000000000000000 (61f520d6), dut=282613666136752914432.000000000000000000000000 (617520d7), rounding_error=49.99999808 % (exp_error = 0.00001192 %)
+# ==========[ Read data from ROM ]==========
+# [Random][MUL]i_32_a=5194167f (79504072704.000000000000000000000000) * i_32_b=510faa5b (38564900864.000000000000000000000000) 	| o_32_m=63263639 (3066066670387506184192.000000000000000000000000)
+# => PASS: expect=3066066682114008416256.000000000000000000000000 (63263639), dut=3066066670387506184192.000000000000000000000000 (63263639), rounding_error=0.00000038 % (exp_error = 0.00001192 %)
+# 
+# ==================================
+# ========== TEST SUMMARY ==========
+# Total test cases:     12
+# Passed          :      9
+# Failed          :      3
+# Pass rate       : 75.00%
+# ==================================
+# 
+# ** Note: $finish    : /home/noname/Documents/project_tiny/FFT_8Points/03_verif/FPU_MUL/tb_fpu_mul.sv(190)
+#    Time: 931 ns  Iteration: 0  Instance: /tb_fpu_mul
+# End time: 16:30:14 on Dec 24,2025, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 3
