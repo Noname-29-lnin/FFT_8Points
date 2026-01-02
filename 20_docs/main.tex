@@ -1,0 +1,66 @@
+\documentclass{my-article}
+\usepackage{my-coverpage}
+\usepackage{my-codespace}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T5]{fontenc}
+\usepackage[vietnamese, english]{babel}
+
+%\usepackage{tcolorbox}           % tạo box đẹp
+%\usepackage{microtype}
+%\usepackage{ragged2e}            % \justifying nếu cần canh đều
+
+\usepackage{textcomp}
+% =========================
+% Cover page information
+% =========================
+
+\selectlanguage{vietnamese}
+\NameUpperUniname{Vietnam National University Ho Chi Minh City}
+\NameUniname{Ho Chi Minh City University of Technology}
+\NameDeptname{Faculty of Electrical and Electronics Engineering}
+\NamePathlogo{./my-chapters/my-images/01_logobachkhoatoi.png}
+\NameClass{Digital System Design \\ &  and Verification}
+\NameGroup{08}
+\NameLesson[\Large]{BIG PROJECT 2 REPORT}
+\NameTitle[\Huge]{FPGA Implementation of 8-Point FFT - Digital System Design}
+\NameAdvisor{Nguyễn Trung Hiếu}
+\NamePlace{Ho Chi Minh}
+\NameTime{../../20..}
+\NamePathBackground[width=\paperwidth,height=\paperheight]{./my-chapters/my-images/bia.jpg} 
+\MemberTableData{
+1 & 2210780 & Nguyễn Đại Đồng & L01 \\ \hline
+2 & 2213874 & Nguyễn Thanh Tùng & L01 \\ \hline
+3 & 2213496 & Nguyễn Quốc Tín & L01 \\ \hline
+}
+
+% =========================
+% Configuration
+% =========================
+%--- Header and footer
+\fancyhf{}
+\fancyhead[L]{\leftmark}
+% =========================
+% Document
+% =========================
+\begin{document}
+\pagestyle{empty}
+\MycoverFinalProject % Cover page
+\newpage
+\selectlanguage{vietnamese}
+\renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
+\setlength{\parindent}{1cm}
+\onehalfspacing
+\setlength{\parskip}{6pt} 
+\tableofcontents
+\listoffigures
+\listoftables
+\listoflistings
+\newpage
+\pagestyle{fancy}
+\MycountPages{number}
+\fancyfoot[L]{\includegraphics[width=.02\linewidth]{./my-chapters/my-images/logo_DEE.png}\text{ Department of Electronics}}
+
+
+
+\end{document}

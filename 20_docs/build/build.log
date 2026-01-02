@@ -1,0 +1,462 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex.fmt)
+ restricted \write18 enabled.
+entering extended mode
+(main.tex
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+(my-article.cls
+Document Class: my-article 2025/08/11 HCMUT Report Class - Layout Only
+(/home/noname/.miktex/texmfs/install/tex/latex/base/article.cls
+Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
+(/home/noname/.miktex/texmfs/install/tex/latex/base/size12.clo))
+(/home/noname/.miktex/texmfs/install/tex/latex/anyfontsize/anyfontsize.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amstext.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsgen.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsbsy.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/amsmath/amsopn.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/amssymb.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/amsfonts.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/keyval.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/iftex/ifvtex.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/iftex/iftex.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/hyperref.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekeys.sty)
+ (/home/noname/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/pdftexcmds/pdftexcmds.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty)))
+(/home/noname/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/nameref.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/refcount/refcount.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/gettitlestring/gettitlestring.
+sty (/home/noname/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty)))
+(/home/noname/.miktex/texmfs/install/tex/latex/etoolbox/etoolbox.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/stringenc/stringenc.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/pd1enc.def)
+(/home/noname/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/puenc.def)
+(/home/noname/.miktex/texmfs/install/tex/latex/url/url.sty)
+(/home/noname/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.sty)))
+(/home/noname/.miktex/texmfs/install/tex/latex/hyperref/hpdftex.def
+(/home/noname/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilecheck.st
+y
+(/home/noname/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecounter.st
+y))) (/home/noname/.miktex/texmfs/install/tex/latex/tools/indentfirst.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/setspace/setspace.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/titlesec/titlesec.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphicx.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/graphics.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/trig.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/graphics.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-def/pdftex.def)))
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/array.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/tabularx.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tabulary/tabulary.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/longtable.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/multirow/multirow.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/multicol.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/caption.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/caption3.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/fancyhdr/fancyhdr.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/natbib/natbib.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpage.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpage2e.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/lastpage/lastpagemodern.sty) 
+)) (/home/noname/.miktex/texmfs/install/tex/latex/base/ifthen.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/enumerate.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/enumitem/enumitem.sty)
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 107.
+
+) (my-coverpage.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics-cfg/color.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/graphics/mathcolor.ltx)))
+(/home/noname/.miktex/texmfs/install/tex/latex/float/float.sty))
+(my-codespace.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgf.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-common.t
+ex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfutil-latex.de
+f)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/pgf.revision.tex)))
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/systemlayer/pgfsys.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys.code.te
+x
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeyslibraryfi
+ltered.code.tex))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgf.cfg)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-pdftex.
+def
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsys-common-
+pdf.def)))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsyssoftpath
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/systemlayer/pgfsysprotocol
+.code.tex))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcore.code.te
+x (/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathutil.code.tex)
+
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathparser.code.te
+x)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.code
+.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.basi
+c.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.trig
+onometric.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.rand
+om.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.comp
+arison.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.base
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.roun
+d.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.misc
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfunctions.inte
+gerarithmetics.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathcalc.code.tex)
+
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmathfloat.code.tex
+)) (/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfint.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepoints.c
+ode.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathcons
+truct.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathusag
+e.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorescopes.c
+ode.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoregraphics
+tate.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretransfor
+mations.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorequick.co
+de.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreobjects.
+code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepathproc
+essing.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorearrows.c
+ode.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreshade.co
+de.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreimage.co
+de.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoreexternal
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorelayers.c
+ode.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcoretranspar
+ency.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorepatterns
+.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/basiclayer/pgfcorerdf.code
+.tex)))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleshapes.co
+de.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduleplot.code
+.tex)
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-0-65.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/compatibility/pgfcomp-versio
+n-1-18.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgffor.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgfkeys.code.tex
+)) (/home/noname/.miktex/texmfs/install/tex/latex/pgf/math/pgfmath.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/math/pgfmath.code.tex))
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/utilities/pgffor.code.tex)
+)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/tikz.co
+de.tex
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotha
+ndlers.code.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmodulematrix.co
+de.tex)
+(/home/noname/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/librari
+es/tikzlibrarytopaths.code.tex)))
+(/home/noname/.miktex/texmfs/install/tex/latex/mdframed/mdframed.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/l3packages/xparse/xparse.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/l3kernel/expl3.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/l3backend/l3backend-pdftex.def))
+) (/home/noname/.miktex/texmfs/install/tex/latex/zref/zref-abspage.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/zref/zref-base.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/etexcmds/etexcmds.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/auxhook/auxhook.sty)))
+(/home/noname/.miktex/texmfs/install/tex/latex/needspace/needspace.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/mdframed/md-frame-1.mdf))
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/listings.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstpatch.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/lstmisc.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/listings/listings.cfg))
+(/home/noname/.miktex/texmfs/install/tex/latex/lstaddons/lstautogobble.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/minted/minted.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/catchfile/catchfile.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/fvextra/fvextra.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/fancyvrb/fancyvrb.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/upquote/upquote.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/lineno/lineno.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/latex2pydata/latex2pydata.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/pgfopts/pgfopts.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/shellesc.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/tools/verbatim.sty))
+(/home/noname/.miktex/texmfs/install/tex/latex/base/inputenc.sty)
+(/home/noname/.miktex/texmfs/install/tex/latex/base/fontenc.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.def
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.dfu))
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmr.fd))
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/babel.sty
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/txtbabel.def)
+*************************************
+* Local config file bblopts.cfg used
+*
+(/home/noname/.miktex/texmfs/install/tex/latex/arabi/bblopts.cfg)
+(/home/noname/.miktex/texmfs/install/tex/latex/babel-vietnamese/vietnamese.ldf
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/locale/vi/babel-vietname
+se.tex)
+
+Package babel Warning: No hyphenation patterns were preloaded for
+(babel)                the language 'Vietnamese' into the format.
+(babel)                Please, configure your TeX system to add them and
+(babel)                rebuild the format. Now I will use the patterns
+(babel)                preloaded for \language=0 instead on input line 36.
+
+Loading definitions for the Vietnamese font encoding
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5enc.def))
+(/home/noname/.miktex/texmfs/install/tex/latex/babel-english/english.ldf
+(/home/noname/.miktex/texmfs/install/tex/generic/babel/locale/en/babel-english.
+tex))) (/home/noname/.miktex/texmfs/install/tex/latex/base/textcomp.sty)
+(main.aux
+No file ./my-chapters/introduction.aux.
+No file ./my-chapters/Design_FPU.aux.
+No file ./my-chapters/verif.aux.
+No file ./my-chapters/imple.aux.
+No file ./my-chapters/synthesis.aux.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+(main.out) (main.out)
+(/home/noname/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/home/noname/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
+(/home/noname/.miktex/texmfs/install/tex/latex/00miktex/epstopdf-sys.cfg))
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd)
+(/home/noname/.miktex/texmfs/install/tex/latex/amsfonts/umsb.fd)
+Overfull \hbox (2.19716pt too wide) in paragraph at lines 48--48
+ []|\T5/cmr/bx/n/14 STT| 
+
+[1{/home/noname/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./my-chapters
+/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>] (main.toc
+) (main.lof (/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmss.fd)
+
+LaTeX Warning: Reference `tab: truth table for sign_unit' on page 2 undefined o
+n input line 9.
+
+
+[2]) (main.lot) (main.lol)
+[3] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+(main.aux
+No file ./my-chapters/introduction.aux.
+No file ./my-chapters/Design_FPU.aux.
+No file ./my-chapters/verif.aux.
+No file ./my-chapters/imple.aux.
+No file ./my-chapters/synthesis.aux.
+)
+
+LaTeX Warning: There were undefined references.
+
+ )
+(see the transcript file for additional information)
+pdfTeX warning (dest): name{lstlisting.7} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.6} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.5} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.4} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.3} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.2} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{lstlisting.1} has been referenced but does not exis
+t, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.2.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.2.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.1} has been referenced but does not e
+xist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.27} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.9} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.8} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.7} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.6} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.5} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.4} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.3} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.2} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{subsection.2.1} has been referenced but does not ex
+ist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+</home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
+</home/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb></home/no
+name/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb></home/noname/.mikt
+ex/texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb></home/noname/.miktex/texmfs/
+install/fonts/type1/vntex/vnr/vnss12.pfb>
+Output written on /home/noname/Documents/project_tiny/FFT_8Points/20_docs/build
+/main.pdf (3 pages, 141568 bytes).
+Transcript written on /home/noname/Documents/project_tiny/FFT_8Points/20_docs/b
+uild/main.log.
