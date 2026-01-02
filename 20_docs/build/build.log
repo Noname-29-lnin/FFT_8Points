@@ -266,15 +266,24 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 48--48
  []|\T5/cmr/bx/n/14 STT| 
 
 [1{/home/noname/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map} <./my-chapters
-/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>] (main.toc
-) (main.lof (/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmss.fd)
+/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
+[2] (main.toc) (main.lof
+(/home/noname/.miktex/texmfs/install/tex/latex/vntex/t5cmss.fd)
 
-LaTeX Warning: Reference `tab: truth table for sign_unit' on page 2 undefined o
+LaTeX Warning: Reference `tab: truth table for sign_unit' on page 3 undefined o
 n input line 9.
 
 
-[2]) (main.lot) (main.lol)
-[3] 
+[3]) (main.lot) (main.lol)
+[4] (my-chapters/theorical_background.tex)
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.64 ...de{./my-chapters/theorical_background.tex}
+                                                   [1 <./my-chapters/my-images/
+logo_DEE.png>] 
 enddocument/afterlastpage (AED): lastpage setting LastPage.
 (main.aux
 No file ./my-chapters/introduction.aux.
@@ -288,6 +297,10 @@ LaTeX Warning: There were undefined references.
 
  )
 (see the transcript file for additional information)
+pdfTeX warning (dest): name{page.28} has been referenced but does not exist, re
+placed by a fixed one
+
+
 pdfTeX warning (dest): name{lstlisting.7} has been referenced but does not exis
 t, replaced by a fixed one
 
@@ -447,16 +460,12 @@ ist, replaced by a fixed one
 pdfTeX warning (dest): name{section.2} has been referenced but does not exist, 
 replaced by a fixed one
 
-
-pdfTeX warning (dest): name{section.1} has been referenced but does not exist, 
-replaced by a fixed one
-
 </home/noname/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
 </home/noname/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnbx12.pfb></home/no
 name/.miktex/texmfs/install/fonts/type1/vntex/vnr/vnr12.pfb></home/noname/.mikt
 ex/texmfs/install/fonts/type1/vntex/vnr/vnr17.pfb></home/noname/.miktex/texmfs/
 install/fonts/type1/vntex/vnr/vnss12.pfb>
 Output written on /home/noname/Documents/project_tiny/FFT_8Points/20_docs/build
-/main.pdf (3 pages, 141568 bytes).
+/main.pdf (5 pages, 152056 bytes).
 Transcript written on /home/noname/Documents/project_tiny/FFT_8Points/20_docs/b
 uild/main.log.
