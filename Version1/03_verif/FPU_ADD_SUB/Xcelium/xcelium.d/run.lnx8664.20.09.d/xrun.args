@@ -1,0 +1,19 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++xm64bit
+-sv
+-f
+./../FPU_ADD_SUB/flist.f
+-top
+tb_FPU_add_sub
+-access
++rwc
+-clean
+-log
+./../FPU_ADD_SUB/Xcelium/compile.log
++nctimescale+1ns/1ps
++ntb_random_seed=automatic
+-allowredefinition
+-v93

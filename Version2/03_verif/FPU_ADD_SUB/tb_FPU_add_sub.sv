@@ -293,12 +293,6 @@ initial begin
     TestCase_Display_result_Float("ADD", "ADD_DENORM_2", 1.0e-45, 0.0);
     TestCase_Display_result_Float("ADD", "ADD_OVERFLOW", 3.4e38, 3.4e38);
     TestCase_Display_result_Float("ADD", "ADD_UNDERFLOW", 1.0e-38, -1.0e-38);
-    // TestCase_Display_result_Float("ADD", "ADD_INF", 1.0/0.0, 5.0);
-    // TestCase_Display_result_Float("ADD", "ADD_INF_NEG", -1.0/0.0, 2.0);
-    // TestCase_Display_result_Float("ADD", "ADD_INF_INF", 1.0/0.0, 1.0/0.0);
-    // TestCase_Display_result_Float("ADD", "ADD_INF_NINF", 1.0/0.0, -1.0/0.0);
-    // TestCase_Display_result_Float("ADD", "ADD_NAN_1", 0.0/0.0, 1.0);
-    // TestCase_Display_result_Float("ADD", "ADD_NAN_2", 0.0/0.0, 0.0/0.0);
 
     Display_SummaryResult(test_count, test_pass);
     #100;

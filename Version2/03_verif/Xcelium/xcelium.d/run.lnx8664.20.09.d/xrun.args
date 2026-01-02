@@ -5,14 +5,14 @@
 +xm64bit
 -sv
 -f
-./../BUTTERFLY/flist.f
+./../FFT8_POINT/flist.f
 -top
-tb_Butterfly_Unit
+tb_FFT_8Points
 -access
 +rwc
 -clean
 -log
-./../BUTTERFLY/Xcelium/compile.log
+./../FFT8_POINT/Xcelium/compile.log
 +nctimescale+1ns/1ps
 +ntb_random_seed=automatic
 -allowredefinition

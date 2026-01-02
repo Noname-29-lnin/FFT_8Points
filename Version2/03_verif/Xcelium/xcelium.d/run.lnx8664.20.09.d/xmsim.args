@@ -7,9 +7,9 @@
 +nctimescale+1ns/1ps
 -MESSAGES
 +EMGRLOG
-./../BUTTERFLY/Xcelium/compile.log
+./../FFT8_POINT/Xcelium/compile.log
 -XLSTIME
-1767344768
+1767346658
 -XLKEEP
 -XLMODE
 ./xcelium.d/run.lnx8664.20.09.d

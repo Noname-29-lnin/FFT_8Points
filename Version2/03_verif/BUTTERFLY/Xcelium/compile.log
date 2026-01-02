@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Jan 02, 2026 at 04:06:08 EST
+TOOL:	xrun(64)	20.09-s001: Started on Jan 02, 2026 at 04:11:03 EST
 xrun
 	+xm64bit
 	-sv
@@ -348,7 +348,7 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:   3, words:   810
 		worklib.fpu_mul:sv <0x10a347c7>
 			streams:  41, words: 12036
-		worklib.tb_Butterfly_Unit:sv <0x216d9907>
+		worklib.tb_Butterfly_Unit:sv <0x70f0abde>
 			streams:  18, words: 43216
 		worklib.Modified_booth:sv <0x3fbdb2f6>
 			streams:   6, words:  4727
@@ -545,12 +545,16 @@ OUTPUTS (DUT):
  [DUT] temp_w = (-0.000000 , 1414.000122)
  [DUT] temp_1 = -707.000061 	 temp_2 = -707.000061 	 temp_3 = 707.000061 	 temp_4 = 707.000061 
 --------------------------------------------------
-[PASS] Large values
+xmsim: *E,ERRSEV (../BUTTERFLY/tb_Butterfly_Unit.sv,180): (time 49 NS).
+tb_Butterfly_Unit.run_corner_test.unmblk1
+[FAIL] Large values
+Y0 DUT=(1000.000000,414.000122) REF=(1000.000000,414.000000)
+Y1 DUT=(1000.000000,-2414.000000) REF=(1000.000000,-2414.000000)
 =================================
  Total vectors : 109
- Passed        : 109
- Failed        : 0
+ Passed        : 108
+ Failed        : 1
 Simulation complete via $finish(1) at time 654 NS + 0
 ../BUTTERFLY/tb_Butterfly_Unit.sv:316         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Jan 02, 2026 at 04:06:11 EST  (total: 00:00:03)
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 02, 2026 at 04:11:05 EST  (total: 00:00:02)

@@ -1,0 +1,809 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Jan 02, 2026 at 01:29:17 EST
+xrun
+	+xm64bit
+	-sv
+	-f ./../FPU_ADD_SUB/flist.f
+		+incdir+./../FPU_ADD_SUB/lib/
+		./../../03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+		./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+		./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+		./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/CLS_4bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+		./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+		./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+		./../../02_rtl/FPU_COMMON/SHF_left.sv
+		./../../02_rtl/FPU_COMMON/SHF_right.sv
+	-top tb_FPU_add_sub
+	-access +rwc
+	-clean
+	-log ./../FPU_ADD_SUB/Xcelium/compile.log
+	+nctimescale+1ns/1ps
+	+ntb_random_seed=automatic
+	-allowredefinition
+	-v93
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+xrun: *W,OPDEPRREN: Command Line Option (+nctimescale+1ns/1ps) is deprecated. Use (+xmtimescale+1ns/1ps) instead.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: ./../../03_verif/FPU_ADD_SUB/tb_FPU_add_sub.sv
+	module worklib.tb_FPU_add_sub:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+	module worklib.ADD_SUB_EXP_adjust:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+	module worklib.ADD_SUB_EXP_comp:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+	module worklib.ADD_SUB_EXP_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+	module worklib.ADD_SUB_EXP_sub:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+	module worklib.ADD_SUB_EXP_swap:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+	module worklib.ADD_SUB_MAN_ALU:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+	module worklib.ADD_SUB_MAN_rounding:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+	module worklib.ADD_SUB_MAN_swap:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+	module worklib.ADD_SUB_NOR_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+	module worklib.ADD_SUB_PSC_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+	module worklib.ADD_SUB_SIGN_unit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+	module worklib.FPU_add_sub:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_4bit.sv
+	module worklib.CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_8bit.sv
+	module worklib.CLA_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLA_24bit.sv
+	module worklib.CLA_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/CLS_4bit.sv
+	module worklib.CLS_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_4bit.sv
+	module worklib.COMP_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_8bit.sv
+	module worklib.COMP_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_24bit.sv
+	module worklib.COMP_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/COMP_CLA_24bit.sv
+	module worklib.COMP_CLA_24bit:sv
+		errors: 0, warnings: 0
+	module worklib.COMP_CLA_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_4bit.sv
+	module worklib.LOPD_4bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_8bit.sv
+	module worklib.LOPD_8bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_16bit.sv
+	module worklib.LOPD_16bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/LOPD_24bit.sv
+	module worklib.LOPD_24bit:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_left.sv
+	module worklib.SHF_left:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_COMMON/SHF_right.sv
+	module worklib.SHF_right:sv
+		errors: 0, warnings: 0
+xmvlog: *W,SPDUSD: Include directory ./../FPU_ADD_SUB/lib/ given but not used.
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		$unit_0x6832521a
+		tb_FPU_add_sub
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.ADD_SUB_NOR_unit:sv <0x60cd39a6>
+			streams:   2, words:   917
+		worklib.ADD_SUB_EXP_adjust:sv <0x144d02aa>
+			streams:   6, words:  1783
+		worklib.LOPD_8bit:sv <0x5e0dfd3a>
+			streams:   5, words:  2314
+		worklib.LOPD_8bit:sv <0x30091c6b>
+			streams:   5, words:  2314
+		worklib.LOPD_16bit:sv <0x6aa11c83>
+			streams:  10, words:  4004
+		worklib.LOPD_24bit:sv <0x65e42e8a>
+			streams:  15, words:  5494
+		worklib.ADD_SUB_MAN_ALU:sv <0x2cdc879f>
+			streams:  12, words:  4141
+		worklib.CLS_4bit:sv <0x4a8dfbc8>
+			streams:   7, words:  2353
+		worklib.ADD_SUB_PSC_unit:sv <0x512f3ca6>
+			streams:  12, words:  4833
+		worklib.ADD_SUB_SIGN_unit:sv <0x6e521f90>
+			streams:   1, words:   370
+		worklib.COMP_24bit:sv <0x3c32cc31>
+			streams:  13, words:  5452
+		worklib.ADD_SUB_MAN_swap:sv <0x640745ad>
+			streams:   2, words:   562
+		worklib.CLA_4bit:sv <0x0780fced>
+			streams:   9, words:  3384
+		worklib.CLA_8bit:sv <0x5669dea6>
+			streams:  13, words:  4418
+		worklib.ADD_SUB_EXP_sub:sv <0x12f56d17>
+			streams:   4, words:  1006
+		worklib.ADD_SUB_EXP_swap:sv <0x07b4c058>
+			streams:   2, words:   559
+		worklib.COMP_4bit:sv <0x3d4f3197>
+			streams:   2, words:  1737
+		worklib.COMP_8bit:sv <0x789ff793>
+			streams:   5, words:  1802
+		worklib.ADD_SUB_EXP_comp:sv <0x191e7bf0>
+			streams:   1, words:   393
+		worklib.FPU_add_sub:sv <0x35b09368>
+			streams:  68, words: 18586
+		worklib.tb_FPU_add_sub:sv <0x2654c4be>
+    TestCase_Display_result_Float("ADD", "ADD_INF", 1.0/0.0, 5.0);
+                                                       |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,304|55): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_INF_NEG", -1.0/0.0, 2.0);
+                                                            |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,305|60): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_INF_INF", 1.0/0.0, 1.0/0.0);
+                                                           |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,306|59): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_INF_INF", 1.0/0.0, 1.0/0.0);
+                                                                    |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,306|68): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_INF_NINF", 1.0/0.0, -1.0/0.0);
+                                                            |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,307|60): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_INF_NINF", 1.0/0.0, -1.0/0.0);
+                                                                      |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,307|70): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_NAN_1", 0.0/0.0, 1.0);
+                                                         |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,308|57): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_NAN_2", 0.0/0.0, 0.0/0.0);
+                                                         |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,309|57): Division by zero attempted (type real operator).
+    TestCase_Display_result_Float("ADD", "ADD_NAN_2", 0.0/0.0, 0.0/0.0);
+                                                                  |
+xmvlog_cg: *W,REALDZ (../FPU_ADD_SUB/tb_FPU_add_sub.sv,309|66): Division by zero attempted (type real operator).
+			streams:  16, words: 62748
+		worklib.SHF_right:sv <0x54b9e394>
+			streams:   7, words:  4020
+		worklib.CLA_24bit:sv <0x59293138>
+			streams:  44, words: 14667
+		worklib.SHF_left:sv <0x5517201f>
+			streams:   7, words:  3911
+		worklib.ADD_SUB_MAN_rounding:sv <0x150cdf4c>
+			streams:  31, words: 12810
+		worklib.ADD_SUB_EXP_rounding:sv <0x31fd9779>
+			streams:   9, words:  3824
+		worklib.\$unit_0x6832521a :compilation_unit <0x38d1aa44>
+			streams:  11, words: 10429
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                45      25
+		Registers:             351     242
+		Scalar wires:          306       -
+		Expanded wires:         80       5
+		Vectored wires:        204       -
+		Initial blocks:          6       6
+		Parallel blocks:         1       1
+		Cont. assignments:     257     112
+		Pseudo assignments:    156     145
+		Compilation units:       1       1
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_FPU_add_sub:sv
+Loading snapshot worklib.tb_FPU_add_sub:sv .................... Done
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+==========[ (0.0 & 0.0) ]==========
+[ZERO][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (0.0 & -0.0) ]==========
+[ZERO][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=80000000 (-0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][ADD]i_32_a=80000000 (-0.000000000000000000000000) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=80000000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=80000000 (-0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=80000000 (-0.000000000000000000000000) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=80000000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.000000000000000000000000 (80000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (0.0 & -0.0) ]==========
+[ZERO][ADD]i_32_a=4016a197 (2.353612661361694335937500) + i_32_b=4016a197 (2.353612661361694335937500) 	| o_32_s=4096a197 (4.707225322723388671875000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=4.707225322723388671875000 (4096a197), dut=4.707225322723388671875000 (4096a197), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][ADD]i_32_a=4016a197 (2.353612661361694335937500) + i_32_b=4016a197 (2.353612661361694335937500) 	| o_32_s=4096a197 (4.707225322723388671875000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=4.707225322723388671875000 (4096a197), dut=4.707225322723388671875000 (4096a197), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=4016a197 (2.353612661361694335937500) - i_32_b=4016a197 (2.353612661361694335937500) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=4016a197 (2.353612661361694335937500) - i_32_b=4016a197 (2.353612661361694335937500) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (0.0 & -0.0) ]==========
+[ZERO][ADD]i_32_a=40aed834 (5.463891983032226562500000) + i_32_b=40aed834 (5.463891983032226562500000) 	| o_32_s=412ed834 (10.927783966064453125000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=10.927783966064453125000000 (412ed834), dut=10.927783966064453125000000 (412ed834), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][ADD]i_32_a=40aed834 (5.463891983032226562500000) + i_32_b=40aed834 (5.463891983032226562500000) 	| o_32_s=412ed834 (10.927783966064453125000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=10.927783966064453125000000 (412ed834), dut=10.927783966064453125000000 (412ed834), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=40aed834 (5.463891983032226562500000) - i_32_b=40aed834 (5.463891983032226562500000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ZERO][SUB]i_32_a=40aed834 (5.463891983032226562500000) - i_32_b=40aed834 (5.463891983032226562500000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (inf & inf) ]==========
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=7f800000 (inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=7f800000 (inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (-inf & -inf) ]==========
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=ff800000 (-inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=ff800000 (-inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=ff800000 (-inf) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=ff800000 (-inf) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (inf & -inf) ]==========
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=7f800000 (inf) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=ff800000 (-inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=7f800000 (inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=ff800000 (-inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (inf & 0) ]==========
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=7f800000 (inf) 	| o_32_s=70000000 (158456325028528675187087900672.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=inf (7f800000), dut=158456325028528675187087900672.000000000000000000000000 (70000000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=7f800000 (inf) 	| o_32_s=f0000000 (-158456325028528675187087900672.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-inf (ff800000), dut=-158456325028528675187087900672.000000000000000000000000 (f0000000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (-inf & 0) ]==========
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=ff800000 (-inf) 	| o_32_s=f0000000 (-158456325028528675187087900672.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-inf (ff800000), dut=-158456325028528675187087900672.000000000000000000000000 (f0000000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=ff800000 (-inf) 	| o_32_s=70000000 (158456325028528675187087900672.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=inf (7f800000), dut=158456325028528675187087900672.000000000000000000000000 (70000000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (inf & Number) ]==========
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=40533333 (3.299999952316284179687500) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=40533333 (3.299999952316284179687500) - i_32_b=7f800000 (inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (-inf & Number) ]==========
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=40533333 (3.299999952316284179687500) + i_32_b=ff800000 (-inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=40533333 (3.299999952316284179687500) - i_32_b=ff800000 (-inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (inf & -Number) ]==========
+[INF][ADD]i_32_a=7f800000 (inf) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=7f800000 (inf) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=7f800000 (inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (-inf & -Number) ]==========
+[INF][ADD]i_32_a=ff800000 (-inf) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=ff800000 (-inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=ff800000 (-inf) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[INF][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=ff800000 (-inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (NaN & -Number) ]==========
+[NaN][ADD]i_32_a=7f800001 (nan) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=7f800001 (nan) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=7f800001 (nan) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=7f800001 (nan) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (-NaN & -Number) ]==========
+[NaN][ADD]i_32_a=ff800001 (-nan) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=ff800001 (-nan) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=ff800001 (-nan) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=ff800001 (-nan) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (NaN &  Number) ]==========
+[NaN][ADD]i_32_a=ff800001 (-nan) + i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][ADD]i_32_a=40533333 (3.299999952316284179687500) + i_32_b=ff800001 (-nan) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=ff800001 (-nan) - i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=40533333 (3.299999952316284179687500) - i_32_b=ff800001 (-nan) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ (-NaN &  Number) ]==========
+[NaN][ADD]i_32_a=7f800001 (nan) + i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][ADD]i_32_a=40533333 (3.299999952316284179687500) + i_32_b=7f800001 (nan) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=7f800001 (nan) - i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=inf (7f800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[NaN][SUB]i_32_a=40533333 (3.299999952316284179687500) - i_32_b=7f800001 (nan) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=nan (7fc00001), dut=-inf (ff800000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ APPR INF ]==========
+[APPRO][ADD]i_32_a=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) + i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), dut=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][ADD]i_32_a=007fffff (0.000000000000000000000000) + i_32_b=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) 	| o_32_s=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), dut=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) - i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), dut=214511611464115339152897452993962573824.000000000000000000000000 (7f21616f), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=007fffff (0.000000000000000000000000) - i_32_b=7f21616f (214511611464115339152897452993962573824.000000000000000000000000) 	| o_32_s=ff21616f (-214511611464115339152897452993962573824.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-214511611464115339152897452993962573824.000000000000000000000000 (ff21616f), dut=-214511611464115339152897452993962573824.000000000000000000000000 (ff21616f), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ APPR INF ]==========
+[APPRO][ADD]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) + i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][ADD]i_32_a=00ffffff (0.000000000000000000000000) + i_32_b=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) - i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=00ffffff (0.000000000000000000000000) - i_32_b=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_32_s=ff7fffff (-340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-340282346638528859811704183484516925440.000000000000000000000000 (ff7fffff), dut=-340282346638528859811704183484516925440.000000000000000000000000 (ff7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ APPR INF ]==========
+[APPRO][ADD]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) + i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][ADD]i_32_a=007fffff (0.000000000000000000000000) + i_32_b=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) - i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), dut=340282346638528859811704183484516925440.000000000000000000000000 (7f7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=007fffff (0.000000000000000000000000) - i_32_b=7f7fffff (340282346638528859811704183484516925440.000000000000000000000000) 	| o_32_s=ff7fffff (-340282346638528859811704183484516925440.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-340282346638528859811704183484516925440.000000000000000000000000 (ff7fffff), dut=-340282346638528859811704183484516925440.000000000000000000000000 (ff7fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ APPR ZERO ]==========
+[APPRO][ADD]i_32_a=00ffffff (0.000000000000000000000000) + i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=013fffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (013fffff), dut=0.000000000000000000000000 (013fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][ADD]i_32_a=007fffff (0.000000000000000000000000) + i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=013fffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (013fffff), dut=0.000000000000000000000000 (013fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=00ffffff (0.000000000000000000000000) - i_32_b=007fffff (0.000000000000000000000000) 	| o_32_s=007fffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00800000), dut=0.000000000000000000000000 (007fffff), rounding_error=0.00001192 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=007fffff (0.000000000000000000000000) - i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=807fffff (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.000000000000000000000000 (80800000), dut=-0.000000000000000000000000 (807fffff), rounding_error=0.00001192 % (exp_error = 0.00001192 %)
+==========[ APPR ZERO ]==========
+[APPRO][ADD]i_32_a=00ffffff (0.000000000000000000000000) + i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=017fffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (017fffff), dut=0.000000000000000000000000 (017fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][ADD]i_32_a=00ffffff (0.000000000000000000000000) + i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=017fffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (017fffff), dut=0.000000000000000000000000 (017fffff), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=00ffffff (0.000000000000000000000000) - i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[APPRO][SUB]i_32_a=00ffffff (0.000000000000000000000000) - i_32_b=00ffffff (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ (-A + B) ]==========
+[SIGN][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=3f8ccccc (1.099999904632568359375000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=1.099999904632568359375000 (3f8ccccc), dut=1.099999904632568359375000 (3f8ccccc), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][ADD]i_32_a=40533333 (3.299999952316284179687500) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=3f8ccccc (1.099999904632568359375000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=1.099999904632568359375000 (3f8ccccc), dut=1.099999904632568359375000 (3f8ccccc), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=40533333 (3.299999952316284179687500) 	| o_32_s=c0b00000 (-5.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-5.500000000000000000000000 (c0b00000), dut=-5.500000000000000000000000 (c0b00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=40533333 (3.299999952316284179687500) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=40b00000 (5.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=5.500000000000000000000000 (40b00000), dut=5.500000000000000000000000 (40b00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ TEST SIGN ]==========
+[SIGN][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=c0533333 (-3.299999952316284179687500) 	| o_32_s=c0b00000 (-5.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-5.500000000000000000000000 (c0b00000), dut=-5.500000000000000000000000 (c0b00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][ADD]i_32_a=c0533333 (-3.299999952316284179687500) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=c0b00000 (-5.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-5.500000000000000000000000 (c0b00000), dut=-5.500000000000000000000000 (c0b00000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=c0533333 (-3.299999952316284179687500) 	| o_32_s=3f8ccccc (1.099999904632568359375000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=1.099999904632568359375000 (3f8ccccc), dut=1.099999904632568359375000 (3f8ccccc), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=c0533333 (-3.299999952316284179687500) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=bf8ccccc (-1.099999904632568359375000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-1.099999904632568359375000 (bf8ccccc), dut=-1.099999904632568359375000 (bf8ccccc), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ TEST SIGN ]==========
+[SIGN][ADD]i_32_a=c00ccccd (-2.200000047683715820312500) + i_32_b=c1b1999a (-22.200000762939453125000000) 	| o_32_s=c1c33334 (-24.400001525878906250000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-24.400001525878906250000000 (c1c33334), dut=-24.400001525878906250000000 (c1c33334), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][ADD]i_32_a=c1b1999a (-22.200000762939453125000000) + i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=c1c33334 (-24.400001525878906250000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-24.400001525878906250000000 (c1c33334), dut=-24.400001525878906250000000 (c1c33334), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=c00ccccd (-2.200000047683715820312500) - i_32_b=c1b1999a (-22.200000762939453125000000) 	| o_32_s=41a00001 (20.000001907348632812500000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=20.000000000000000000000000 (41a00000), dut=20.000001907348632812500000 (41a00001), rounding_error=0.00000954 % (exp_error = 0.00001192 %)
+[SIGN][SUB]i_32_a=c1b1999a (-22.200000762939453125000000) - i_32_b=c00ccccd (-2.200000047683715820312500) 	| o_32_s=c1a00001 (-20.000001907348632812500000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-20.000000000000000000000000 (c1a00000), dut=-20.000001907348632812500000 (c1a00001), rounding_error=0.00000954 % (exp_error = 0.00001192 %)
+==========[ Overflow rouding ]==========
+[PRE_NOR_EXP][ADD]i_32_a=0cffffff (0.000000000000000000000000) + i_32_b=00f80000 (0.000000000000000000000000) 	| o_32_s=0cffffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (0d000000), dut=0.000000000000000000000000 (0cffffff), rounding_error=0.00000596 % (exp_error = 0.00001192 %)
+[PRE_NOR_EXP][ADD]i_32_a=00f80000 (0.000000000000000000000000) + i_32_b=0cffffff (0.000000000000000000000000) 	| o_32_s=0cffffff (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (0d000000), dut=0.000000000000000000000000 (0cffffff), rounding_error=0.00000596 % (exp_error = 0.00001192 %)
+[PRE_NOR_EXP][SUB]i_32_a=0cffffff (0.000000000000000000000000) - i_32_b=00f80000 (0.000000000000000000000000) 	| o_32_s=0cfffffe (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (0cfffffe), dut=0.000000000000000000000000 (0cfffffe), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[PRE_NOR_EXP][SUB]i_32_a=00f80000 (0.000000000000000000000000) - i_32_b=0cffffff (0.000000000000000000000000) 	| o_32_s=8cfffffe (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.000000000000000000000000 (8cfffffe), dut=-0.000000000000000000000000 (8cfffffe), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Value ]==========
+[VALUE][ADD]i_32_a=5203778f (141161644032.000000000000000000000000) + i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_s=520d042d (151415111680.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=151415111680.000000000000000000000000 (520d042d), dut=151415111680.000000000000000000000000 (520d042d), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[VALUE][ADD]i_32_a=5018c9da (10253461504.000000000000000000000000) + i_32_b=5203778f (141161644032.000000000000000000000000) 	| o_32_s=520d042d (151415111680.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=151415111680.000000000000000000000000 (520d042d), dut=151415111680.000000000000000000000000 (520d042d), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[VALUE][SUB]i_32_a=5203778f (141161644032.000000000000000000000000) - i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_s=51f3d5e3 (130908184576.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=130908184576.000000000000000000000000 (51f3d5e3), dut=130908184576.000000000000000000000000 (51f3d5e3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[VALUE][SUB]i_32_a=5018c9da (10253461504.000000000000000000000000) - i_32_b=5203778f (141161644032.000000000000000000000000) 	| o_32_s=d1f3d5e3 (-130908184576.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-130908184576.000000000000000000000000 (d1f3d5e3), dut=-130908184576.000000000000000000000000 (d1f3d5e3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=5177b21a (66490310656.000000000000000000000000) + i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_s=51c4152a (105271083008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=105271083008.000000000000000000000000 (51c4152a), dut=105271083008.000000000000000000000000 (51c4152a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=5110783b (38780776448.000000000000000000000000) + i_32_b=5177b21a (66490310656.000000000000000000000000) 	| o_32_s=51c4152a (105271083008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=105271083008.000000000000000000000000 (51c4152a), dut=105271083008.000000000000000000000000 (51c4152a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5177b21a (66490310656.000000000000000000000000) - i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_s=50ce73be (27709534208.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=27709534208.000000000000000000000000 (50ce73be), dut=27709534208.000000000000000000000000 (50ce73be), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5110783b (38780776448.000000000000000000000000) - i_32_b=5177b21a (66490310656.000000000000000000000000) 	| o_32_s=d0ce73be (-27709534208.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-27709534208.000000000000000000000000 (d0ce73be), dut=-27709534208.000000000000000000000000 (d0ce73be), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=5177b21a (66490310656.000000000000000000000000) + i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_s=51c4152a (105271083008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=105271083008.000000000000000000000000 (51c4152a), dut=105271083008.000000000000000000000000 (51c4152a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=5110783b (38780776448.000000000000000000000000) + i_32_b=5177b21a (66490310656.000000000000000000000000) 	| o_32_s=51c4152a (105271083008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=105271083008.000000000000000000000000 (51c4152a), dut=105271083008.000000000000000000000000 (51c4152a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5177b21a (66490310656.000000000000000000000000) - i_32_b=5110783b (38780776448.000000000000000000000000) 	| o_32_s=50ce73be (27709534208.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=27709534208.000000000000000000000000 (50ce73be), dut=27709534208.000000000000000000000000 (50ce73be), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5110783b (38780776448.000000000000000000000000) - i_32_b=5177b21a (66490310656.000000000000000000000000) 	| o_32_s=d0ce73be (-27709534208.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-27709534208.000000000000000000000000 (d0ce73be), dut=-27709534208.000000000000000000000000 (d0ce73be), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=5203778f (141161644032.000000000000000000000000) + i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_s=520d042d (151415111680.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=151415111680.000000000000000000000000 (520d042d), dut=151415111680.000000000000000000000000 (520d042d), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=5018c9da (10253461504.000000000000000000000000) + i_32_b=5203778f (141161644032.000000000000000000000000) 	| o_32_s=520d042d (151415111680.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=151415111680.000000000000000000000000 (520d042d), dut=151415111680.000000000000000000000000 (520d042d), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5203778f (141161644032.000000000000000000000000) - i_32_b=5018c9da (10253461504.000000000000000000000000) 	| o_32_s=51f3d5e3 (130908184576.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=130908184576.000000000000000000000000 (51f3d5e3), dut=130908184576.000000000000000000000000 (51f3d5e3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5018c9da (10253461504.000000000000000000000000) - i_32_b=5203778f (141161644032.000000000000000000000000) 	| o_32_s=d1f3d5e3 (-130908184576.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-130908184576.000000000000000000000000 (d1f3d5e3), dut=-130908184576.000000000000000000000000 (d1f3d5e3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=d02cf5b3 (-11607133184.000000000000000000000000) + i_32_b=510d38a4 (37908791296.000000000000000000000000) 	| o_32_s=50c3f66e (26301657088.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=26301657088.000000000000000000000000 (50c3f66e), dut=26301657088.000000000000000000000000 (50c3f66e), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=510d38a4 (37908791296.000000000000000000000000) + i_32_b=d02cf5b3 (-11607133184.000000000000000000000000) 	| o_32_s=50c3f66e (26301657088.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=26301657088.000000000000000000000000 (50c3f66e), dut=26301657088.000000000000000000000000 (50c3f66e), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=d02cf5b3 (-11607133184.000000000000000000000000) - i_32_b=510d38a4 (37908791296.000000000000000000000000) 	| o_32_s=d1387610 (-49515921408.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-49515925504.000000000000000000000000 (d1387611), dut=-49515921408.000000000000000000000000 (d1387610), rounding_error=0.00000827 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=510d38a4 (37908791296.000000000000000000000000) - i_32_b=d02cf5b3 (-11607133184.000000000000000000000000) 	| o_32_s=51387610 (49515921408.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=49515925504.000000000000000000000000 (51387611), dut=49515921408.000000000000000000000000 (51387610), rounding_error=0.00000827 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=52024077 (139856822272.000000000000000000000000) + i_32_b=50d6594e (28769415168.000000000000000000000000) 	| o_32_s=521d0ba0 (168626225152.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=168626241536.000000000000000000000000 (521d0ba1), dut=168626225152.000000000000000000000000 (521d0ba0), rounding_error=0.00000972 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=50d6594e (28769415168.000000000000000000000000) + i_32_b=52024077 (139856822272.000000000000000000000000) 	| o_32_s=521d0ba0 (168626225152.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=168626241536.000000000000000000000000 (521d0ba1), dut=168626225152.000000000000000000000000 (521d0ba0), rounding_error=0.00000972 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=52024077 (139856822272.000000000000000000000000) - i_32_b=50d6594e (28769415168.000000000000000000000000) 	| o_32_s=51ceea9a (111087403008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=111087403008.000000000000000000000000 (51ceea9a), dut=111087403008.000000000000000000000000 (51ceea9a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=50d6594e (28769415168.000000000000000000000000) - i_32_b=52024077 (139856822272.000000000000000000000000) 	| o_32_s=d1ceea9a (-111087403008.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-111087403008.000000000000000000000000 (d1ceea9a), dut=-111087403008.000000000000000000000000 (d1ceea9a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=502905d8 (11342929920.000000000000000000000000) + i_32_b=50ac0ea1 (23093118976.000000000000000000000000) 	| o_32_s=510048c6 (34436046848.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=34436046848.000000000000000000000000 (510048c6), dut=34436046848.000000000000000000000000 (510048c6), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=50ac0ea1 (23093118976.000000000000000000000000) + i_32_b=502905d8 (11342929920.000000000000000000000000) 	| o_32_s=510048c6 (34436046848.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=34436046848.000000000000000000000000 (510048c6), dut=34436046848.000000000000000000000000 (510048c6), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=502905d8 (11342929920.000000000000000000000000) - i_32_b=50ac0ea1 (23093118976.000000000000000000000000) 	| o_32_s=d02f176a (-11750189056.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-11750189056.000000000000000000000000 (d02f176a), dut=-11750189056.000000000000000000000000 (d02f176a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=50ac0ea1 (23093118976.000000000000000000000000) - i_32_b=502905d8 (11342929920.000000000000000000000000) 	| o_32_s=502f176a (11750189056.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=11750189056.000000000000000000000000 (502f176a), dut=11750189056.000000000000000000000000 (502f176a), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=5209db8a (148023443456.000000000000000000000000) + i_32_b=5109e83a (37019164672.000000000000000000000000) 	| o_32_s=522c5598 (185042599936.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=185042599936.000000000000000000000000 (522c5598), dut=185042599936.000000000000000000000000 (522c5598), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=5109e83a (37019164672.000000000000000000000000) + i_32_b=5209db8a (148023443456.000000000000000000000000) 	| o_32_s=522c5598 (185042599936.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=185042599936.000000000000000000000000 (522c5598), dut=185042599936.000000000000000000000000 (522c5598), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5209db8a (148023443456.000000000000000000000000) - i_32_b=5109e83a (37019164672.000000000000000000000000) 	| o_32_s=51cec2f7 (111004278784.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=111004278784.000000000000000000000000 (51cec2f7), dut=111004278784.000000000000000000000000 (51cec2f7), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5109e83a (37019164672.000000000000000000000000) - i_32_b=5209db8a (148023443456.000000000000000000000000) 	| o_32_s=d1cec2f7 (-111004278784.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-111004278784.000000000000000000000000 (d1cec2f7), dut=-111004278784.000000000000000000000000 (d1cec2f7), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=51630e49 (60949827584.000000000000000000000000) + i_32_b=500e6b88 (9557647360.000000000000000000000000) 	| o_32_s=51835495 (70507470848.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=70507479040.000000000000000000000000 (51835496), dut=70507470848.000000000000000000000000 (51835495), rounding_error=0.00001162 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=500e6b88 (9557647360.000000000000000000000000) + i_32_b=51630e49 (60949827584.000000000000000000000000) 	| o_32_s=51835495 (70507470848.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=70507479040.000000000000000000000000 (51835496), dut=70507470848.000000000000000000000000 (51835495), rounding_error=0.00001162 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=51630e49 (60949827584.000000000000000000000000) - i_32_b=500e6b88 (9557647360.000000000000000000000000) 	| o_32_s=513f7367 (51392180224.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=51392180224.000000000000000000000000 (513f7367), dut=51392180224.000000000000000000000000 (513f7367), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=500e6b88 (9557647360.000000000000000000000000) - i_32_b=51630e49 (60949827584.000000000000000000000000) 	| o_32_s=d13f7367 (-51392180224.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-51392180224.000000000000000000000000 (d13f7367), dut=-51392180224.000000000000000000000000 (d13f7367), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=51fdd01b (136264769536.000000000000000000000000) + i_32_b=4f773d93 (4148007680.000000000000000000000000) 	| o_32_s=5202c503 (140412764160.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=140412780544.000000000000000000000000 (5202c504), dut=140412764160.000000000000000000000000 (5202c503), rounding_error=0.00001167 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=4f773d93 (4148007680.000000000000000000000000) + i_32_b=51fdd01b (136264769536.000000000000000000000000) 	| o_32_s=5202c503 (140412764160.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=140412780544.000000000000000000000000 (5202c504), dut=140412764160.000000000000000000000000 (5202c503), rounding_error=0.00001167 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=51fdd01b (136264769536.000000000000000000000000) - i_32_b=4f773d93 (4148007680.000000000000000000000000) 	| o_32_s=51f6162f (132116766720.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=132116758528.000000000000000000000000 (51f6162e), dut=132116766720.000000000000000000000000 (51f6162f), rounding_error=0.00000620 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=4f773d93 (4148007680.000000000000000000000000) - i_32_b=51fdd01b (136264769536.000000000000000000000000) 	| o_32_s=d1f6162f (-132116766720.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-132116758528.000000000000000000000000 (d1f6162e), dut=-132116766720.000000000000000000000000 (d1f6162f), rounding_error=0.00000620 % (exp_error = 0.00001192 %)
+==========[ Read data from ROM ]==========
+[Random][ADD]i_32_a=5194167f (79504072704.000000000000000000000000) + i_32_b=510faa5b (38564900864.000000000000000000000000) 	| o_32_s=51dbebac (118068969472.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=118068969472.000000000000000000000000 (51dbebac), dut=118068969472.000000000000000000000000 (51dbebac), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][ADD]i_32_a=510faa5b (38564900864.000000000000000000000000) + i_32_b=5194167f (79504072704.000000000000000000000000) 	| o_32_s=51dbebac (118068969472.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=118068969472.000000000000000000000000 (51dbebac), dut=118068969472.000000000000000000000000 (51dbebac), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=5194167f (79504072704.000000000000000000000000) - i_32_b=510faa5b (38564900864.000000000000000000000000) 	| o_32_s=511882a3 (40939171840.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=40939171840.000000000000000000000000 (511882a3), dut=40939171840.000000000000000000000000 (511882a3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[Random][SUB]i_32_a=510faa5b (38564900864.000000000000000000000000) - i_32_b=5194167f (79504072704.000000000000000000000000) 	| o_32_s=d11882a3 (-40939171840.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-40939171840.000000000000000000000000 (d11882a3), dut=-40939171840.000000000000000000000000 (d11882a3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_POS_POS ]==========
+FPU_A = 3fc00000 (1.5000)
+FPU_B = 40100000 (2.2500)
+[ADD][ADD]i_32_a=3fc00000 (1.500000000000000000000000) + i_32_b=40100000 (2.250000000000000000000000) 	| o_32_s=40700000 (3.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=3.750000000000000000000000 (40700000), dut=3.750000000000000000000000 (40700000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=40100000 (2.250000000000000000000000) + i_32_b=3fc00000 (1.500000000000000000000000) 	| o_32_s=40700000 (3.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=3.750000000000000000000000 (40700000), dut=3.750000000000000000000000 (40700000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=3fc00000 (1.500000000000000000000000) - i_32_b=40100000 (2.250000000000000000000000) 	| o_32_s=bf400000 (-0.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.750000000000000000000000 (bf400000), dut=-0.750000000000000000000000 (bf400000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40100000 (2.250000000000000000000000) - i_32_b=3fc00000 (1.500000000000000000000000) 	| o_32_s=3f400000 (0.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.750000000000000000000000 (3f400000), dut=0.750000000000000000000000 (3f400000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_NEG_NEG ]==========
+FPU_A = bfc00000 (-1.5000)
+FPU_B = c0100000 (-2.2500)
+[ADD][ADD]i_32_a=bfc00000 (-1.500000000000000000000000) + i_32_b=c0100000 (-2.250000000000000000000000) 	| o_32_s=c0700000 (-3.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-3.750000000000000000000000 (c0700000), dut=-3.750000000000000000000000 (c0700000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=c0100000 (-2.250000000000000000000000) + i_32_b=bfc00000 (-1.500000000000000000000000) 	| o_32_s=c0700000 (-3.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-3.750000000000000000000000 (c0700000), dut=-3.750000000000000000000000 (c0700000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=bfc00000 (-1.500000000000000000000000) - i_32_b=c0100000 (-2.250000000000000000000000) 	| o_32_s=3f400000 (0.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.750000000000000000000000 (3f400000), dut=0.750000000000000000000000 (3f400000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c0100000 (-2.250000000000000000000000) - i_32_b=bfc00000 (-1.500000000000000000000000) 	| o_32_s=bf400000 (-0.750000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.750000000000000000000000 (bf400000), dut=-0.750000000000000000000000 (bf400000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_POS_NEG ]==========
+FPU_A = 40a00000 (5.0000)
+FPU_B = c0400000 (-3.0000)
+[ADD][ADD]i_32_a=40a00000 (5.000000000000000000000000) + i_32_b=c0400000 (-3.000000000000000000000000) 	| o_32_s=40000000 (2.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=2.000000000000000000000000 (40000000), dut=2.000000000000000000000000 (40000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=c0400000 (-3.000000000000000000000000) + i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=40000000 (2.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=2.000000000000000000000000 (40000000), dut=2.000000000000000000000000 (40000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40a00000 (5.000000000000000000000000) - i_32_b=c0400000 (-3.000000000000000000000000) 	| o_32_s=41000000 (8.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=8.000000000000000000000000 (41000000), dut=8.000000000000000000000000 (41000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c0400000 (-3.000000000000000000000000) - i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=c1000000 (-8.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-8.000000000000000000000000 (c1000000), dut=-8.000000000000000000000000 (c1000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_NEG_POS ]==========
+FPU_A = c0a00000 (-5.0000)
+FPU_B = 40400000 (3.0000)
+[ADD][ADD]i_32_a=c0a00000 (-5.000000000000000000000000) + i_32_b=40400000 (3.000000000000000000000000) 	| o_32_s=c0000000 (-2.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-2.000000000000000000000000 (c0000000), dut=-2.000000000000000000000000 (c0000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=40400000 (3.000000000000000000000000) + i_32_b=c0a00000 (-5.000000000000000000000000) 	| o_32_s=c0000000 (-2.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-2.000000000000000000000000 (c0000000), dut=-2.000000000000000000000000 (c0000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c0a00000 (-5.000000000000000000000000) - i_32_b=40400000 (3.000000000000000000000000) 	| o_32_s=c1000000 (-8.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-8.000000000000000000000000 (c1000000), dut=-8.000000000000000000000000 (c1000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40400000 (3.000000000000000000000000) - i_32_b=c0a00000 (-5.000000000000000000000000) 	| o_32_s=41000000 (8.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=8.000000000000000000000000 (41000000), dut=8.000000000000000000000000 (41000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_ZERO ]==========
+FPU_A = 4048f5c3 (3.1400)
+FPU_B = 00000000 (0.0000)
+[ADD][ADD]i_32_a=4048f5c3 (3.140000104904174804687500) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=40a47ae1 (5.139999866485595703125000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=3.140000104904174804687500 (4048f5c3), dut=5.139999866485595703125000 (40a47ae1), rounding_error=63.69425964 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=4048f5c3 (3.140000104904174804687500) 	| o_32_s=4048f5c3 (3.140000104904174804687500) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=3.140000104904174804687500 (4048f5c3), dut=3.140000104904174804687500 (4048f5c3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=4048f5c3 (3.140000104904174804687500) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=3f91eb86 (1.140000104904174804687500) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=3.140000104904174804687500 (4048f5c3), dut=1.140000104904174804687500 (3f91eb86), rounding_error=63.69426727 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=4048f5c3 (3.140000104904174804687500) 	| o_32_s=c048f5c3 (-3.140000104904174804687500) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-3.140000104904174804687500 (c048f5c3), dut=-3.140000104904174804687500 (c048f5c3), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_ZERO_REV ]==========
+FPU_A = 00000000 (0.0000)
+FPU_B = c02ccccd (-2.7000)
+[ADD][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=c02ccccd (-2.700000047683715820312500) 	| o_32_s=c02ccccd (-2.700000047683715820312500) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-2.700000047683715820312500 (c02ccccd), dut=-2.700000047683715820312500 (c02ccccd), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=c02ccccd (-2.700000047683715820312500) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=bf333334 (-0.700000047683715820312500) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-2.700000047683715820312500 (c02ccccd), dut=-0.700000047683715820312500 (bf333334), rounding_error=74.07407379 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=c02ccccd (-2.700000047683715820312500) 	| o_32_s=402ccccd (2.700000047683715820312500) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=2.700000047683715820312500 (402ccccd), dut=2.700000047683715820312500 (402ccccd), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c02ccccd (-2.700000047683715820312500) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=c0966666 (-4.699999809265136718750000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-2.700000047683715820312500 (c02ccccd), dut=-4.699999809265136718750000 (c0966666), rounding_error=74.07406616 % (exp_error = 0.00001192 %)
+==========[ ADD_CANCEL_1 ]==========
+FPU_A = 40a00000 (5.0000)
+FPU_B = c0a00000 (-5.0000)
+[ADD][ADD]i_32_a=40a00000 (5.000000000000000000000000) + i_32_b=c0a00000 (-5.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=c0a00000 (-5.000000000000000000000000) + i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=80000000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40a00000 (5.000000000000000000000000) - i_32_b=c0a00000 (-5.000000000000000000000000) 	| o_32_s=41200000 (10.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=10.000000000000000000000000 (41200000), dut=10.000000000000000000000000 (41200000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c0a00000 (-5.000000000000000000000000) - i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=c1200000 (-10.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-10.000000000000000000000000 (c1200000), dut=-10.000000000000000000000000 (c1200000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_CANCEL_2 ]==========
+FPU_A = c2c88000 (-100.2500)
+FPU_B = 42c88000 (100.2500)
+[ADD][ADD]i_32_a=c2c88000 (-100.250000000000000000000000) + i_32_b=42c88000 (100.250000000000000000000000) 	| o_32_s=80000000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=42c88000 (100.250000000000000000000000) + i_32_b=c2c88000 (-100.250000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=c2c88000 (-100.250000000000000000000000) - i_32_b=42c88000 (100.250000000000000000000000) 	| o_32_s=c3488000 (-200.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-200.500000000000000000000000 (c3488000), dut=-200.500000000000000000000000 (c3488000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=42c88000 (100.250000000000000000000000) - i_32_b=c2c88000 (-100.250000000000000000000000) 	| o_32_s=43488000 (200.500000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=200.500000000000000000000000 (43488000), dut=200.500000000000000000000000 (43488000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_EXP_DIFF_1 ]==========
+FPU_A = 60ad78ec (100000002004087734272.0000)
+FPU_B = 3f800000 (1.0000)
+[ADD][ADD]i_32_a=60ad78ec (100000002004087734272.000000000000000000000000) + i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=60cd78ec (118446746077797285888.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=100000002004087734272.000000000000000000000000 (60ad78ec), dut=118446746077797285888.000000000000000000000000 (60cd78ec), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=3f800000 (1.000000000000000000000000) + i_32_b=60ad78ec (100000002004087734272.000000000000000000000000) 	| o_32_s=60cd78ec (118446746077797285888.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=100000002004087734272.000000000000000000000000 (60ad78ec), dut=118446746077797285888.000000000000000000000000 (60cd78ec), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=60ad78ec (100000002004087734272.000000000000000000000000) - i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=608d78ec (81553257930378182656.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=100000002004087734272.000000000000000000000000 (60ad78ec), dut=81553257930378182656.000000000000000000000000 (608d78ec), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=3f800000 (1.000000000000000000000000) - i_32_b=60ad78ec (100000002004087734272.000000000000000000000000) 	| o_32_s=e08d78ec (-81553257930378182656.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-100000002004087734272.000000000000000000000000 (e0ad78ec), dut=-81553257930378182656.000000000000000000000000 (e08d78ec), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+==========[ ADD_EXP_DIFF_2 ]==========
+FPU_A = 3f800000 (1.0000)
+FPU_B = 1e3ce508 (0.0000)
+[ADD][ADD]i_32_a=3f800000 (1.000000000000000000000000) + i_32_b=1e3ce508 (0.000000000000000000010000) 	| o_32_s=3f979ca1 (1.184467434883117675781250) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=1.000000000000000000000000 (3f800000), dut=1.184467434883117675781250 (3f979ca1), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=1e3ce508 (0.000000000000000000010000) + i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=3f979ca1 (1.184467434883117675781250) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=1.000000000000000000000000 (3f800000), dut=1.184467434883117675781250 (3f979ca1), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=3f800000 (1.000000000000000000000000) - i_32_b=1e3ce508 (0.000000000000000000010000) 	| o_32_s=3f50c6be (0.815532565116882324218750) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=1.000000000000000000000000 (3f800000), dut=0.815532565116882324218750 (3f50c6be), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=1e3ce508 (0.000000000000000000010000) - i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=bf50c6be (-0.815532565116882324218750) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-1.000000000000000000000000 (bf800000), dut=-0.815532565116882324218750 (bf50c6be), rounding_error=18.44674301 % (exp_error = 0.00001192 %)
+==========[ ADD_DENORM_1 ]==========
+FPU_A = 00000001 (0.0000)
+FPU_B = 00000001 (0.0000)
+[ADD][ADD]i_32_a=00000001 (0.000000000000000000000000) + i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=00000001 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=0.000000000000000000000000 (00000002), dut=0.000000000000000000000000 (00000001), rounding_error=50.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=00000001 (0.000000000000000000000000) + i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=00000001 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=0.000000000000000000000000 (00000002), dut=0.000000000000000000000000 (00000001), rounding_error=50.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000001 (0.000000000000000000000000) - i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000001 (0.000000000000000000000000) - i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_DENORM_2 ]==========
+FPU_A = 00000001 (0.0000)
+FPU_B = 00000000 (0.0000)
+[ADD][ADD]i_32_a=00000001 (0.000000000000000000000000) + i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000001 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000001), dut=0.000000000000000000000000 (00000001), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=00000000 (0.000000000000000000000000) + i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=00000001 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000001), dut=0.000000000000000000000000 (00000001), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000001 (0.000000000000000000000000) - i_32_b=00000000 (0.000000000000000000000000) 	| o_32_s=00000001 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000001), dut=0.000000000000000000000000 (00000001), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=00000000 (0.000000000000000000000000) - i_32_b=00000001 (0.000000000000000000000000) 	| o_32_s=80000001 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-0.000000000000000000000000 (80000001), dut=-0.000000000000000000000000 (80000001), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_OVERFLOW ]==========
+FPU_A = 7f7fc99e (339999995214436424907732413799364296704.0000)
+FPU_B = 7f7fc99e (339999995214436424907732413799364296704.0000)
+[ADD][ADD]i_32_a=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) + i_32_b=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) 	| o_32_s=7fffc99e (nan) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=inf (7f800000), dut=nan (7fffc99e), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) + i_32_b=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) 	| o_32_s=7fffc99e (nan) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=inf (7f800000), dut=nan (7fffc99e), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) - i_32_b=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) - i_32_b=7f7fc99e (339999995214436424907732413799364296704.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_UNDERFLOW ]==========
+FPU_A = 006ce3ee (0.0000)
+FPU_B = 806ce3ee (-0.0000)
+[ADD][ADD]i_32_a=006ce3ee (0.000000000000000000000000) + i_32_b=806ce3ee (-0.000000000000000000000000) 	| o_32_s=00000000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=0.000000000000000000000000 (00000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=806ce3ee (-0.000000000000000000000000) + i_32_b=006ce3ee (0.000000000000000000000000) 	| o_32_s=80000000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=0.000000000000000000000000 (00000000), dut=-0.000000000000000000000000 (80000000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=006ce3ee (0.000000000000000000000000) - i_32_b=806ce3ee (-0.000000000000000000000000) 	| o_32_s=006ce3ee (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=0.000000000000000000000000 (00d9c7dc), dut=0.000000000000000000000000 (006ce3ee), rounding_error=50.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=806ce3ee (-0.000000000000000000000000) - i_32_b=006ce3ee (0.000000000000000000000000) 	| o_32_s=806ce3ee (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-0.000000000000000000000000 (80d9c7dc), dut=-0.000000000000000000000000 (806ce3ee), rounding_error=50.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_INF ]==========
+FPU_A = 7f800000 (inf)
+FPU_B = 40a00000 (5.0000)
+[ADD][ADD]i_32_a=7f800000 (inf) + i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=40a00000 (5.000000000000000000000000) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f800000 (inf) - i_32_b=40a00000 (5.000000000000000000000000) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40a00000 (5.000000000000000000000000) - i_32_b=7f800000 (inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_INF_NEG ]==========
+FPU_A = ff800000 (-inf)
+FPU_B = 40000000 (2.0000)
+[ADD][ADD]i_32_a=ff800000 (-inf) + i_32_b=40000000 (2.000000000000000000000000) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=40000000 (2.000000000000000000000000) + i_32_b=ff800000 (-inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=ff800000 (-inf) - i_32_b=40000000 (2.000000000000000000000000) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=40000000 (2.000000000000000000000000) - i_32_b=ff800000 (-inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_INF_INF ]==========
+FPU_A = 7f800000 (inf)
+FPU_B = 7f800000 (inf)
+[ADD][ADD]i_32_a=7f800000 (inf) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=7f800000 (inf) + i_32_b=7f800000 (inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f800000 (inf) - i_32_b=7f800000 (inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f800000 (inf) - i_32_b=7f800000 (inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_INF_NINF ]==========
+FPU_A = 7f800000 (inf)
+FPU_B = ff800000 (-inf)
+[ADD][ADD]i_32_a=7f800000 (inf) + i_32_b=ff800000 (-inf) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=ff800000 (-inf) + i_32_b=7f800000 (inf) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=7f800000 (inf) - i_32_b=ff800000 (-inf) 	| o_32_s=7f800000 (inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=inf (7f800000), dut=inf (7f800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=ff800000 (-inf) - i_32_b=7f800000 (inf) 	| o_32_s=ff800000 (-inf) 	| o_ov_flow=0, o_un_flow=0
+=> PASS: expect=-inf (ff800000), dut=-inf (ff800000), rounding_error=0.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_NAN_1 ]==========
+FPU_A = ffc00000 (-nan)
+FPU_B = 3f800000 (1.0000)
+[ADD][ADD]i_32_a=ffc00000 (-nan) + i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=ff400000 (-255211775190703847597530955573826158592.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-255211775190703847597530955573826158592.000000000000000000000000 (ff400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=3f800000 (1.000000000000000000000000) + i_32_b=ffc00000 (-nan) 	| o_32_s=ff400000 (-255211775190703847597530955573826158592.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-255211775190703847597530955573826158592.000000000000000000000000 (ff400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=ffc00000 (-nan) - i_32_b=3f800000 (1.000000000000000000000000) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=3f800000 (1.000000000000000000000000) - i_32_b=ffc00000 (-nan) 	| o_32_s=00400000 (0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=0.000000000000000000000000 (00400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+==========[ ADD_NAN_2 ]==========
+FPU_A = ffc00000 (-nan)
+FPU_B = ffc00000 (-nan)
+[ADD][ADD]i_32_a=ffc00000 (-nan) + i_32_b=ffc00000 (-nan) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][ADD]i_32_a=ffc00000 (-nan) + i_32_b=ffc00000 (-nan) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=ffc00000 (-nan) - i_32_b=ffc00000 (-nan) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+[ADD][SUB]i_32_a=ffc00000 (-nan) - i_32_b=ffc00000 (-nan) 	| o_32_s=80400000 (-0.000000000000000000000000) 	| o_ov_flow=0, o_un_flow=0
+=> FAIL: expect=-nan (ffc00000), dut=-0.000000000000000000000000 (80400000), rounding_error=100.00000000 % (exp_error = 0.00001192 %)
+
+==================================
+========== TEST SUMMARY ==========
+Total test cases:    228
+Passed          :    172
+Failed          :     56
+Pass rate       : 75.44%
+==================================
+
+Simulation complete via $finish(1) at time 5261 NS + 0
+../FPU_ADD_SUB/tb_FPU_add_sub.sv:313     $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 02, 2026 at 01:29:18 EST  (total: 00:00:01)

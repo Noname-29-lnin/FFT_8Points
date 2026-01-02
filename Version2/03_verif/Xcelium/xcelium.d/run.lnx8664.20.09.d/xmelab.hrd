@@ -3,7 +3,7 @@
 // Do not modify this file
 //
 
-tb_Butterfly_Unit
+tb_FFT_8Points
 -ACCESS
 +rwc
 -timescale

@@ -1,0 +1,1 @@
+s1(02Jan2026:01:43:28):  xrun +xm64bit -sv -f ./../FPU_MUL/flist.f -top tb_fpu_mul -access +rwc -clean -log ./../FPU_MUL/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

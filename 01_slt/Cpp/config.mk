@@ -1,9 +1,0 @@
-MAIN_TEST=main
-SRC_FILE=flist.f
-BUILD_DIR=build
-REPORT_DIR=Reports
-VALUE_SERIAL=2
-VALUE_PARALLEL=2
-ANALYSIS_NAME=test_main
-NAME_TEST=slipt_coresort
-DIR_TEST=./example/Slipt_CoreSort

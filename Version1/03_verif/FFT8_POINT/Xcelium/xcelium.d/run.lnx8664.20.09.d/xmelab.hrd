@@ -1,0 +1,10 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+
+tb_FFT_8Points
+-ACCESS
++rwc
+-timescale
+1ns/1ps

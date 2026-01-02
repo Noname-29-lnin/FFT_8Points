@@ -1,4 +1,0 @@
-TOPMODULE=fpu_mul
-INC_DIR=./../FPU_MUL
-LIB_DIR=./../FPU_MUL
-RADIX=HEX

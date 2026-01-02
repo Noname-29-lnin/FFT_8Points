@@ -1,1 +1,0 @@
-s1(31Dec2025:10:41:49):  xrun +xm64bit -sv -f ./../SUB_UNIT/flist.f -top tb_SUB_8bit -access +rwc -clean -log ./../SUB_UNIT/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 
