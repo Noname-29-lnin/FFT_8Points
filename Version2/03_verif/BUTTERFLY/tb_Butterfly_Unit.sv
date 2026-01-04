@@ -31,9 +31,6 @@ module tb_Butterfly_Unit ();
     complex_t y0_ref, y1_ref;
     complex_t y0_dut, y1_dut;
 
-    // ===============================
-    // Convert FP bits -> complex
-    // ===============================
     function automatic complex_t fp_to_complex(
         input logic [31:0] re_bits,
         input logic [31:0] im_bits
@@ -46,9 +43,6 @@ module tb_Butterfly_Unit ();
         end
     endfunction
 
-    // ===============================
-    // Convert complex -> FP bits
-    // ===============================
     function automatic void complex_to_fp(
         input  complex_t c,
         output logic [31:0] re_bits,
@@ -60,9 +54,6 @@ module tb_Butterfly_Unit ();
         end
     endfunction
 
-    // ===============================
-    // Golden butterfly
-    // ===============================
     function automatic void butterfly_golden(
         input  complex_t x0,
         input  complex_t x1,
@@ -94,9 +85,6 @@ module tb_Butterfly_Unit ();
         end
     endfunction
 
-    // ===============================
-    // Compare complex
-    // ===============================
     function automatic bit cmp_complex(
         input complex_t dut,
         input complex_t ref_val
@@ -191,9 +179,6 @@ module tb_Butterfly_Unit ();
     end
 endtask
 
-    // ===============================
-    // Test sequence
-    // ===============================
     initial begin
         // 1. W = 1
         run_corner_test(
@@ -269,7 +254,6 @@ endtask
 
         for (int i = 0; i < 100; i++) begin
 
-            // Random input (safe range)
             a.re = ($signed($urandom_range(0,2000)) - 1000) / 100.0;
             a.im = ($signed($urandom_range(0,2000)) - 1000) / 100.0;
 

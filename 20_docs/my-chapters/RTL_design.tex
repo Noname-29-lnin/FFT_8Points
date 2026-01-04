@@ -1,0 +1,45 @@
+\section{RTL Implementation Strategy}
+
+\subsection{IEEE 754 Single-Precision Floating-Point Adder/Subtractor Design}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=\linewidth, scale=0.5]{./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for_FPU_ADD_SUB.png}
+	\caption{Algorithmic flowchart of the IEEE 754 Floating-Point Adder/Subtractor.}
+	\label{fig:fpu_add_sub_flowchart}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_Overview.png}
+	\caption{Top-level hardware architecture of the 32-bit Floating-Point Adder/Subtractor.}
+	\label{fig:fpu_add_sub_block_diagram}
+\end{figure}
+
+\subsection{IEEE 754 Single-Precision Floating-Point Multiplier Design}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=\linewidth, scale=0.5]{./../Version2/02_rtl/FPU_MUL/00_spec/Flowchart_for_FPU_MUL.png}
+	\caption{Algorithmic flowchart of the IEEE 754 Floating-Point Multiplier.}
+	\label{fig:fpu_mul_flowchart}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.9\linewidth]{./../Version2/02_rtl/FPU_MUL/00_spec/BlockDiagram_Overview.png}
+	\caption{Top-level hardware architecture of the 32-bit Floating-Point Multiplier.}
+	\label{fig:fpu_mul_block_diagram}
+\end{figure}
+
+\subsection{Radix-2 Butterfly Processing Unit (BPU) Design}
+
+\[ (a + jb)*(c + jd) = (ad + bc) - j(ad - bc) \]
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./../Version2/02_rtl/ButterFly/00_spec/Butterfly_unit.png}
+	\caption{Structure of Radix-2 Butterfly Processing Unit (BPU).}
+\end{figure}
+
+\subsection{8-Point FFT Processor Top-Level Architecture}

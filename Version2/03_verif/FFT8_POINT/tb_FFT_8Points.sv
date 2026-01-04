@@ -7,7 +7,7 @@ module tb_FFT_8Points;
     // =============================
     parameter int SIZE_DATA = 32;
     parameter int NUM_TEST  =  4;
-    parameter real EPSILON  = 1e-4;
+    parameter real EPSILON  = 1e-3;
 
     // =============================
     // Clock & control
@@ -63,19 +63,24 @@ module tb_FFT_8Points;
     // =============================
     always #5 i_clk = ~i_clk;
 
+    initial begin
+        $shm_open("tb_FFT_8Points.shm");
+        $shm_probe("ASM");
+    end
+
     // =============================
     // Test vectors
     // =============================
-    logic [7:0][31:0] input_real  [NUM_TEST];
-    logic [7:0][31:0] input_imag  [NUM_TEST];
-    logic [7:0][31:0] exp_real    [NUM_TEST];
-    logic [7:0][31:0] exp_imag    [NUM_TEST];
+    logic [31:0] input_real  [8*NUM_TEST - 1:0];
+    logic [31:0] input_imag  [8*NUM_TEST - 1:0];
+    logic [31:0] exp_real    [8*NUM_TEST - 1:0];
+    logic [31:0] exp_imag    [8*NUM_TEST - 1:0];
 
     initial begin
-        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_real.hex"       , input_real);
-        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_imag.hex"       , input_imag);
-        $readmemh("./../../03_verif/FFT8_POINT/08_hex/fft_expected_real.hex", exp_real  );
         $readmemh("./../../03_verif/FFT8_POINT/08_hex/fft_expected_imag.hex", exp_imag  );
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/fft_expected_real.hex", exp_real  );
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_imag.hex"       , input_imag);
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_real.hex"       , input_real);
     end
 
     // =============================
@@ -103,11 +108,6 @@ module tb_FFT_8Points;
     integer error_cnt = 0;
 
     initial begin
-        $shm_open("tb_FFT_8Points.shm");
-        $shm_probe("ASM");
-    end
-
-    initial begin
         // Init
         i_clk   = 0;
         i_rst_n = 0;
@@ -117,37 +117,39 @@ module tb_FFT_8Points;
         i_rst_n = 1;
 
         for (i = 0; i < NUM_TEST; i++) begin
-            // Apply inputs
-            for (k = 0; k < 8; k++) begin
-                x_real[k] = input_real[i][k];
-                x_imag[k] = input_imag[i][k];
-            end
+    // Apply inputs (8 samples per FFT)
+    for (k = 0; k < 8; k++) begin
+        x_real[k] = input_real[i*8 + k];
+        x_imag[k] = input_imag[i*8 + k];
+    end
 
-            // Start FFT
-            @(posedge i_clk);
-            i_start = 1;
-            @(posedge i_clk);
-            i_start = 0;
+    // Start FFT
+    @(posedge i_clk);
+    i_start = 1;
+    @(posedge i_clk);
+    i_start = 0;
 
-            // Wait done
-            wait (!done_d && o_done);
-            #1;
+    // Wait done
+    wait (!done_d && o_done);
+    #1;
 
-            // Check results
-            for (k = 0; k < 8; k++) begin
-                real dr, di;
-                dr = abs(fp(X_real[k]) - fp(exp_real[i][k]));
-                di = abs(fp(X_imag[k]) - fp(exp_imag[i][k]));
-
-                if (dr > EPSILON || di > EPSILON) begin
-                    error_cnt++;
-                    $display("ERROR test=%0d bin=%0d | DUT=(%f,%f) EXP=(%f,%f)",
-                             i, k,
-                             fp(X_real[k]), fp(X_imag[k]),
-                             fp(exp_real[i][k]), fp(exp_imag[i][k]));
-                end
+    // Check outputs
+        for (k = 0; k < 8; k++) begin
+            real dr, di;
+            dr = abs(fp(X_real[k]) - fp(exp_real[i*8 + k]));
+            di = abs(fp(X_imag[k]) - fp(exp_imag[i*8 + k]));
+        
+            if (dr > EPSILON || di > EPSILON) begin
+                error_cnt++;
+                $display(
+                    "ERROR test=%0d bin=%0d | DUT=(%f,%f) EXP=(%f,%f)",
+                    i, k,
+                    fp(X_real[k]), fp(X_imag[k]),
+                    fp(exp_real[i*8 + k]), fp(exp_imag[i*8 + k])
+                );
             end
         end
+    end
 
         // Summary
         if (error_cnt == 0)

@@ -1,17 +1,9 @@
 \babel@toc {vietnamese}{}\relax 
 \babel@toc {english}{}\relax 
 \babel@toc {vietnamese}{}\relax 
-\contentsline {section}{\numberline {1}Requirement}{1}{section.1}%
-\contentsline {section}{\numberline {2}Design FPU}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Bộ tiền xử lý liên quan đến Exponent}{3}{subsection.2.1}%
-\contentsline {subsection}{\numberline {2.2}Bộ tiền xử lý liên quan đến Mantissa}{5}{subsection.2.2}%
-\contentsline {subsection}{\numberline {2.3}Bộ xử lý dấu của phép tính}{7}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Bộ xử lý các trường hợp đặc biệt ở ngõ vào}{9}{subsection.2.4}%
-\contentsline {subsection}{\numberline {2.5}Bộ căn chỉnh Exponent}{12}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Bộ cộng trừ Mantissa}{13}{subsection.2.6}%
-\contentsline {subsection}{\numberline {2.7}Bộ chuẩn hóa Mantissa}{14}{subsection.2.7}%
-\contentsline {subsection}{\numberline {2.8}Bộ tìm vị trí bit 1 của MANTISSA sau khi chuẩn hóa}{15}{subsection.2.8}%
-\contentsline {subsection}{\numberline {2.9}Bộ làm tròn cho giá trị Mantissa và Exponent}{15}{subsection.2.9}%
-\contentsline {section}{\numberline {3}Simulation and Verification}{17}{section.3}%
-\contentsline {section}{\numberline {4}Implement on FPGA}{21}{section.4}%
-\contentsline {section}{\numberline {5}Synthesis my design}{23}{section.5}%
+\contentsline {section}{\numberline {1}Theorical Background}{1}{section.1}%
+\contentsline {section}{\numberline {2}RTL Implementation Strategy}{2}{section.2}%
+\contentsline {subsection}{\numberline {2.1}IEEE 754 Single-Precision Floating-Point Adder/Subtractor Design}{2}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}IEEE 754 Single-Precision Floating-Point Multiplier Design}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Radix-2 Butterfly Processing Unit (BPU) Design}{5}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}8-Point FFT Processor Top-Level Architecture}{6}{subsection.2.4}%

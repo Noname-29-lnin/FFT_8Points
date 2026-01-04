@@ -407,7 +407,14 @@ Butterfly_Unit #(
     .o_data_1_re    (S3_X7_real),
     .o_data_1_im    (S3_X7_imag)
 );
-
+logic w_done;
+always_ff @( posedge i_clk or negedge i_rst_n ) begin
+    if(~i_rst_n) begin
+        w_done    <= '0;
+    end else begin
+        w_done    <= S3_start;
+    end
+end
 always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n) begin
         X0_real     <= '0;
@@ -426,7 +433,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
         X6_imag     <= '0;
         X7_real     <= '0;
         X7_imag     <= '0;
-    end else begin
+    end else if(w_done) begin
         X0_real     <= S3_X0_real;
         X0_imag     <= S3_X0_imag;
         X1_real     <= S3_X1_real;
@@ -449,7 +456,7 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
     if(~i_rst_n) begin
         o_done    <= '0;
     end else begin
-        o_done    <= S3_start;
+        o_done    <= w_done;
     end
 end
 

@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Jan 02, 2026 at 04:37:38 EST
+TOOL:	xrun(64)	20.09-s001: Started on Jan 03, 2026 at 22:32:06 EST
 xrun
 	+xm64bit
 	-sv
@@ -249,10 +249,22 @@ file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
 	Elaborating the design hierarchy:
 		Caching library 'worklib' ....... Done
 	Top level design units:
-		wallace_pkg
 		tb_FFT_8Points
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
-	Building instance overlay tables: .................... Done
+	Building instance overlay tables: ..
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/fft_expected_imag.hex", exp_imag  );
+                                                                                     |
+xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,80|85): $readmem default memory order incompatible with IEEE1364.
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/fft_expected_real.hex", exp_real  );
+                                                                                     |
+xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,81|85): $readmem default memory order incompatible with IEEE1364.
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_imag.hex"       , input_imag);
+                                                                                       |
+xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,82|87): $readmem default memory order incompatible with IEEE1364.
+        $readmemh("./../../03_verif/FFT8_POINT/08_hex/input_real.hex"       , input_real);
+                                                                                       |
+xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,83|87): $readmem default memory order incompatible with IEEE1364.
+.................. Done
 	Generating native compiled code:
 		worklib.ADD_SUB_NOR_unit:sv <0x0a0c8010>
 			streams:   2, words:   917
@@ -312,16 +324,8 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:  10, words:  4004
 		worklib.MUL_LOPD_24bit:sv <0x6f012042>
 			streams:  15, words:  5494
-		worklib.CLA_adder_top:sv <0x23e56bea>
-			streams:   4, words:  2277
-		worklib.FA_1bit:sv <0x6ea8838f>
-			streams:   0, words:     0
-		worklib.signed_area_computation:sv <0x2aa4b375>
-			streams:   2, words:  3229
-		worklib.Multiplier:sv <0x09b14d9b>
-			streams:  19, words:  6966
-		worklib.MUL_MAN_mul:sv <0x70178632>
-			streams:   8, words:  2118
+		worklib.MUL_MAN_mul:sv <0x480e5b45>
+			streams:   8, words:  2074
 		worklib.MUL_EXP_unit:sv <0x4bb39a75>
 			streams:   3, words:   810
 		worklib.fpu_mul:sv <0x1baaa019>
@@ -330,18 +334,10 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:   6, words:  2164
 		worklib.Detect_edge:sv <0x630462fe>
 			streams:   4, words:   955
-		worklib.FFT_8Points:sv <0x159c3271>
-			streams: 129, words: 55935
-		worklib.tb_FFT_8Points:sv <0x21771f00>
-			streams:  45, words: 23800
-		worklib.Modified_booth:sv <0x5045adb8>
-			streams:   6, words:  4727
-		worklib.wallace_tree:sv <0x0a65120d>
-			streams: 198, words: 137457
-		worklib.wallace_final_merge:sv <0x58db7a78>
-			streams:   1, words:   199
-		worklib.cla_logic_tree_level:sv <0x4def47af>
-			streams:   7, words:  2525
+		worklib.FFT_8Points:sv <0x34f143c0>
+			streams: 131, words: 56407
+		worklib.tb_FFT_8Points:sv <0x23ae551b>
+			streams:  45, words: 22517
 		worklib.MUL_SHF_left:sv <0x648634cf>
 			streams:   7, words:  3911
 		worklib.MUL_MAN_rounding:sv <0x1878b887>
@@ -358,56 +354,27 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:  31, words: 12810
 		worklib.ADD_SUB_EXP_rounding:sv <0x540282aa>
 			streams:   9, words:  3824
-		worklib.wallace_stage:sv <0x229730e1>
-			streams: 102, words: 43273
-		worklib.wallace_stage:sv <0x522f1cfb>
-			streams:  68, words: 28735
-		worklib.wallace_stage:sv <0x03ac1301>
-			streams:  42, words: 17749
-		worklib.wallace_stage:sv <0x3e8834a7>
-			streams:  24, words: 10315
-		worklib.wallace_stage:sv <0x2d3edcc8>
-			streams:  16, words:  6763
-		worklib.wallace_stage:sv <0x38eba389>
-			streams:   9, words:  3903
-		worklib.wallace_pkg:sv <0x5a2ede1f>
-			streams:   6, words:  3349
-		worklib.cla_logic_tree_level:sv <0x27afca6e>
-			streams:   7, words:  2525
-		worklib.cla_logic_tree_level:sv <0x394699aa>
-			streams:   6, words:  2046
-		worklib.CLA_logic:sv <0x114ebbd9>
-			streams:  20, words:  6927
-		worklib.CLA_logic:sv <0x791231a8>
-			streams:  15, words:  5178
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                    Instances  Unique
-		Modules:                 7791      52
-		Verilog packages:           1       1
-		Registers:             626435     477
-		Scalar wires:          182865       -
-		Expanded wires:         25680    1512
-		Vectored wires:         75480       -
-		Always blocks:           3228      17
-		Initial blocks:             4       4
-		Cont. assignments:     229081     242
-		Pseudo assignments:     15579     386
-		Simulation timescale:     1ps
+		                   Instances  Unique
+		Modules:                3999      42
+		Registers:             23951     390
+		Scalar wires:          28352       -
+		Expanded wires:         6528     408
+		Vectored wires:        19320       -
+		Always blocks:            13      13
+		Initial blocks:            4       4
+		Cont. assignments:     24985     196
+		Pseudo assignments:    13803     349
+		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.tb_FFT_8Points:sv
 Loading snapshot worklib.tb_FFT_8Points:sv .................... Done
 xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
 xcelium> run
-xmsim: *W,RMEMAR: $readmem warning: address incremented out of range. Too many data words read
-	at line 5 of file "./../../03_verif/FFT8_POINT/08_hex/input_imag.hex". Current address: 4, address range: [0:3].
-            File: ../FFT8_POINT/tb_FFT_8Points.sv, line = 76, pos = 87
-           Scope: tb_FFT_8Points
-            Time: 0 FS + 0
-
 ALL FFT TESTS PASSED (4 vectors)
-Simulation complete via $finish(1) at time 226 NS + 0
-../FFT8_POINT/tb_FFT_8Points.sv:158         $finish;
+Simulation complete via $finish(1) at time 266 NS + 0
+../FFT8_POINT/tb_FFT_8Points.sv:160         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Jan 02, 2026 at 04:37:51 EST  (total: 00:00:13)
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 03, 2026 at 22:32:09 EST  (total: 00:00:03)
