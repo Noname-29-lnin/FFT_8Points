@@ -60,9 +60,9 @@ Complex_Multiplier #(
     .o_data_0_im    (w_i_data_5_im) 
 );
 assign w_data_5_re = w_i_data_5_re; // (a + jb)*W^1_N = 0.707(a+b) - j*0.707*(a-b)
-assign w_data_5_im = {w_i_data_5_im[SIZE_DATA-1]^1'b1, w_i_data_5_im[SIZE_DATA-2:0]};
+assign w_data_5_im = {~w_i_data_5_im[SIZE_DATA-1], w_i_data_5_im[SIZE_DATA-2:0]};
 assign w_data_6_re = i_data_6_im;                                              // (a+jb)*W^2_N => b - ja
-assign w_data_6_im = {i_data_6_re[SIZE_DATA-1]^1, i_data_6_re[SIZE_DATA-2:0]}; // 
+assign w_data_6_im = {~i_data_6_re[SIZE_DATA-1], i_data_6_re[SIZE_DATA-2:0]};  // 
 Complex_Multiplier #(
     .SIZE_DATA      (SIZE_DATA)
 ) INPUT_DATA_7 (
@@ -71,8 +71,8 @@ Complex_Multiplier #(
     .o_data_0_re    (w_i_data_7_re),
     .o_data_0_im    (w_i_data_7_im) 
 );
-assign w_data_7_re = {w_i_data_7_im[SIZE_DATA-1]^1'b1, w_i_data_7_im[SIZE_DATA-2:0]}; // (a + jb)*W^3_N = -0.707(a-b) - j*0.707*(a+b)
-assign w_data_7_im = {w_i_data_7_re[SIZE_DATA-1]^1'b1, w_i_data_7_re[SIZE_DATA-2:0]};
+assign w_data_7_re = {~w_i_data_7_im[SIZE_DATA-1], w_i_data_7_im[SIZE_DATA-2:0]}; // (a + jb)*W^3_N = -0.707(a-b) - j*0.707*(a+b)
+assign w_data_7_im = {~w_i_data_7_re[SIZE_DATA-1], w_i_data_7_re[SIZE_DATA-2:0]};
 
 
 BFU_2 #(

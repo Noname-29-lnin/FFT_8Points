@@ -28,7 +28,7 @@ logic [SIZE_DATA-1:0]     w_data_3_im;
 assign w_data_2_re = i_data_2_re; // (a + jb) *W^0_N = a + jb
 assign w_data_2_im = i_data_2_im; // 
 assign w_data_3_re = i_data_3_im;                                              // (a+jb)*W^2_N => b - ja
-assign w_data_3_im = {i_data_3_re[SIZE_DATA-1]^1, i_data_3_re[SIZE_DATA-2:0]}; // 
+assign w_data_3_im = {~i_data_3_re[SIZE_DATA-1], i_data_3_re[SIZE_DATA-2:0]}; // 
 
 BFU_2 #(
     .SIZE_DATA      (SIZE_DATA)
