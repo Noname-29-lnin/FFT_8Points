@@ -27,18 +27,21 @@
 ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv
 ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv
 ./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
-./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+// ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+./../../02_rtl/FPU_MUL/Unsigned_Multiplier_Unit/Multiplier.sv
+
 ./../../02_rtl/FPU_MUL/fpu_mul.sv
 ./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv
 ./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv

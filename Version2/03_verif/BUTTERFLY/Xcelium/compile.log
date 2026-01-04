@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Jan 04, 2026 at 06:25:37 EST
+TOOL:	xrun(64)	20.09-s001: Started on Jan 04, 2026 at 14:12:59 EST
 xrun
 	+xm64bit
 	-sv
@@ -32,18 +32,7 @@ xrun
 		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv
 		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv
 		./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
-		./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+		./../../02_rtl/FPU_MUL/Unsigned_Multiplier_Unit/Multiplier.sv
 		./../../02_rtl/FPU_MUL/fpu_mul.sv
 		./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv
 		./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv
@@ -187,41 +176,18 @@ file: ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv
 file: ./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
 	module worklib.FPU_add_sub:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
-	module worklib.CLA_adder_top:sv
+file: ./../../02_rtl/FPU_MUL/Unsigned_Multiplier_Unit/Multiplier.sv
+	module worklib.vedic2x2:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
-	module worklib.cla_logic_tree_level:sv
+	module worklib.vedic4x4:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
-	module worklib.CLA_logic:sv
+	module worklib.vedic8x8:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
-	module worklib.FA_1bit:sv
+	module worklib.vedic16x8:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
-	module worklib.HA_1bit:sv
+	module worklib.array_multiplier:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
-	module worklib.Modified_booth:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
 	module worklib.Multiplier:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
-	module worklib.signed_area_computation:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
-	module worklib.wallace_final_merge:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
-	package worklib.wallace_pkg:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
-	module worklib.wallace_stage:sv
-		errors: 0, warnings: 0
-file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
-	module worklib.wallace_tree:sv
 		errors: 0, warnings: 0
 file: ./../../02_rtl/FPU_MUL/fpu_mul.sv
 	module worklib.fpu_mul:sv
@@ -271,148 +237,119 @@ file: ./../../02_rtl/FPU_MUL/MUL_SHF_left.sv
 	Elaborating the design hierarchy:
 		Caching library 'worklib' ....... Done
 	Top level design units:
-		wallace_pkg
 		tb_Butterfly_Unit
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.ADD_SUB_NOR_unit:sv <0x3b201888>
+		worklib.ADD_SUB_NOR_unit:sv <0x1a6437a4>
 			streams:   2, words:   917
-		worklib.ADD_SUB_EXP_adjust:sv <0x19e6b606>
+		worklib.ADD_SUB_EXP_adjust:sv <0x7f245b3d>
 			streams:   6, words:  1783
-		worklib.ADD_SUB_LOPD_8bit:sv <0x216770d8>
+		worklib.ADD_SUB_LOPD_8bit:sv <0x789cd81a>
 			streams:   5, words:  2314
-		worklib.ADD_SUB_LOPD_8bit:sv <0x4f639189>
+		worklib.ADD_SUB_LOPD_8bit:sv <0x1698394b>
 			streams:   5, words:  2314
-		worklib.ADD_SUB_LOPD_16bit:sv <0x3cb704fa>
+		worklib.ADD_SUB_LOPD_16bit:sv <0x75f5c52a>
 			streams:  10, words:  4004
-		worklib.ADD_SUB_LOPD_24bit:sv <0x672da198>
+		worklib.ADD_SUB_LOPD_24bit:sv <0x7840f6f1>
 			streams:  15, words:  5494
-		worklib.ADD_SUB_MAN_ALU:sv <0x25498449>
+		worklib.ADD_SUB_MAN_ALU:sv <0x03e0250a>
 			streams:  12, words:  4141
-		worklib.ADD_SUB_CLS_4bit:sv <0x5e6fa00b>
+		worklib.ADD_SUB_CLS_4bit:sv <0x76c713db>
 			streams:   7, words:  2353
-		worklib.ADD_SUB_PSC_unit:sv <0x4ac220c6>
+		worklib.ADD_SUB_PSC_unit:sv <0x7e7a8a3f>
 			streams:  12, words:  4833
-		worklib.ADD_SUB_SIGN_unit:sv <0x770e277d>
+		worklib.ADD_SUB_SIGN_unit:sv <0x14255d6e>
 			streams:   1, words:   370
-		worklib.ADD_SUB_COMP_24bit:sv <0x7594b97f>
+		worklib.ADD_SUB_COMP_24bit:sv <0x44ec9654>
 			streams:  13, words:  5452
-		worklib.ADD_SUB_MAN_swap:sv <0x08f81da7>
+		worklib.ADD_SUB_MAN_swap:sv <0x46122ee6>
 			streams:   2, words:   562
-		worklib.ADD_SUB_CLA_4bit:sv <0x62b32ec7>
+		worklib.ADD_SUB_CLA_4bit:sv <0x41301350>
 			streams:   9, words:  3384
-		worklib.ADD_SUB_CLA_8bit:sv <0x1a2c92dd>
+		worklib.ADD_SUB_CLA_8bit:sv <0x116429a9>
 			streams:  13, words:  4418
-		worklib.ADD_SUB_EXP_sub:sv <0x5f038c8e>
+		worklib.ADD_SUB_EXP_sub:sv <0x2982776e>
 			streams:   4, words:  1006
-		worklib.ADD_SUB_EXP_swap:sv <0x05e3e935>
+		worklib.ADD_SUB_EXP_swap:sv <0x77a11494>
 			streams:   2, words:   559
-		worklib.ADD_SUB_COMP_4bit:sv <0x256243ca>
+		worklib.ADD_SUB_COMP_4bit:sv <0x79724489>
 			streams:   2, words:  1737
-		worklib.ADD_SUB_COMP_8bit:sv <0x6c29f9d7>
+		worklib.ADD_SUB_COMP_8bit:sv <0x5d99bd6e>
 			streams:   5, words:  1802
-		worklib.ADD_SUB_EXP_comp:sv <0x615b2236>
+		worklib.ADD_SUB_EXP_comp:sv <0x42d881de>
 			streams:   1, words:   393
-		worklib.FPU_add_sub:sv <0x2513b51a>
+		worklib.FPU_add_sub:sv <0x235f871d>
 			streams:  74, words: 21994
-		worklib.MUL_PSC_unit:sv <0x034eb21c>
+		worklib.MUL_PSC_unit:sv <0x63edb75e>
 			streams:  10, words:  5783
-		worklib.MUL_CLA_4bit:sv <0x19261191>
+		worklib.MUL_CLA_4bit:sv <0x45f6ec20>
 			streams:   9, words:  3384
-		worklib.MUL_CLA_8bit:sv <0x08094e54>
+		worklib.MUL_CLA_8bit:sv <0x73954d23>
 			streams:  13, words:  4418
-		worklib.MUL_EXP_adjust:sv <0x51b2e109>
+		worklib.MUL_EXP_adjust:sv <0x5bdac38e>
 			streams:   6, words:  1863
-		worklib.MUL_NOR_unit:sv <0x37ad10bd>
+		worklib.MUL_NOR_unit:sv <0x4a5959af>
 			streams:   3, words:  1080
-		worklib.MUL_LOPD_8bit:sv <0x03dcde89>
+		worklib.MUL_LOPD_8bit:sv <0x718a3a91>
 			streams:   5, words:  2314
-		worklib.MUL_LOPD_8bit:sv <0x6dd83fd8>
+		worklib.MUL_LOPD_8bit:sv <0x1f8edbc0>
 			streams:   5, words:  2314
-		worklib.MUL_LOPD_16bit:sv <0x0ca14f2a>
+		worklib.MUL_LOPD_16bit:sv <0x4411b802>
 			streams:  10, words:  4004
-		worklib.MUL_LOPD_24bit:sv <0x3115c33d>
+		worklib.MUL_LOPD_24bit:sv <0x49c79c10>
 			streams:  15, words:  5494
-		worklib.CLA_adder_top:sv <0x37811636>
-			streams:   4, words:  2277
-		worklib.FA_1bit:sv <0x226bb4a5>
-			streams:   0, words:     0
-		worklib.signed_area_computation:sv <0x0138358b>
-			streams:   2, words:  3229
-		worklib.Multiplier:sv <0x7fb0367a>
-			streams:  19, words:  6966
-		worklib.MUL_MAN_mul:sv <0x18a6b043>
+		worklib.vedic16x8:sv <0x5fe07f42>
+			streams:   1, words:   219
+		worklib.vedic2x2:sv <0x615349cf>
+			streams:   1, words:   257
+		worklib.vedic4x4:sv <0x4d38e1af>
+			streams:   3, words:   615
+		worklib.vedic8x8:sv <0x0430cf06>
+			streams:   3, words:   633
+		worklib.array_multiplier:sv <0x00a15898>
+			streams:   3, words:   582
+		worklib.Multiplier:sv <0x2061bbf3>
+			streams:   3, words:  1051
+		worklib.MUL_MAN_mul:sv <0x653bb325>
 			streams:   8, words:  2118
-		worklib.MUL_EXP_unit:sv <0x15dd33c9>
+		worklib.MUL_EXP_unit:sv <0x6f2e2e0e>
 			streams:   3, words:   810
-		worklib.fpu_mul:sv <0x10a347c7>
-			streams:  41, words: 12036
-		worklib.tb_Butterfly_Unit:sv <0x4fad180b>
+		worklib.fpu_mul:sv <0x5fbf7259>
+			streams:  41, words: 12220
+		worklib.tb_Butterfly_Unit:sv <0x19cda7d0>
 			streams:  18, words: 43756
-		worklib.Modified_booth:sv <0x3fbdb2f6>
-			streams:   6, words:  4727
-		worklib.wallace_tree:sv <0x3f32a8f4>
-			streams: 198, words: 137457
-		worklib.wallace_final_merge:sv <0x42e49c6f>
-			streams:   1, words:   199
-		worklib.cla_logic_tree_level:sv <0x3277921a>
-			streams:   7, words:  2525
-		worklib.MUL_SHF_left:sv <0x19d56e11>
+		worklib.MUL_SHF_left:sv <0x6f786729>
 			streams:   7, words:  3911
-		worklib.MUL_MAN_rounding:sv <0x4a23e499>
+		worklib.MUL_MAN_rounding:sv <0x6f566022>
 			streams:  26, words: 11680
-		worklib.MUL_EXP_rounding:sv <0x158e6d50>
+		worklib.MUL_EXP_rounding:sv <0x4d50886a>
 			streams:   9, words:  3824
-		worklib.ADD_SUB_SHF_right:sv <0x32f12098>
+		worklib.ADD_SUB_SHF_right:sv <0x501baeb4>
 			streams:   7, words:  4020
-		worklib.ADD_SUB_CLA_24bit:sv <0x6ac8fb5d>
+		worklib.ADD_SUB_CLA_24bit:sv <0x373469c2>
 			streams:  44, words: 14667
-		worklib.ADD_SUB_SHF_left:sv <0x556ab229>
+		worklib.ADD_SUB_SHF_left:sv <0x4a4b2874>
 			streams:   7, words:  3911
-		worklib.ADD_SUB_MAN_rounding:sv <0x50226308>
+		worklib.ADD_SUB_MAN_rounding:sv <0x5fb24c13>
 			streams:  31, words: 12810
-		worklib.ADD_SUB_EXP_rounding:sv <0x08f21a16>
+		worklib.ADD_SUB_EXP_rounding:sv <0x1b5f003c>
 			streams:   9, words:  3824
-		worklib.wallace_stage:sv <0x335ef82e>
-			streams: 102, words: 43273
-		worklib.wallace_stage:sv <0x4642fa47>
-			streams:  68, words: 28735
-		worklib.wallace_stage:sv <0x6e26c2d1>
-			streams:  42, words: 17749
-		worklib.wallace_stage:sv <0x4e2a2e66>
-			streams:  24, words: 10315
-		worklib.wallace_stage:sv <0x593c6910>
-			streams:  16, words:  6763
-		worklib.wallace_stage:sv <0x6c38595d>
-			streams:   9, words:  3903
-		worklib.wallace_pkg:sv <0x1444c269>
-			streams:   6, words:  3349
-		worklib.cla_logic_tree_level:sv <0x24ebf309>
-			streams:   7, words:  2525
-		worklib.cla_logic_tree_level:sv <0x60342759>
-			streams:   6, words:  2046
-		worklib.CLA_logic:sv <0x6ff51a42>
-			streams:  20, words:  6927
-		worklib.CLA_logic:sv <0x4a95c3b8>
-			streams:  15, words:  5178
-		worklib.Butterfly_Unit:sv <0x3a76448e>
+		worklib.Butterfly_Unit:sv <0x3d15a240>
 			streams:   6, words:  2164
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
-		                   Instances  Unique
-		Modules:                 650      50
-		Verilog packages:          1       1
-		Registers:             52276     386
-		Scalar wires:          15239       -
-		Expanded wires:         2140     126
-		Vectored wires:         6286       -
-		Always blocks:           268       5
-		Initial blocks:            3       3
-		Cont. assignments:     19090     240
-		Pseudo assignments:     1296     249
-		Simulation timescale:    1ps
+		                  Instances  Unique
+		Modules:               1106      46
+		Registers:             2047     300
+		Scalar wires:          6394       -
+		Expanded wires:         736      42
+		Vectored wires:        2758       -
+		Initial blocks:           3       3
+		Cont. assignments:     3226     212
+		Pseudo assignments:    1152     213
+		Simulation timescale:   1ps
 	Writing initial simulation snapshot: worklib.tb_Butterfly_Unit:sv
 Loading snapshot worklib.tb_Butterfly_Unit:sv .................... Done
 SVSEED default: 1
@@ -581,4 +518,4 @@ OUTPUTS (DUT):
 Simulation complete via $finish(1) at time 666 NS + 0
 ../BUTTERFLY/tb_Butterfly_Unit.sv:312         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Jan 04, 2026 at 06:25:40 EST  (total: 00:00:03)
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 04, 2026 at 14:13:01 EST  (total: 00:00:02)
