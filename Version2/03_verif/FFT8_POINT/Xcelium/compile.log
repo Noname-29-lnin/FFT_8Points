@@ -1,12 +1,15 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Jan 03, 2026 at 22:32:06 EST
+TOOL:	xrun(64)	20.09-s001: Started on Jan 04, 2026 at 06:26:50 EST
 xrun
 	+xm64bit
 	-sv
 	-f ./../FFT8_POINT/flist.f
 		./../../03_verif/FFT8_POINT/tb_FFT_8Points.sv
-		./../../02_rtl/FFT_unit/FFT_8Points.sv
-		./../../02_rtl/ButterFly/Butterfly_Unit.sv
+		./../../02_rtl/FFT_unit/FFT_8Points_Cus.sv
+		./../../02_rtl/ButterFly/Complex_Multiplier.sv
+		./../../02_rtl/ButterFly/BFU_8.sv
+		./../../02_rtl/ButterFly/BFU_4.sv
+		./../../02_rtl/ButterFly/BFU_2.sv
 		./../../02_rtl/FFT_unit/Detect_edge.sv
 		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
 		./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv
@@ -78,11 +81,20 @@ xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
 file: ./../../03_verif/FFT8_POINT/tb_FFT_8Points.sv
 	module worklib.tb_FFT_8Points:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/FFT_unit/FFT_8Points.sv
+file: ./../../02_rtl/FFT_unit/FFT_8Points_Cus.sv
 	module worklib.FFT_8Points:sv
 		errors: 0, warnings: 0
-file: ./../../02_rtl/ButterFly/Butterfly_Unit.sv
-	module worklib.Butterfly_Unit:sv
+file: ./../../02_rtl/ButterFly/Complex_Multiplier.sv
+	module worklib.Complex_Multiplier:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/ButterFly/BFU_8.sv
+	module worklib.BFU_8:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/ButterFly/BFU_4.sv
+	module worklib.BFU_4:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/ButterFly/BFU_2.sv
+	module worklib.BFU_2:sv
 		errors: 0, warnings: 0
 file: ./../../02_rtl/FFT_unit/Detect_edge.sv
 	module worklib.Detect_edge:sv
@@ -249,6 +261,7 @@ file: ./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
 	Elaborating the design hierarchy:
 		Caching library 'worklib' ....... Done
 	Top level design units:
+		wallace_pkg
 		tb_FFT_8Points
 xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
 	Building instance overlay tables: ..
@@ -266,6 +279,44 @@ xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,82|87): $readmem default memo
 xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,83|87): $readmem default memory order incompatible with IEEE1364.
 .................. Done
 	Generating native compiled code:
+		worklib.MUL_PSC_unit:sv <0x2439b881>
+			streams:  10, words:  5783
+		worklib.MUL_CLA_4bit:sv <0x53995676>
+			streams:   9, words:  3384
+		worklib.MUL_CLA_8bit:sv <0x1844c0c2>
+			streams:  13, words:  4418
+		worklib.MUL_EXP_adjust:sv <0x6f4309ec>
+			streams:   6, words:  1863
+		worklib.MUL_NOR_unit:sv <0x2a2a9b15>
+			streams:   3, words:  1080
+		worklib.MUL_LOPD_8bit:sv <0x567b87b2>
+			streams:   5, words:  2314
+		worklib.MUL_LOPD_8bit:sv <0x387f66e3>
+			streams:   5, words:  2314
+		worklib.MUL_LOPD_16bit:sv <0x0a190994>
+			streams:  10, words:  4004
+		worklib.MUL_LOPD_24bit:sv <0x6f012042>
+			streams:  15, words:  5494
+		worklib.CLA_adder_top:sv <0x23e56bea>
+			streams:   4, words:  2277
+		worklib.FA_1bit:sv <0x6ea8838f>
+			streams:   0, words:     0
+		worklib.signed_area_computation:sv <0x2aa4b375>
+			streams:   2, words:  3229
+		worklib.Multiplier:sv <0x09b14d9b>
+			streams:  19, words:  6966
+		worklib.MUL_MAN_mul:sv <0x70178632>
+			streams:   8, words:  2118
+		worklib.MUL_EXP_unit:sv <0x4bb39a75>
+			streams:   3, words:   810
+		worklib.fpu_mul:sv <0x1baaa019>
+			streams:  41, words: 12036
+		worklib.Complex_Multiplier:sv <0x5938c6b1>
+			streams:   9, words:  2176
+		worklib.BFU_8:sv <0x202b99e7>
+			streams:  36, words: 11751
+		worklib.BFU_4:sv <0x0a3dc1bc>
+			streams:  16, words:  5023
 		worklib.ADD_SUB_NOR_unit:sv <0x0a0c8010>
 			streams:   2, words:   917
 		worklib.ADD_SUB_EXP_adjust:sv <0x193c7cd9>
@@ -306,38 +357,22 @@ xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,83|87): $readmem default memo
 			streams:   1, words:   393
 		worklib.FPU_add_sub:sv <0x40e23fb4>
 			streams:  74, words: 21994
-		worklib.MUL_PSC_unit:sv <0x2439b881>
-			streams:  10, words:  5783
-		worklib.MUL_CLA_4bit:sv <0x53995676>
-			streams:   9, words:  3384
-		worklib.MUL_CLA_8bit:sv <0x1844c0c2>
-			streams:  13, words:  4418
-		worklib.MUL_EXP_adjust:sv <0x6f4309ec>
-			streams:   6, words:  1863
-		worklib.MUL_NOR_unit:sv <0x2a2a9b15>
-			streams:   3, words:  1080
-		worklib.MUL_LOPD_8bit:sv <0x567b87b2>
-			streams:   5, words:  2314
-		worklib.MUL_LOPD_8bit:sv <0x387f66e3>
-			streams:   5, words:  2314
-		worklib.MUL_LOPD_16bit:sv <0x0a190994>
-			streams:  10, words:  4004
-		worklib.MUL_LOPD_24bit:sv <0x6f012042>
-			streams:  15, words:  5494
-		worklib.MUL_MAN_mul:sv <0x480e5b45>
-			streams:   8, words:  2074
-		worklib.MUL_EXP_unit:sv <0x4bb39a75>
-			streams:   3, words:   810
-		worklib.fpu_mul:sv <0x1baaa019>
-			streams:  41, words: 12036
-		worklib.Butterfly_Unit:sv <0x296b7d89>
-			streams:   6, words:  2164
+		worklib.BFU_2:sv <0x1458381a>
+			streams:   6, words:  2007
 		worklib.Detect_edge:sv <0x630462fe>
 			streams:   4, words:   955
-		worklib.FFT_8Points:sv <0x34f143c0>
-			streams: 131, words: 56407
+		worklib.FFT_8Points:sv <0x68e2cc6c>
+			streams: 116, words: 53177
 		worklib.tb_FFT_8Points:sv <0x23ae551b>
 			streams:  45, words: 22517
+		worklib.Modified_booth:sv <0x5045adb8>
+			streams:   6, words:  4727
+		worklib.wallace_tree:sv <0x0a65120d>
+			streams: 198, words: 137457
+		worklib.wallace_final_merge:sv <0x58db7a78>
+			streams:   1, words:   199
+		worklib.cla_logic_tree_level:sv <0x4def47af>
+			streams:   7, words:  2525
 		worklib.MUL_SHF_left:sv <0x648634cf>
 			streams:   7, words:  3911
 		worklib.MUL_MAN_rounding:sv <0x1878b887>
@@ -354,19 +389,42 @@ xmelab: *W,MEMODR (../FFT8_POINT/tb_FFT_8Points.sv,83|87): $readmem default memo
 			streams:  31, words: 12810
 		worklib.ADD_SUB_EXP_rounding:sv <0x540282aa>
 			streams:   9, words:  3824
+		worklib.wallace_stage:sv <0x229730e1>
+			streams: 102, words: 43273
+		worklib.wallace_stage:sv <0x522f1cfb>
+			streams:  68, words: 28735
+		worklib.wallace_stage:sv <0x03ac1301>
+			streams:  42, words: 17749
+		worklib.wallace_stage:sv <0x3e8834a7>
+			streams:  24, words: 10315
+		worklib.wallace_stage:sv <0x2d3edcc8>
+			streams:  16, words:  6763
+		worklib.wallace_stage:sv <0x38eba389>
+			streams:   9, words:  3903
+		worklib.wallace_pkg:sv <0x5a2ede1f>
+			streams:   6, words:  3349
+		worklib.cla_logic_tree_level:sv <0x27afca6e>
+			streams:   7, words:  2525
+		worklib.cla_logic_tree_level:sv <0x394699aa>
+			streams:   6, words:  2046
+		worklib.CLA_logic:sv <0x114ebbd9>
+			streams:  20, words:  6927
+		worklib.CLA_logic:sv <0x791231a8>
+			streams:  15, words:  5178
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                   Instances  Unique
-		Modules:                3999      42
-		Registers:             23951     390
-		Scalar wires:          28352       -
-		Expanded wires:         6528     408
-		Vectored wires:        19320       -
-		Always blocks:            13      13
+		Modules:                2692      55
+		Verilog packages:          1       1
+		Registers:             64523     521
+		Scalar wires:          29460       -
+		Expanded wires:         5820     356
+		Vectored wires:        15920       -
+		Always blocks:           281      18
 		Initial blocks:            4       4
-		Cont. assignments:     24985     196
-		Pseudo assignments:    13803     349
+		Cont. assignments:     31113     254
+		Pseudo assignments:     8546     420
 		Simulation timescale:    1ps
 	Writing initial simulation snapshot: worklib.tb_FFT_8Points:sv
 Loading snapshot worklib.tb_FFT_8Points:sv .................... Done
@@ -377,4 +435,4 @@ ALL FFT TESTS PASSED (4 vectors)
 Simulation complete via $finish(1) at time 266 NS + 0
 ../FFT8_POINT/tb_FFT_8Points.sv:160         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Jan 03, 2026 at 22:32:09 EST  (total: 00:00:03)
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 04, 2026 at 06:26:53 EST  (total: 00:00:03)

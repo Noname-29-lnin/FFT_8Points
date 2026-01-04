@@ -1,6 +1,9 @@
-1767491326 /home/admin/shared/My_project/FFT_8Points/Version2/03_verif/FFT8_POINT/tb_FFT_8Points.sv
-1767496336 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points.sv
-1767344652 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Butterfly_Unit.sv
+1767526006 /home/admin/shared/My_project/FFT_8Points/Version2/03_verif/FFT8_POINT/tb_FFT_8Points.sv
+1767525985 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points_Cus.sv
+1767524644 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Complex_Multiplier.sv
+1767525126 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_8.sv
+1767525433 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_4.sv
+1767523378 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_2.sv
 1767345485 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/Detect_edge.sv
 1767339859 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
 1767339907 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv
@@ -38,7 +41,7 @@
 1767344226 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_8bit.sv
 1767344247 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_16bit.sv
 1767344272 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_24bit.sv
-1767408391 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_MAN_mul.sv
+1767519067 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_MAN_mul.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_MAN_rounding.sv
 1767344417 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_NOR_unit.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_PSC_unit.sv

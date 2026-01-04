@@ -3,8 +3,11 @@
 // Do not modify this file
 //
 /home/admin/shared/My_project/FFT_8Points/Version2/03_verif/FFT8_POINT/tb_FFT_8Points.sv
-/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points.sv
-/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Butterfly_Unit.sv
+/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points_Cus.sv
+/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Complex_Multiplier.sv
+/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_8.sv
+/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_4.sv
+/home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_2.sv
 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/Detect_edge.sv
 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv

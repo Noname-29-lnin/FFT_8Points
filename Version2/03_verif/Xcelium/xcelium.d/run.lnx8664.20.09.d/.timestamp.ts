@@ -5,6 +5,7 @@
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_PSC_unit.sv
 1767340011 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_8bit.sv
 1767340073 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_8bit.sv
+1767525126 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_8.sv
 1767344439 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_SHF_left.sv
 1767339859 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
 1767339532 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
@@ -18,8 +19,8 @@
 1767340095 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_16bit.sv
 1767343923 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
 1767344395 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_EXP_unit.sv
-1767496336 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+1767525985 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FFT_unit/FFT_8Points_Cus.sv
 1767339992 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_4bit.sv
 1767339937 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv
 1767344226 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_8bit.sv
@@ -29,8 +30,9 @@
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
 1767344272 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_24bit.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
-1767408391 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_MAN_mul.sv
-1767491326 /home/admin/shared/My_project/FFT_8Points/Version2/03_verif/FFT8_POINT/tb_FFT_8Points.sv
+1767519067 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_MAN_mul.sv
+1767523378 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_2.sv
+1767526006 /home/admin/shared/My_project/FFT_8Points/Version2/03_verif/FFT8_POINT/tb_FFT_8Points.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
 1767344417 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_NOR_unit.sv
 1767344247 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_LOPD_16bit.sv
@@ -39,7 +41,7 @@
 1767344333 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_CLA_8bit.sv
 1767339522 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
 1767340182 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_right.sv
-1767344652 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Butterfly_Unit.sv
+1767525433 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/BFU_4.sv
 1767344350 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_CLA_24bit.sv
 1767339522 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
 1767340510 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
@@ -53,5 +55,6 @@
 1767340522 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
 1767339522 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+1767524644 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/ButterFly/Complex_Multiplier.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
 1767344157 /home/admin/shared/My_project/FFT_8Points/Version2/02_rtl/FPU_MUL/MUL_EXP_rounding.sv

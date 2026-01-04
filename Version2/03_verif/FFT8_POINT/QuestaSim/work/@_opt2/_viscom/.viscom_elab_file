@@ -1,0 +1,1 @@
+/home/noname/intelFPGA_lite/24.1std/questa_fse/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 393216 ./../FFT8_POINT/QuestaSim/work.tb_FFT_8Points -quiet -auto_acc_if_foreign -work ./../FFT8_POINT/QuestaSim/work -debugdb +acc -allow_unnamed -o _opt2 -id 1-000ae431a4f1-695a2149-bdae5-2a207 +__betafsm

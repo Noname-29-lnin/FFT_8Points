@@ -1,0 +1,1355 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/noname/Documents/project_tiny/FFT_8Points/Version2/03_verif/Questasim
+vADD_SUB_CLA_24bit
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1767519070
+!i10b 1
+!s100 o><:O8nB[;zNnikXfSA;i0
+Ic=dFIHBjKi8J[0ZWQAU@T0
+S1
+R0
+w1767339937
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv
+!i122 1
+Z3 L0 1 64
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2024.3;79
+r1
+!s85 0
+31
+Z6 !s108 1767519070.000000
+!s107 ./../../02_rtl/FPU_MUL/MUL_SHF_left.sv|./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv|./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv|./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv|./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_24bit.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_16bit.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_8bit.sv|./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv|./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv|./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv|./../../02_rtl/FPU_MUL/MUL_CLA_24bit.sv|./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv|./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv|./../../02_rtl/FPU_MUL/fpu_mul.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv|./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_right.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_left.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_16bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLS_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv|./../../02_rtl/ButterFly/Butterfly_Unit.sv|./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv|
+Z7 !s90 -f|./../BUTTERFLY/flist.f|
+!i113 0
+Z8 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z9 tCvgOpt 0
+n@a@d@d_@s@u@b_@c@l@a_24bit
+vADD_SUB_CLA_4bit
+R1
+R2
+!i10b 1
+!s100 PXB40B_eTHC@588Kc9omX2
+IQjElKe8YMCGA5N]hO`gIS0
+S1
+R0
+w1767339859
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
+!i122 1
+Z10 L0 1 26
+R4
+R5
+r1
+!s85 0
+31
+R6
+Z11 !s107 ./../../02_rtl/FPU_MUL/MUL_SHF_left.sv|./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv|./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv|./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv|./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_24bit.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_16bit.sv|./../../02_rtl/FPU_MUL/MUL_LOPD_8bit.sv|./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv|./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv|./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv|./../../02_rtl/FPU_MUL/MUL_CLA_24bit.sv|./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv|./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv|./../../02_rtl/FPU_MUL/fpu_mul.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv|./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv|./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_right.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_left.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_16bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLS_4bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv|./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv|./../../02_rtl/ButterFly/Butterfly_Unit.sv|./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv|
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@l@a_4bit
+vADD_SUB_CLA_8bit
+R1
+R2
+!i10b 1
+!s100 YaOVHl?`h3;OSb1Ng?oh<2
+IDQLR00]Tj<VniKN`X19I90
+S1
+R0
+w1767339907
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv
+!i122 1
+Z12 L0 1 35
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@l@a_8bit
+vADD_SUB_CLS_4bit
+R1
+R2
+!i10b 1
+!s100 iEM<`Q96>DPZhEKDTVIOo3
+I_:Me^OXZ786[?;DCk2ASE2
+S1
+R0
+w1767339973
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLS_4bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLS_4bit.sv
+!i122 1
+Z13 L0 1 18
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@l@s_4bit
+vADD_SUB_COMP_24bit
+R1
+R2
+!i10b 1
+!s100 E?7KB;RPlC0L2R5afHG6_3
+IDY2l6HCE6HKOo@O0QR89l1
+S1
+R0
+w1767340101
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_24bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_24bit.sv
+!i122 1
+L0 1 62
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@o@m@p_24bit
+vADD_SUB_COMP_4bit
+R1
+R2
+!i10b 1
+!s100 BS^;0UOVZXPRz7j8k4db_3
+I_Vd>hK_703JRMYlak8[dm2
+S1
+R0
+w1767339992
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_4bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_4bit.sv
+!i122 1
+L0 1 12
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@o@m@p_4bit
+vADD_SUB_COMP_8bit
+R1
+R2
+!i10b 1
+!s100 BU20@ECI>I>P_1=B^mJ923
+IFKGz3>jDCD1`81AK^iX322
+S1
+R0
+w1767340011
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_8bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_COMP_8bit.sv
+!i122 1
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@c@o@m@p_8bit
+vADD_SUB_EXP_adjust
+R1
+R2
+!i10b 1
+!s100 Pzgb6nVNaC1lN==be]CQY3
+IGHgWI:K;Bon[6_6m>zZ1o1
+S1
+R0
+w1767343779
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_adjust.sv
+!i122 1
+R12
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@e@x@p_adjust
+vADD_SUB_EXP_comp
+R1
+R2
+!i10b 1
+!s100 HIjhV<fhGJaUZbICnZB3e0
+IXocDai:U`2cS4]_]lQP^91
+S1
+R0
+w1767340510
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_comp.sv
+!i122 1
+Z14 L0 1 17
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@e@x@p_comp
+vADD_SUB_EXP_rounding
+R1
+R2
+!i10b 1
+!s100 1gM@3M;OWVZWD>;70;;>U1
+IB8_aai65<FW1110e`=:[J2
+S1
+R0
+Z15 w1767339522
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_rounding.sv
+!i122 1
+Z16 L0 1 19
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@e@x@p_rounding
+vADD_SUB_EXP_sub
+R1
+R2
+!i10b 1
+!s100 Ge_J:NG`^d<LOf[V^2?Zk0
+I@=M@P^OCIP[=FcloYTYXK1
+S1
+R0
+w1767340522
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_sub.sv
+!i122 1
+L0 1 20
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@e@x@p_sub
+vADD_SUB_EXP_swap
+R1
+R2
+!i10b 1
+!s100 `MN=UHlBESoj7V>ZjhC4X0
+I6TQPD;f`nJ@4ciRm1a;In3
+S1
+R0
+R15
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_EXP_swap.sv
+!i122 1
+Z17 L0 1 14
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@e@x@p_swap
+vADD_SUB_LOPD_16bit
+R1
+R2
+!i10b 1
+!s100 WNjg8LS?K2c0[67673]DR2
+IC6EI?1[j7HUS3njGAFVlk1
+S1
+R0
+w1767340095
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_16bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_16bit.sv
+!i122 1
+Z18 L0 1 40
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@l@o@p@d_16bit
+vADD_SUB_LOPD_24bit
+R1
+R2
+!i10b 1
+!s100 aNZECcQLcG3R``R]DYI`e3
+I:Y:1P0T>Q3@73<j[]C[W61
+S1
+R0
+w1767342388
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_24bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_24bit.sv
+!i122 1
+R18
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@l@o@p@d_24bit
+vADD_SUB_LOPD_8bit
+R1
+R2
+!i10b 1
+!s100 ddRVFOK2?8:W?M:=3kA353
+I;f7cOT[g5P7W7>2JileNI0
+S1
+R0
+w1767340073
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_8bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_LOPD_8bit.sv
+!i122 1
+R14
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@l@o@p@d_8bit
+vADD_SUB_MAN_ALU
+R1
+R2
+!i10b 1
+!s100 LVMiIg=1A30LhlakFn^YF1
+I;zRfMb=mfhR<oiANF;CbS2
+S1
+R0
+w1767340529
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_ALU.sv
+!i122 1
+L0 1 48
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@m@a@n_@a@l@u
+vADD_SUB_MAN_rounding
+R1
+R2
+!i10b 1
+!s100 lB4feQ@I^d>Nj3=Lb;fFg3
+IZ9c>4fTo2BTi0IC2[Jd701
+S1
+R0
+R15
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_rounding.sv
+!i122 1
+L0 1 32
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@m@a@n_rounding
+vADD_SUB_MAN_swap
+R1
+R2
+!i10b 1
+!s100 =nN_AhXHbFiQ5U7;a;;2k2
+Ig7gcE9oJJCM1eX3TVcg1U3
+S1
+R0
+R15
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_MAN_swap.sv
+!i122 1
+R17
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@m@a@n_swap
+vADD_SUB_NOR_unit
+R1
+R2
+!i10b 1
+!s100 Oo:d;a9njn49aD;^^AYh03
+Iaf;XKe]100?z7YHn0KCT`2
+S1
+R0
+w1767340579
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_NOR_unit.sv
+!i122 1
+Z19 L0 1 25
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@n@o@r_unit
+vADD_SUB_PSC_unit
+R1
+R2
+!i10b 1
+!s100 kC3jgP6OM_cYP_F0<MJiR2
+I9EhdGZAzfgfO6CJ]Pz:j>3
+S1
+R0
+w1767339532
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_PSC_unit.sv
+!i122 1
+L0 1 36
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@p@s@c_unit
+vADD_SUB_SHF_left
+R1
+R2
+!i10b 1
+!s100 cIH5=HYmF]Hj7j`6_8P=i1
+IHz]UeMKQVcPDYk9gH0j[=3
+S1
+R0
+w1767340173
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_left.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_left.sv
+!i122 1
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@s@h@f_left
+vADD_SUB_SHF_right
+R1
+R2
+!i10b 1
+!s100 5M_WdYoUH;iW>Lmz<YbTD0
+ICD5JQ5hCM9W7^dOgz4cR11
+S1
+R0
+w1767340182
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_right.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SHF_right.sv
+!i122 1
+L0 1 23
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@s@h@f_right
+vADD_SUB_SIGN_unit
+R1
+R2
+!i10b 1
+!s100 o4DL8I6fVh1^@I1ICQR]Q2
+IDCz[dAMo1RIhjDJ6_LigU2
+S1
+R0
+R15
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SIGN_unit.sv
+!i122 1
+L0 1 11
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@s@i@g@n_unit
+vADD_SUB_SUB_4bit
+R1
+R2
+!i10b 1
+!s100 8ZFmb]ThJ^]6A;S]FEiLg2
+IMRW8IL^bgJ=cLDBVbLYf`0
+S1
+R0
+w1767340188
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_4bit.sv
+!i122 1
+R16
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@s@u@b_4bit
+vADD_SUB_SUB_8bit
+R1
+R2
+!i10b 1
+!s100 1<G2Pc?0Y9TH;WAKRZZ^<2
+IGQ^RZgoQj4J;ja?[_LB@@2
+S1
+R0
+w1767340206
+8./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv
+F./../../02_rtl/FPU_ADD_SUB/ADD_SUB_SUB_8bit.sv
+!i122 1
+L0 1 27
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@a@d@d_@s@u@b_@s@u@b_8bit
+vButterfly_Unit
+R1
+R2
+!i10b 1
+!s100 ;OZSUo<M0PARKEXVlEndJ2
+IF3DRPDOMhH3@O;D<823mA1
+S1
+R0
+w1767501955
+8./../../02_rtl/ButterFly/Butterfly_Unit.sv
+F./../../02_rtl/ButterFly/Butterfly_Unit.sv
+!i122 1
+L0 1 94
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@butterfly_@unit
+vCLA_adder_top
+R1
+R2
+!i10b 1
+!s100 X3;P8[MT2Ik::>?[jBO[42
+I>8V<5F:mn9M[8TkVgQ3g40
+S1
+R0
+Z20 w1767344157
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_adder_top.sv
+!i122 1
+R12
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@c@l@a_adder_top
+vCLA_logic
+R1
+R2
+!i10b 1
+!s100 12BG<2F4hI[jl^OK>g4R[2
+I6z::cW_2RJUGQ5nPZ80ZA1
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic.sv
+!i122 1
+L0 1 52
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@c@l@a_logic
+vcla_logic_tree_level
+R1
+R2
+!i10b 1
+!s100 a[oWRmZM=2fSn7KYCT5gV2
+I3UgC2N1hSEFWk`_m_0CIZ2
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/CLA_logic_tree_level.sv
+!i122 1
+L0 1 108
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+vFA_1bit
+R1
+R2
+!i10b 1
+!s100 NMUA6<l;<k2SLl@dQa;131
+I@``Qdn`B34`aYgMYO@[Jl0
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/FA_1bit.sv
+!i122 1
+L0 2 10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@f@a_1bit
+vFPU_add_sub
+R1
+R2
+!i10b 1
+!s100 Q[CKb^>d_AB6LnoeKcadY1
+Il?cL38R^=EF9En1P@1YK_3
+S1
+R0
+w1767343923
+8./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+F./../../02_rtl/FPU_ADD_SUB/FPU_add_sub.sv
+!i122 1
+L0 1 239
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@f@p@u_add_sub
+vfpu_mul
+R1
+R2
+!i10b 1
+!s100 mLm`?>3nzmnbGkYTjUUoI0
+I7]F7NeGF`IYf[Mh3AO9=d0
+S1
+R0
+w1767344282
+8./../../02_rtl/FPU_MUL/fpu_mul.sv
+F./../../02_rtl/FPU_MUL/fpu_mul.sv
+!i122 1
+L0 1 127
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+vHA_1bit
+R1
+R2
+!i10b 1
+!s100 O?]>?WTF6AYF2Z5S4aYc^3
+I8ZdOfn9W=`c^PLc7k9SoA1
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/HA_1bit.sv
+!i122 1
+L0 2 9
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@h@a_1bit
+vModified_booth
+R1
+R2
+!i10b 1
+!s100 z:MXaF_LCQC8L^Kl0Y7PZ2
+IY3flK;KQHcQR:R7?Ljm022
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Modified_booth.sv
+!i122 1
+L0 1 99
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@modified_booth
+vMUL_CLA_24bit
+R1
+R2
+!i10b 1
+!s100 NZbT_:A6gWS7@9;H`fiZ02
+IDOT8iAS1ai3:0begIPold2
+S1
+R0
+w1767344350
+8./../../02_rtl/FPU_MUL/MUL_CLA_24bit.sv
+F./../../02_rtl/FPU_MUL/MUL_CLA_24bit.sv
+!i122 1
+R3
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@c@l@a_24bit
+vMUL_CLA_4bit
+R1
+R2
+!i10b 1
+!s100 kZ6?BIa4Smn@a;2e>PXEa3
+I?WF3AzU[4Y1hCX86I5d;M3
+S1
+R0
+w1767344317
+8./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv
+F./../../02_rtl/FPU_MUL/MUL_CLA_4bit.sv
+!i122 1
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@c@l@a_4bit
+vMUL_CLA_8bit
+R1
+R2
+!i10b 1
+!s100 ^BN_f72U?<3>G9GMOS]AB3
+IQ?2kI9[Cl1@BP4BBUV_;l1
+S1
+R0
+w1767344333
+8./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv
+F./../../02_rtl/FPU_MUL/MUL_CLA_8bit.sv
+!i122 1
+R12
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@c@l@a_8bit
+vMUL_EXP_adjust
+R1
+R2
+!i10b 1
+!s100 0<5MboYdG?nVIhAKEFAEC2
+IahQzV[nLdAeOcl<6PP?YG2
+S1
+R0
+w1767344387
+8./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+F./../../02_rtl/FPU_MUL/MUL_EXP_adjust.sv
+!i122 1
+R12
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@e@x@p_adjust
+vMUL_EXP_rounding
+R1
+R2
+!i10b 1
+!s100 9Z>8]6Md]T5ZoMQknQ7KO1
+IA@W6m0EkhiPBjinW>VH[V1
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+F./../../02_rtl/FPU_MUL/MUL_EXP_rounding.sv
+!i122 1
+R16
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@e@x@p_rounding
+vMUL_EXP_unit
+R1
+R2
+!i10b 1
+!s100 j:F0ebS0gT:b?gzG5cP9_2
+I5>;Q0H9mSJz2i;cciXa9h3
+S1
+R0
+w1767344395
+8./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+F./../../02_rtl/FPU_MUL/MUL_EXP_unit.sv
+!i122 1
+L0 1 15
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@e@x@p_unit
+vMUL_LOPD_16bit
+R1
+R2
+!i10b 1
+!s100 Df:eIO7G@d5D;kVl8YF7m3
+IF9HST>]LUk=X19HHP]:S=2
+S1
+R0
+w1767344247
+8./../../02_rtl/FPU_MUL/MUL_LOPD_16bit.sv
+F./../../02_rtl/FPU_MUL/MUL_LOPD_16bit.sv
+!i122 1
+R18
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@l@o@p@d_16bit
+vMUL_LOPD_24bit
+R1
+R2
+!i10b 1
+!s100 Q?4=c`AMYjKf3En5EiHlX3
+I[4Z:lEDR9MlRbEONFjAde0
+S1
+R0
+w1767344272
+8./../../02_rtl/FPU_MUL/MUL_LOPD_24bit.sv
+F./../../02_rtl/FPU_MUL/MUL_LOPD_24bit.sv
+!i122 1
+L0 1 39
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@l@o@p@d_24bit
+vMUL_LOPD_8bit
+R1
+R2
+!i10b 1
+!s100 l5AkeFifmI`CDzDbS8mG<2
+I<><fdU4>A[MB7C<A`jK=_0
+S1
+R0
+w1767344226
+8./../../02_rtl/FPU_MUL/MUL_LOPD_8bit.sv
+F./../../02_rtl/FPU_MUL/MUL_LOPD_8bit.sv
+!i122 1
+R13
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@l@o@p@d_8bit
+vMUL_MAN_mul
+R1
+R2
+!i10b 1
+!s100 <6ih@oN^e2Q6B2BI[d<Z71
+IeAHPYaL34:Yd22h7;1_eQ0
+S1
+R0
+w1767519067
+8./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+F./../../02_rtl/FPU_MUL/MUL_MAN_mul.sv
+!i122 1
+L0 1 33
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@m@a@n_mul
+vMUL_MAN_rounding
+R1
+R2
+!i10b 1
+!s100 Z21N>jSK:Uc0A`0CnCkjb1
+I@9ZaA_oYHR?FMzOKS5P991
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+F./../../02_rtl/FPU_MUL/MUL_MAN_rounding.sv
+!i122 1
+L0 1 21
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@m@a@n_rounding
+vMUL_NOR_unit
+R1
+R2
+!i10b 1
+!s100 l^<i;C`iZ`IBj<DI79@<b0
+IHN5_QzoRNKlF3Ye2_0lZ92
+S1
+R0
+w1767344417
+8./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+F./../../02_rtl/FPU_MUL/MUL_NOR_unit.sv
+!i122 1
+R19
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@n@o@r_unit
+vMUL_PSC_unit
+R1
+R2
+!i10b 1
+!s100 n_iPlY6IibYf;I6IJALJ@1
+IgHU^obA0JfVdOS8XcT[@G1
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+F./../../02_rtl/FPU_MUL/MUL_PSC_unit.sv
+!i122 1
+Z21 L0 1 37
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@p@s@c_unit
+vMUL_SHF_left
+R1
+R2
+!i10b 1
+!s100 IV9LA_NcUC0YIBCT>VN2<2
+IllkkIcci;OcWmzQ8GEJ;b1
+S1
+R0
+w1767344439
+8./../../02_rtl/FPU_MUL/MUL_SHF_left.sv
+F./../../02_rtl/FPU_MUL/MUL_SHF_left.sv
+!i122 1
+R10
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@m@u@l_@s@h@f_left
+vMultiplier
+R1
+R2
+!i10b 1
+!s100 ]T>^A=hQeX@di2m[mk6573
+IneM3P3<J9NF5V7lBbD_0J0
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/Multiplier.sv
+!i122 1
+L0 5 102
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+n@multiplier
+vsigned_area_computation
+R1
+R2
+!i10b 1
+!s100 FVPnZzJ_WV7a`JL1Zheol2
+IjVfIl5kO@5DcVSkgCIn^@3
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/signed_area_computation.sv
+!i122 1
+L0 10 62
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+vwallace_final_merge
+R1
+R2
+!i10b 1
+!s100 9j?UWzTAW?LgQO97bz_<@3
+I`>cn?V@Xb`4jX`Q9lzRAi0
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_final_merge.sv
+!i122 1
+R21
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+Xwallace_pkg
+R1
+R2
+!i10b 1
+!s100 n6hM:O3I07lQD]4D:]HHJ3
+IeePRj?D5bP<Ab:fEjh[:H0
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_pkg.sv
+!i122 1
+L0 10 0
+VeePRj?D5bP<Ab:fEjh[:H0
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+vwallace_stage
+R1
+Z22 DXx4 work 11 wallace_pkg 0 22 eePRj?D5bP<Ab:fEjh[:H0
+R2
+!i10b 1
+!s100 cdGBV[=gh4ck``P_eFh?a1
+I6M2jWZg0^ZNBhNjbln5Ng1
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_stage.sv
+!i122 1
+L0 1 59
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9
+vwallace_tree
+R1
+R22
+R2
+!i10b 1
+!s100 2QQ4jVgmJOeYT?H8D@^nM2
+I<RIz1G1QaSUM_H4I=8k3F3
+S1
+R0
+R20
+8./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+F./../../02_rtl/FPU_MUL/Mutiplier_fomular_unsign/wallace_tree.sv
+!i122 1
+L0 2 158
+R4
+R5
+r1
+!s85 0
+31
+R6
+R11
+R7
+!i113 0
+R8
+R9

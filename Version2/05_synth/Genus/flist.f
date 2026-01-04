@@ -1,6 +1,12 @@
 ./../../02_rtl/FFT_unit/FFT_8Points.sv
-./../../02_rtl/ButterFly/Butterfly_Unit.sv
 ./../../02_rtl/FFT_unit/Detect_edge.sv
+
+./../../02_rtl/ButterFly/Complex_Multiplier.sv
+./../../02_rtl/ButterFly/BFU_8.sv
+./../../02_rtl/ButterFly/BFU_4.sv
+./../../02_rtl/ButterFly/BFU_2.sv
+// ./../../02_rtl/ButterFly/Butterfly_Unit.sv
+
 ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_4bit.sv
 ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_8bit.sv
 ./../../02_rtl/FPU_ADD_SUB/ADD_SUB_CLA_24bit.sv

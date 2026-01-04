@@ -23,34 +23,20 @@ module FFT_8Points #(
     output logic [SIZE_DATA-1:0]    X7_real, X7_imag,
     output logic                    o_done
 );
-// Twiddle factors (IEEE 754 single-precision)
-logic w_start;
-parameter W2_0_REAL = 32'h3F800000; // 1.0
-parameter W2_0_IMAG = 32'h00000000; // 0.0
-parameter W2_1_REAL = 32'h3F800000; // 1.0
-parameter W2_1_IMAG = 32'h00000000; // 0.0
-parameter W4_0_REAL = 32'h3F800000; // 1.0
-parameter W4_0_IMAG = 32'h00000000; // 0.0
-parameter W4_1_REAL = 32'h00000000; // 0.0
-parameter W4_1_IMAG = 32'hBF800000; // -1.0
-parameter W8_0_REAL = 32'h3F800000; // 1.0
-parameter W8_0_IMAG = 32'h00000000; // 0.0
-parameter W8_1_REAL = 32'h3F3504F3; // 0.707107
-parameter W8_1_IMAG = 32'hBF3504F3; // -0.707107
-parameter W8_2_REAL = 32'h00000000; // 0.0
-parameter W8_2_IMAG = 32'hBF800000; // -1.0
-parameter W8_3_REAL = 32'hBF3504F3; // -0.707107
-parameter W8_3_IMAG = 32'hBF3504F3; // -0.707107
 // Stage 1
 logic S1_start;
-logic [SIZE_DATA-1:0]     s1_x0_real, s1_x0_imag;
-logic [SIZE_DATA-1:0]     s1_x1_real, s1_x1_imag;
-logic [SIZE_DATA-1:0]     s1_x2_real, s1_x2_imag;
-logic [SIZE_DATA-1:0]     s1_x3_real, s1_x3_imag;
-logic [SIZE_DATA-1:0]     s1_x4_real, s1_x4_imag;
-logic [SIZE_DATA-1:0]     s1_x5_real, s1_x5_imag;
-logic [SIZE_DATA-1:0]     s1_x6_real, s1_x6_imag;
-logic [SIZE_DATA-1:0]     s1_x7_real, s1_x7_imag;
+logic [SIZE_DATA-1:0]   s1_x0_real, s1_x0_imag;
+logic [SIZE_DATA-1:0]   s1_x1_real, s1_x1_imag;
+logic [SIZE_DATA-1:0]   s1_x2_real, s1_x2_imag;
+logic [SIZE_DATA-1:0]   s1_x3_real, s1_x3_imag;
+logic [SIZE_DATA-1:0]   s1_x4_real, s1_x4_imag;
+logic [SIZE_DATA-1:0]   s1_x5_real, s1_x5_imag;
+logic [SIZE_DATA-1:0]   s1_x6_real, s1_x6_imag;
+logic [SIZE_DATA-1:0]   s1_x7_real, s1_x7_imag;
+logic [SIZE_DATA-1:0]   S1_0_real, S1_0_imag, S1_1_real, S1_1_imag;
+logic [SIZE_DATA-1:0]   S1_2_real, S1_2_imag, S1_3_real, S1_3_imag;
+logic [SIZE_DATA-1:0]   S1_4_real, S1_4_imag, S1_5_real, S1_5_imag;
+logic [SIZE_DATA-1:0]   S1_6_real, S1_6_imag, S1_7_real, S1_7_imag;
 
 Detect_edge #(
     .POS_EDGE       (1)   // 1: posedge, 0: negedge
@@ -105,70 +91,55 @@ always_ff @( posedge i_clk or negedge i_rst_n ) begin
     end
 end
 
-logic [SIZE_DATA-1:0] S1_0_real, S1_0_imag, S1_1_real, S1_1_imag;
-logic [SIZE_DATA-1:0] S1_2_real, S1_2_imag, S1_3_real, S1_3_imag;
-logic [SIZE_DATA-1:0] S1_4_real, S1_4_imag, S1_5_real, S1_5_imag;
-logic [SIZE_DATA-1:0] S1_6_real, S1_6_imag, S1_7_real, S1_7_imag;
-// x(0) + x(4)
-Butterfly_Unit #(
+BFU_2 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY1_0 (
+) BFU2_S1_04 (
     .i_data_0_re    (s1_x0_real),
     .i_data_0_im    (s1_x0_imag),
     .i_data_1_re    (s1_x4_real),
     .i_data_1_im    (s1_x4_imag),
-    .i_twiddle_re   (W2_0_REAL),
-    .i_twiddle_im   (W2_0_IMAG),
     .o_data_0_re    (S1_0_real),
     .o_data_0_im    (S1_0_imag),
-    .o_data_1_re    (S1_1_real),
-    .o_data_1_im    (S1_1_imag)
+    .o_data_1_re    (S1_4_real),
+    .o_data_1_im    (S1_4_imag) 
 );
-// x(2) + x(6)
-Butterfly_Unit #(
+BFU_2 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY1_1 (
+) BFU2_S1_26 (
     .i_data_0_re    (s1_x2_real),
     .i_data_0_im    (s1_x2_imag),
     .i_data_1_re    (s1_x6_real),
     .i_data_1_im    (s1_x6_imag),
-    .i_twiddle_re   (W2_0_REAL),
-    .i_twiddle_im   (W2_0_IMAG),
     .o_data_0_re    (S1_2_real),
     .o_data_0_im    (S1_2_imag),
-    .o_data_1_re    (S1_3_real),
-    .o_data_1_im    (S1_3_imag)
+    .o_data_1_re    (S1_6_real),
+    .o_data_1_im    (S1_6_imag) 
 );
-// x(1) + x(5)
-Butterfly_Unit #(
+BFU_2 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY1_2 (
+) BFU2_S1_15 (
     .i_data_0_re    (s1_x1_real),
     .i_data_0_im    (s1_x1_imag),
     .i_data_1_re    (s1_x5_real),
     .i_data_1_im    (s1_x5_imag),
-    .i_twiddle_re   (W2_0_REAL),
-    .i_twiddle_im   (W2_0_IMAG),
-    .o_data_0_re    (S1_4_real),
-    .o_data_0_im    (S1_4_imag),
+    .o_data_0_re    (S1_1_real),
+    .o_data_0_im    (S1_1_imag),
     .o_data_1_re    (S1_5_real),
-    .o_data_1_im    (S1_5_imag)
+    .o_data_1_im    (S1_5_imag) 
 );
-// x(3) + x(7)
-Butterfly_Unit #(
+BFU_2 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY1_3 (
+) BFU2_S1_37 (
     .i_data_0_re    (s1_x3_real),
     .i_data_0_im    (s1_x3_imag),
     .i_data_1_re    (s1_x7_real),
     .i_data_1_im    (s1_x7_imag),
-    .i_twiddle_re   (W2_0_REAL),
-    .i_twiddle_im   (W2_0_IMAG),
-    .o_data_0_re    (S1_6_real),
-    .o_data_0_im    (S1_6_imag),
+    .o_data_0_re    (S1_3_real),
+    .o_data_0_im    (S1_3_imag),
     .o_data_1_re    (S1_7_real),
-    .o_data_1_im    (S1_7_imag)
+    .o_data_1_im    (S1_7_imag) 
 );
+
 // Stage 2
 
 logic S2_start; 
@@ -226,66 +197,48 @@ logic [31:0] S2_0_real, S2_0_imag, S2_1_real, S2_1_imag;
 logic [31:0] S2_2_real, S2_2_imag, S2_3_real, S2_3_imag;
 logic [31:0] S2_4_real, S2_4_imag, S2_5_real, S2_5_imag;
 logic [31:0] S2_6_real, S2_6_imag, S2_7_real, S2_7_imag;
-// S2_0 = S1_0 + S1_2
-Butterfly_Unit #(
+
+BFU_4 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY2_0 (
+) BFU4_06 (
     .i_data_0_re    (s2_S1_0_real),
     .i_data_0_im    (s2_S1_0_imag),
-    .i_data_1_re    (s2_S1_2_real),
-    .i_data_1_im    (s2_S1_2_imag),
-    .i_twiddle_re   (W4_0_REAL),
-    .i_twiddle_im   (W4_0_IMAG),
+    .i_data_1_re    (s2_S1_4_real),
+    .i_data_1_im    (s2_S1_4_imag),
+    .i_data_2_re    (s2_S1_2_real),
+    .i_data_2_im    (s2_S1_2_imag),
+    .i_data_3_re    (s2_S1_6_real),
+    .i_data_3_im    (s2_S1_6_imag),
     .o_data_0_re    (S2_0_real),
     .o_data_0_im    (S2_0_imag),
-    .o_data_1_re    (S2_2_real),
-    .o_data_1_im    (S2_2_imag)
+    .o_data_1_re    (S2_4_real),
+    .o_data_1_im    (S2_4_imag),
+    .o_data_2_re    (S2_2_real),
+    .o_data_2_im    (S2_2_imag),
+    .o_data_3_re    (S2_6_real),
+    .o_data_3_im    (S2_6_imag) 
 );
-// S2_1 = S1_1 + S1_3 * W4^1
-Butterfly_Unit #(
+BFU_4 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY2_1 (
+) BFU4_17 (
     .i_data_0_re    (s2_S1_1_real),
     .i_data_0_im    (s2_S1_1_imag),
-    .i_data_1_re    (s2_S1_3_real),
-    .i_data_1_im    (s2_S1_3_imag),
-    .i_twiddle_re   (W4_1_REAL),
-    .i_twiddle_im   (W4_1_IMAG),
+    .i_data_1_re    (s2_S1_5_real),
+    .i_data_1_im    (s2_S1_5_imag),
+    .i_data_2_re    (s2_S1_3_real),
+    .i_data_2_im    (s2_S1_3_imag),
+    .i_data_3_re    (s2_S1_7_real),
+    .i_data_3_im    (s2_S1_7_imag),
     .o_data_0_re    (S2_1_real),
     .o_data_0_im    (S2_1_imag),
-    .o_data_1_re    (S2_3_real),
-    .o_data_1_im    (S2_3_imag)
+    .o_data_1_re    (S2_5_real),
+    .o_data_1_im    (S2_5_imag),
+    .o_data_2_re    (S2_3_real),
+    .o_data_2_im    (S2_3_imag),
+    .o_data_3_re    (S2_7_real),
+    .o_data_3_im    (S2_7_imag) 
 );
-// S2_4 = S1_4 + S1_6
-Butterfly_Unit #(
-    .SIZE_DATA      (SIZE_DATA)
-) BFLY2_2 (
-    .i_data_0_re    (s2_S1_4_real),
-    .i_data_0_im    (s2_S1_4_imag),
-    .i_data_1_re    (s2_S1_6_real),
-    .i_data_1_im    (s2_S1_6_imag),
-    .i_twiddle_re   (W4_0_REAL),
-    .i_twiddle_im   (W4_0_IMAG),
-    .o_data_0_re    (S2_4_real),
-    .o_data_0_im    (S2_4_imag),
-    .o_data_1_re    (S2_6_real),
-    .o_data_1_im    (S2_6_imag)
-);
-// S2_5 = S1_5 + S1_7 * W4^1
-Butterfly_Unit #(
-    .SIZE_DATA      (SIZE_DATA)
-) BFLY2_3 (
-    .i_data_0_re    (s2_S1_5_real),
-    .i_data_0_im    (s2_S1_5_imag),
-    .i_data_1_re    (s2_S1_7_real),
-    .i_data_1_im    (s2_S1_7_imag),
-    .i_twiddle_re   (W4_1_REAL),
-    .i_twiddle_im   (W4_1_IMAG),
-    .o_data_0_re    (S2_5_real),
-    .o_data_0_im    (S2_5_imag),
-    .o_data_1_re    (S2_7_real),
-    .o_data_1_im    (S2_7_imag)
-);
+
 // Stage 3 (final output)
 logic S3_start;
 logic [31:0] s3_S2_0_real, s3_S2_0_imag, s3_S2_1_real, s3_S2_1_imag;
@@ -347,65 +300,41 @@ logic [SIZE_DATA-1:0]    S3_X5_real, S3_X5_imag;
 logic [SIZE_DATA-1:0]    S3_X6_real, S3_X6_imag;
 logic [SIZE_DATA-1:0]    S3_X7_real, S3_X7_imag;
 
-// X(0) = S2_0 + S2_4
-Butterfly_Unit #(
+BFU_8 #(
     .SIZE_DATA      (SIZE_DATA)
-) BFLY3_0 (
+) BFU8_07 (
     .i_data_0_re    (s3_S2_0_real),
     .i_data_0_im    (s3_S2_0_imag),
     .i_data_1_re    (s3_S2_4_real),
     .i_data_1_im    (s3_S2_4_imag),
-    .i_twiddle_re   (W8_0_REAL),
-    .i_twiddle_im   (W8_0_IMAG),
+    .i_data_2_re    (s3_S2_2_real),
+    .i_data_2_im    (s3_S2_2_imag),
+    .i_data_3_re    (s3_S2_6_real),
+    .i_data_3_im    (s3_S2_6_imag),
+    .i_data_4_re    (s3_S2_1_real),
+    .i_data_4_im    (s3_S2_1_imag),
+    .i_data_5_re    (s3_S2_5_real),
+    .i_data_5_im    (s3_S2_5_imag),
+    .i_data_6_re    (s3_S2_3_real),
+    .i_data_6_im    (s3_S2_3_imag),
+    .i_data_7_re    (s3_S2_7_real),
+    .i_data_7_im    (s3_S2_7_imag),
     .o_data_0_re    (S3_X0_real),
     .o_data_0_im    (S3_X0_imag),
-    .o_data_1_re    (S3_X4_real),
-    .o_data_1_im    (S3_X4_imag)
-);
-// X(1) = S2_1 + S2_5 * W8^1
-Butterfly_Unit #(
-    .SIZE_DATA      (SIZE_DATA)
-) BFLY3_1 (
-    .i_data_0_re    (s3_S2_1_real),
-    .i_data_0_im    (s3_S2_1_imag),
-    .i_data_1_re    (s3_S2_5_real),
-    .i_data_1_im    (s3_S2_5_imag),
-    .i_twiddle_re   (W8_1_REAL),
-    .i_twiddle_im   (W8_1_IMAG),
-    .o_data_0_re    (S3_X1_real),
-    .o_data_0_im    (S3_X1_imag),
-    .o_data_1_re    (S3_X5_real),
-    .o_data_1_im    (S3_X5_imag)
-);
-// X(2) = S2_2 + S2_6 * W8^2
-Butterfly_Unit #(
-    .SIZE_DATA      (SIZE_DATA)
-) BFLY3_2 (
-    .i_data_0_re    (s3_S2_2_real),
-    .i_data_0_im    (s3_S2_2_imag),
-    .i_data_1_re    (s3_S2_6_real),
-    .i_data_1_im    (s3_S2_6_imag),
-    .i_twiddle_re   (W8_2_REAL),
-    .i_twiddle_im   (W8_2_IMAG),
-    .o_data_0_re    (S3_X2_real),
-    .o_data_0_im    (S3_X2_imag),
-    .o_data_1_re    (S3_X6_real),
-    .o_data_1_im    (S3_X6_imag)
-);
-// X(3) = S2_3 + S2_7 * W8^3
-Butterfly_Unit #(
-    .SIZE_DATA      (SIZE_DATA)
-) BFLY3_3 (
-    .i_data_0_re    (s3_S2_3_real),
-    .i_data_0_im    (s3_S2_3_imag),
-    .i_data_1_re    (s3_S2_7_real),
-    .i_data_1_im    (s3_S2_7_imag),
-    .i_twiddle_re   (W8_3_REAL),
-    .i_twiddle_im   (W8_3_IMAG),
-    .o_data_0_re    (S3_X3_real),
-    .o_data_0_im    (S3_X3_imag),
-    .o_data_1_re    (S3_X7_real),
-    .o_data_1_im    (S3_X7_imag)
+    .o_data_1_re    (S3_X1_real),
+    .o_data_1_im    (S3_X1_imag),
+    .o_data_2_re    (S3_X2_real),
+    .o_data_2_im    (S3_X2_imag),
+    .o_data_3_re    (S3_X3_real),
+    .o_data_3_im    (S3_X3_imag),
+    .o_data_4_re    (S3_X4_real),
+    .o_data_4_im    (S3_X4_imag),
+    .o_data_5_re    (S3_X5_real),
+    .o_data_5_im    (S3_X5_imag),
+    .o_data_6_re    (S3_X6_real),
+    .o_data_6_im    (S3_X6_imag),
+    .o_data_7_re    (S3_X7_real),
+    .o_data_7_im    (S3_X7_imag) 
 );
 logic w_done;
 always_ff @( posedge i_clk or negedge i_rst_n ) begin

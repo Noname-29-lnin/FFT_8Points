@@ -4,7 +4,7 @@
 ##################################################
 set Top_module  FFT_8Points
 set LIB_DIR     "./../PDK45nm/gpdk045_lib"
-set LIB_NAME    "slow_vdd1v0_basicCells_hvt"
+set LIB_NAME    "fast_vdd1v0_basicCells_lvt"
 set LIB_FILE    "${LIB_DIR}/${LIB_NAME}.lib"
 set SDC_FILE    "./constraint.sdc"
 set SRC_FILE    "./../../02_rtl/"

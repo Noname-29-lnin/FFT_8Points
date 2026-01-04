@@ -243,8 +243,20 @@ endtask
             '{re:0.0, im:0.0},
             "W = 0"
         );
+        run_corner_test(
+            '{re:200.0, im:3.0},
+            '{re:40000.0, im:5.0},
+            '{re:0.0, im:0.0},
+            "W = 0"
+        );
 
         // 9. Large values
+        run_corner_test(
+            '{re:10.0, im:-1.0},
+            '{re:-1.0, im:5.0},
+            '{re:0.707, im:-0.707},
+            "0.707 Normal values"
+        );
         run_corner_test(
             '{re:1000.0, im:-1000.0},
             '{re:-1000.0, im:1000.0},

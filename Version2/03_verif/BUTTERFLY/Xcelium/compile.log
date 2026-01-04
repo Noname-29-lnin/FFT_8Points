@@ -1,5 +1,5 @@
 xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	20.09-s001: Started on Jan 02, 2026 at 04:11:03 EST
+TOOL:	xrun(64)	20.09-s001: Started on Jan 04, 2026 at 06:25:37 EST
 xrun
 	+xm64bit
 	-sv
@@ -76,34 +76,34 @@ xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
 file: ./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv
             butterfly_golden(a, b, w, y0_ref, y1_ref);
                            |
-xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,288|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,284|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
         output shortreal f_temp_1,
                                 |
-xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,72|32): Formal output argument 'f_temp_1' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,63|32): Formal output argument 'f_temp_1' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
             butterfly_golden(a, b, w, y0_ref, y1_ref);
                            |
-xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,288|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,284|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
         output shortreal f_temp_2,
                                 |
-xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,73|32): Formal output argument 'f_temp_2' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,64|32): Formal output argument 'f_temp_2' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
             butterfly_golden(a, b, w, y0_ref, y1_ref);
                            |
-xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,288|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,284|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
         output shortreal f_temp_3,
                                 |
-xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,74|32): Formal output argument 'f_temp_3' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,65|32): Formal output argument 'f_temp_3' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
             butterfly_golden(a, b, w, y0_ref, y1_ref);
                            |
-xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,288|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,284|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
         output shortreal f_temp_4,
                                 |
-xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,75|32): Formal output argument 'f_temp_4' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,66|32): Formal output argument 'f_temp_4' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
             butterfly_golden(a, b, w, y0_ref, y1_ref);
                            |
-xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,288|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP1 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,284|27): task or function call does not specify all formal output arguments [10.2.2][10.3(IEEE)].
         output complex_t t
                          |
-xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,76|25): Formal output argument 't' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
+xmvlog: *W,FAAOP2 (./../../03_verif/BUTTERFLY/tb_Butterfly_Unit.sv,67|25): Formal output argument 't' is absent in the task or function call identified by the previous error message [10.2.2][10.3(IEEE)].
 	module worklib.tb_Butterfly_Unit:sv
 		errors: 0, warnings: 10
 file: ./../../02_rtl/ButterFly/Butterfly_Unit.sv
@@ -348,8 +348,8 @@ xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-
 			streams:   3, words:   810
 		worklib.fpu_mul:sv <0x10a347c7>
 			streams:  41, words: 12036
-		worklib.tb_Butterfly_Unit:sv <0x70f0abde>
-			streams:  18, words: 43216
+		worklib.tb_Butterfly_Unit:sv <0x4fad180b>
+			streams:  18, words: 43756
 		worklib.Modified_booth:sv <0x3fbdb2f6>
 			streams:   6, words:  4727
 		worklib.wallace_tree:sv <0x3f32a8f4>
@@ -534,6 +534,34 @@ OUTPUTS (DUT):
 [PASS] W = 0
 --------------------------------------------------
 INPUTS:
+  a = (43480000 , 40400000) = (200.000000 , 3.000000)
+  b = (471c4000 , 40a00000) = (40000.000000 , 5.000000)
+  w = (00000000 , 00000000) = (0.000000 , 0.000000)
+OUTPUTS (DUT):
+  y0 = (43480000 , 40400000) = (200.000000 , 3.000000)
+  y1 = (43480000 , 40400000) = (200.000000 , 3.000000)
+ [EXPECTED] temp_w = (0.000000 , 0.000000)
+ [EXPECTED] temp_1 = 0.000000 	 temp_2 = 0.000000 	 temp_3 = 0.000000 	 temp_4 = 0.000000 
+ [DUT] temp_w = (0.000000 , 0.000000)
+ [DUT] temp_1 = 0.000000 	 temp_2 = 0.000000 	 temp_3 = 0.000000 	 temp_4 = 0.000000 
+--------------------------------------------------
+[PASS] W = 0
+--------------------------------------------------
+INPUTS:
+  a = (41200000 , bf800000) = (10.000000 , -1.000000)
+  b = (bf800000 , 40a00000) = (-1.000000 , 5.000000)
+  w = (3f34fdf4 , bf34fdf4) = (0.707000 , -0.707000)
+OUTPUTS (DUT):
+  y0 = (414d3f7d , 404f7cee) = (12.828000 , 3.242000)
+  y1 = (40e58106 , c0a7be77) = (7.172000 , -5.242000)
+ [EXPECTED] temp_w = (2.828000 , 4.242000)
+ [EXPECTED] temp_1 = -0.707000 	 temp_2 = -3.535000 	 temp_3 = 3.535000 	 temp_4 = 0.707000 
+ [DUT] temp_w = (2.828000 , 4.242000)
+ [DUT] temp_1 = -0.707000 	 temp_2 = -3.535000 	 temp_3 = 0.707000 	 temp_4 = 3.535000 
+--------------------------------------------------
+[PASS] 0.707 Normal values
+--------------------------------------------------
+INPUTS:
   a = (447a0000 , c47a0000) = (1000.000000 , -1000.000000)
   b = (c47a0000 , 447a0000) = (-1000.000000 , 1000.000000)
   w = (3f34fdf4 , bf34fdf4) = (0.707000 , -0.707000)
@@ -545,16 +573,12 @@ OUTPUTS (DUT):
  [DUT] temp_w = (-0.000000 , 1414.000122)
  [DUT] temp_1 = -707.000061 	 temp_2 = -707.000061 	 temp_3 = 707.000061 	 temp_4 = 707.000061 
 --------------------------------------------------
-xmsim: *E,ERRSEV (../BUTTERFLY/tb_Butterfly_Unit.sv,180): (time 49 NS).
-tb_Butterfly_Unit.run_corner_test.unmblk1
-[FAIL] Large values
-Y0 DUT=(1000.000000,414.000122) REF=(1000.000000,414.000000)
-Y1 DUT=(1000.000000,-2414.000000) REF=(1000.000000,-2414.000000)
+[PASS] Large values
 =================================
- Total vectors : 109
- Passed        : 108
- Failed        : 1
-Simulation complete via $finish(1) at time 654 NS + 0
-../BUTTERFLY/tb_Butterfly_Unit.sv:316         $finish;
+ Total vectors : 111
+ Passed        : 111
+ Failed        : 0
+Simulation complete via $finish(1) at time 666 NS + 0
+../BUTTERFLY/tb_Butterfly_Unit.sv:312         $finish;
 xcelium> exit
-TOOL:	xrun(64)	20.09-s001: Exiting on Jan 02, 2026 at 04:11:05 EST  (total: 00:00:02)
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 04, 2026 at 06:25:40 EST  (total: 00:00:03)

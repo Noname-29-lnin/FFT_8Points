@@ -1,0 +1,11 @@
+# vsim -lib ./../BUTTERFLY/QuestaSim/work -debugDB -l ./../BUTTERFLY/QuestaSim/tb_Butterfly_Unit.log -voptargs="+acc" -assertdebug -c tb_Butterfly_Unit -wlf ./../BUTTERFLY/QuestaSim/tb_Butterfly_Unit.wlf -do "cd ./../BUTTERFLY/QuestaSim; log -r /*; run -all;" 
+# Start time: 16:31:11 on Jan 04,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Note: (vsim-8611) Generating debug db.
+# ** Warning: (vopt-10908) Some optimizations are turned off because the +acc switch is in effect.
+# ** Error: (vopt-11) Could not find ./../BUTTERFLY/QuestaSim/work.tb_Butterfly_Unit.
+# Optimization failed
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=1, Warnings=1.
+# Error loading design
+# End time: 16:31:11 on Jan 04,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 1

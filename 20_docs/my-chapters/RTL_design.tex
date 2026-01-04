@@ -34,7 +34,7 @@
 
 \subsection{Radix-2 Butterfly Processing Unit (BPU) Design}
 
-\[ (a + jb)*(c + jd) = (ad + bc) - j(ad - bc) \]
+\[ (a + jb)*(c + jd) = ac + jad + jbc - bd = (ac - bd) + j(ad + bc) \]
 
 \begin{figure}[H]
 	\centering
@@ -43,3 +43,9 @@
 \end{figure}
 
 \subsection{8-Point FFT Processor Top-Level Architecture}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=.8\linewidth]{./../Version2/02_rtl/FFT_unit/00_spec/FFT_8Point.png}
+	\caption{Structure of Radix-2 Butterfly Processing Unit (BPU).}
+\end{figure}
