@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  5 JAN 2026 20:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.8.10)  5 JAN 2026 21:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1480,13 +1480,14 @@ ine 432.
 )
 Package babel Info: Making " an active character on input line 147.
 ))
-Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
-(babel)             Reported on input line 14.
-
 (C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.sty
 Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
 )
-(main.aux)
+(main.aux
+Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
+(babel)             Reported on input line 9.
+ (my-chapters/theorical_background.aux) (my-chapters/RTL_design.aux)
+(my-chapters/Verification.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
@@ -1580,8 +1581,8 @@ Package caption Info: float package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count413
-<./my-chapters/my-images/01_logobachkhoatoi.png, id=6, 471.9231pt x 478.9092pt>
-
+<./my-chapters/my-images/01_logobachkhoatoi.png, id=78, 471.9231pt x 478.9092pt
+>
 File: ./my-chapters/my-images/01_logobachkhoatoi.png Graphic file (type png)
 <use ./my-chapters/my-images/01_logobachkhoatoi.png>
 Package pdftex.def Info: ./my-chapters/my-images/01_logobachkhoatoi.png  used o
@@ -1605,7 +1606,7 @@ Overfull \hbox (2.19716pt too wide) in paragraph at lines 44--44
 
 
 
-<./my-chapters/my-images/bia.jpg, id=8, 301.125pt x 414.95026pt>
+<./my-chapters/my-images/bia.jpg, id=80, 301.125pt x 414.95026pt>
 File: ./my-chapters/my-images/bia.jpg Graphic file (type jpg)
 <use ./my-chapters/my-images/bia.jpg>
 Package pdftex.def Info: ./my-chapters/my-images/bia.jpg  used on input line 45
@@ -1619,7 +1620,9 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- (main.lof)
+ (main.lof
+
+[2])
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
@@ -1633,22 +1636,19 @@ s/my-images/bia.jpg> <./my-chapters/my-images/01_logobachkhoatoi.png>]
 
 
 
-[2]
+[3]
 \openout2 = `./my-chapters/theorical_background.aux'.
 
  (my-chapters/theorical_background.tex
 
 Package babel Info: 'vietnamese' activates 'vietnamese' shorthands.
 (babel)             Reported on input line 37.
-<./my-chapters/my-images/logo_DEE.png, id=22, 76.03406pt x 75.28125pt>
+<./my-chapters/my-images/logo_DEE.png, id=144, 76.03406pt x 75.28125pt>
 File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 37.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 37.
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
@@ -1665,9 +1665,6 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 98.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 98.
-
-
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1681,27 +1678,33 @@ Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 61.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
 
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 61.
-
-[3]
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.61 ...de{./my-chapters/theorical_background.tex}
+                                                   [3]
 \openout2 = `./my-chapters/RTL_design.aux'.
 
- (my-chapters/RTL_design.tex
-<./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for_FPU_ADD_SUB.png, id=62,
- 4833.05624pt x 15361.39pt>
-File: ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for_FPU_ADD_SUB.png Gr
-aphic file (type png)
-<use ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for_FPU_ADD_SUB.png>
-Package pdftex.def Info: ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for
-_FPU_ADD_SUB.png  used on input line 7.
+
+(my-chapters/RTL_design.tex
+<./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Flowchart_for_FPU_ADD_SUB.pn
+g, id=179, 4833.05624pt x 15361.39pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Flowchart_for_FPU_ADD_S
+UB.png Graphic file (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Flowchart_for_FPU_ADD_SU
+B.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Flow
+chart_for_FPU_ADD_SUB.png  used on input line 7.
 (pdftex.def)             Requested size: 2416.52226pt x 7680.67638pt.
-<./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_Overview.png, id=63, 145
-3.43pt x 1446.40375pt>
-File: ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_Overview.png Graphi
-c file (type png)
-<use ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_Overview.png>
-Package pdftex.def Info: ./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_
-Overview.png  used on input line 14.
+<./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/BlockDiagram_Overview.png, i
+d=180, 1453.43pt x 1446.40375pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/BlockDiagram_Overview.p
+ng Graphic file (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/BlockDiagram_Overview.pn
+g>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Bloc
+kDiagram_Overview.png  used on input line 14.
 (pdftex.def)             Requested size: 435.32422pt x 433.21823pt.
 
 
@@ -1710,21 +1713,19 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 18.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 18.
-
 [4
 
 
 
- <./../Version2/02_rtl/FPU_ADD_SUB/00_spec/Flowchart_for_FPU_ADD_SUB.png>]
-<./../Version2/02_rtl/FPU_MUL/00_spec/Flowchart_for_FPU_MUL.png, id=72, 7541.17
-375pt x 12975.47626pt>
-File: ./../Version2/02_rtl/FPU_MUL/00_spec/Flowchart_for_FPU_MUL.png Graphic fi
-le (type png)
-<use ./../Version2/02_rtl/FPU_MUL/00_spec/Flowchart_for_FPU_MUL.png>
-Package pdftex.def Info: ./../Version2/02_rtl/FPU_MUL/00_spec/Flowchart_for_FPU
-_MUL.png  used on input line 23.
+ <./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/Flowchart_for_FPU_ADD_SUB.p
+ng>]
+<./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/Flowchart_for_FPU_MUL.png, id=18
+8, 7541.17375pt x 12975.47626pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/Flowchart_for_FPU_MUL.png G
+raphic file (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/Flowchart_for_FPU_MUL.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/Flowchar
+t_for_FPU_MUL.png  used on input line 23.
 (pdftex.def)             Requested size: 3770.57773pt x 6487.7224pt.
 
 
@@ -1733,17 +1734,15 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 27.
 (pdftex.def)             Requested size: 9.676pt x 9.58012pt.
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 27.
-
-[5 <./../Version2/02_rtl/FPU_ADD_SUB/00_spec/BlockDiagram_Overview.png>]
-<./../Version2/02_rtl/FPU_MUL/00_spec/BlockDiagram_Overview.png, id=80, 1332.98
-pt x 1446.40375pt>
-File: ./../Version2/02_rtl/FPU_MUL/00_spec/BlockDiagram_Overview.png Graphic fi
-le (type png)
-<use ./../Version2/02_rtl/FPU_MUL/00_spec/BlockDiagram_Overview.png>
-Package pdftex.def Info: ./../Version2/02_rtl/FPU_MUL/00_spec/BlockDiagram_Over
-view.png  used on input line 30.
+[5 <./my-chapters/my-images/DesignRTL_FFT/FPU_ADD_SUB/BlockDiagram_Overview.png
+>]
+<./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/BlockDiagram_Overview.png, id=19
+5, 1332.98pt x 1446.40375pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/BlockDiagram_Overview.png G
+raphic file (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/BlockDiagram_Overview.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/BlockDia
+gram_Overview.png  used on input line 30.
 (pdftex.def)             Requested size: 435.32422pt x 472.34889pt.
 
 
@@ -1751,4 +1750,225 @@ File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
 <use ./my-chapters/my-images/logo_DEE.png>
 Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
 ne 34.
-(pdftex.def)             Requested size: 
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[6 <./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/Flowchart_for_FPU_MUL.png>]
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 41.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[7 <./my-chapters/my-images/DesignRTL_FFT/FPU_MUL/BlockDiagram_Overview.png>]
+<./my-chapters/my-images/DesignRTL_FFT/BPU/Butterfly_unit.png, id=208, 1728.457
+5pt x 765.86125pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/Butterfly_unit.png Graphic file
+ (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/Butterfly_unit.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/Butterfly_un
+it.png  used on input line 45.
+(pdftex.def)             Requested size: 386.95897pt x 171.45825pt.
+<./my-chapters/my-images/DesignRTL_FFT/FFT_original.png, id=209, 451.6875pt x 3
+45.54094pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FFT_original.png Graphic file (type
+ png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FFT_original.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FFT_original.png
+  used on input line 53.
+(pdftex.def)             Requested size: 338.58632pt x 259.03378pt.
+<./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point.png, id=210, 2491.3075pt 
+x 1649.16125pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point.png Graphic file (ty
+pe png)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point.p
+ng  used on input line 60.
+(pdftex.def)             Requested size: 386.95897pt x 256.1458pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 64.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[8 <./my-chapters/my-images/DesignRTL_FFT/BPU/Butterfly_unit.png> <./my-chapter
+s/my-images/DesignRTL_FFT/FFT_original.png>]
+<./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF2.png, id=221, 451.6875pt x 34
+5.54094pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF2.png Graphic file (type 
+png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF2.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF2.png 
+ used on input line 89.
+(pdftex.def)             Requested size: 290.22107pt x 222.03122pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 91.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[9 <./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point.png>]
+<./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_2.png, id=228, 875.27pt x 523.95
+75pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_2.png Graphic file (type pn
+g)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_2.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_2.png  u
+sed on input line 95.
+(pdftex.def)             Requested size: 338.58632pt x 202.68765pt.
+<./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF4.png, id=229, 451.6875pt x 34
+5.54094pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF4.png Graphic file (type 
+png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF4.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF4.png 
+ used on input line 102.
+(pdftex.def)             Requested size: 290.22107pt x 222.03122pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 104.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[10 <./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF2.png> <./my-chapters/my-i
+mages/DesignRTL_FFT/BPU/BFP_2.png>]
+<./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_4.png, id=241, 1388.18625pt x 66
+4.4825pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_4.png Graphic file (type pn
+g)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_4.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_4.png  u
+sed on input line 111.
+(pdftex.def)             Requested size: 338.58632pt x 162.06454pt.
+<./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF8.png, id=242, 451.6875pt x 34
+5.54094pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF8.png Graphic file (type 
+png)
+<use ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF8.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF8.png 
+ used on input line 118.
+(pdftex.def)             Requested size: 290.22107pt x 222.03122pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 120.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[11 <./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF4.png> <./my-chapters/my-i
+mages/DesignRTL_FFT/BPU/BFP_4.png>]
+<./my-chapters/my-images/DesignRTL_FFT/BPU/Complex_multiplier.png, id=252, 341.
+77687pt x 301.8778pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/Complex_multiplier.png Graphic 
+file (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/Complex_multiplier.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/Complex_mult
+iplier.png  used on input line 125.
+(pdftex.def)             Requested size: 241.84843pt x 213.62076pt.
+<./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_8.png, id=253, 2511.3825pt x 140
+7.2575pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_8.png Graphic file (type pn
+g)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_8.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_8.png  u
+sed on input line 133.
+(pdftex.def)             Requested size: 290.22107pt x 162.61497pt.
+
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 136.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[12 <./my-chapters/my-images/DesignRTL_FFT/FFT_cus_BF8.png> <./my-chapters/my-i
+mages/DesignRTL_FFT/BPU/Complex_multiplier.png>]
+<./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point_cus.png, id=262, 2450.153
+75pt x 1607.00375pt>
+File: ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point_cus.png Graphic file
+ (type png)
+<use ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point_cus.png>
+Package pdftex.def Info: ./my-chapters/my-images/DesignRTL_FFT/BPU/FFT_8Point_c
+us.png  used on input line 142.
+(pdftex.def)             Requested size: 435.32422pt x 285.52103pt.
+)
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 62.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[13 <./my-chapters/my-images/DesignRTL_FFT/BPU/BFP_8.png> <./my-chapters/my-ima
+ges/DesignRTL_FFT/BPU/FFT_8Point_cus.png>]
+\openout2 = `./my-chapters/Verification.aux'.
+
+ (my-chapters/Verification.tex
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 5.
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 5
+.
+
+(C:\Users\nguye\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 46.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[14
+
+
+
+])
+
+File: ./my-chapters/my-images/logo_DEE.png Graphic file (type png)
+<use ./my-chapters/my-images/logo_DEE.png>
+Package pdftex.def Info: ./my-chapters/my-images/logo_DEE.png  used on input li
+ne 63.
+(pdftex.def)             Requested size: 9.676pt x 9.58012pt.
+[15] 
+enddocument/afterlastpage (AED): lastpage setting LastPage.
+runsystem(latexminted cleantemp  --timestamp 20260105211321 FAD58DE7366495DB465
+0CFEFAC2FCD61)...disabled (restricted).
+
+(main.aux (my-chapters/theorical_background.aux) (my-chapters/RTL_design.aux)
+(my-chapters/Verification.aux))
+ ***********
+LaTeX2e <2025-06-01> patch level 1
+L3 programming layer <2025-07-20>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: 3F338E6586C7E5C9AAA7B428D3388F41;5344.
+ ) 
+Here is how much of TeX's memory you used:
+ 33136 strings out of 468134
+ 650107 string characters out of 5430740
+ 1613105 words of memory out of 5000000
+ 61049 multiletter control sequences out of 15000+600000
+ 652442 words of font info for 93 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 99i,15n,101p,1065b,1139s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\nguye\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1200.pk><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
+ts/cm/cmex10.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb><C:/Users/nguye/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/nguye/AppData/Local/Program
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/nguye/AppData/Local
+/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/nguye/AppDat
+a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nguye
+/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Us
+ers/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pf
+b><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr12.pfb
+><C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr17.pfb>
+<C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti12.pfb>
+<C:/Users/nguye/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt8.pfb>
+Output written on main.pdf (18 pages, 3889183 bytes).
+PDF statistics:
+ 432 PDF objects out of 1000 (max. 8388607)
+ 126 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
+
