@@ -17,3 +17,4 @@
 \contentsline {subsection}{\numberline {3.2}Verification for Floating-Point Multiplier Design}{15}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}Verification for Radix-2 Butterfly Processing Unit (BPU) Design}{15}{subsection.3.3}%
 \contentsline {subsection}{\numberline {3.4}Verification for 8-Point FFT Processor}{15}{subsection.3.4}%
+\contentsline {section}{\numberline {4}Synthsis of FFT-8Points Design}{16}{section.4}%
