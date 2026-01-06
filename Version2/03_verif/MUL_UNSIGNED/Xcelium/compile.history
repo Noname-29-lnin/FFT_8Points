@@ -1,0 +1,1 @@
+s1(04Jan2026:14:09:58):  xrun +xm64bit -sv -f ./../MUL_UNSIGNED/flist.f -top tb_Multiplier -access +rwc -clean -log ./../MUL_UNSIGNED/Xcelium/compile.log +nctimescale+1ns/1ps +ntb_random_seed=automatic -allowredefinition -v93 

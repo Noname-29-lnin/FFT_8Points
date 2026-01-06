@@ -1,0 +1,90 @@
+xrun(64): 20.09-s001: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	20.09-s001: Started on Jan 04, 2026 at 14:09:58 EST
+xrun
+	+xm64bit
+	-sv
+	-f ./../MUL_UNSIGNED/flist.f
+		./../../03_verif/MUL_UNSIGNED/tb_Multiplier.sv
+		./../../02_rtl/FPU_MUL/Unsigned_Multiplier_Unit/Multiplier.sv
+	-top tb_Multiplier
+	-access +rwc
+	-clean
+	-log ./../MUL_UNSIGNED/Xcelium/compile.log
+	+nctimescale+1ns/1ps
+	+ntb_random_seed=automatic
+	-allowredefinition
+	-v93
+
+   User defined plus("+") options:
+	+ntb_random_seed=automatic
+
+xrun: *W,OPDEPRREN: Command Line Option (+nctimescale+1ns/1ps) is deprecated. Use (+xmtimescale+1ns/1ps) instead.
+xrun: *N,CLEAN: Removing existing directory ./xcelium.d.
+file: ./../../03_verif/MUL_UNSIGNED/tb_Multiplier.sv
+	module worklib.tb_Multiplier:sv
+		errors: 0, warnings: 0
+file: ./../../02_rtl/FPU_MUL/Unsigned_Multiplier_Unit/Multiplier.sv
+	module worklib.vedic2x2:sv
+		errors: 0, warnings: 0
+	module worklib.vedic4x4:sv
+		errors: 0, warnings: 0
+	module worklib.vedic8x8:sv
+		errors: 0, warnings: 0
+	module worklib.vedic16x8:sv
+		errors: 0, warnings: 0
+	module worklib.array_multiplier:sv
+		errors: 0, warnings: 0
+	module worklib.Multiplier:sv
+		errors: 0, warnings: 0
+	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
+	Top level design units:
+		tb_Multiplier
+xmelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.vedic16x8:sv <0x016c4181>
+			streams:   1, words:   219
+		worklib.vedic2x2:sv <0x5c64ab38>
+			streams:   1, words:   257
+		worklib.vedic4x4:sv <0x41936777>
+			streams:   3, words:   615
+		worklib.vedic8x8:sv <0x50ee95cc>
+			streams:   3, words:   633
+		worklib.array_multiplier:sv <0x6d7822ee>
+			streams:   3, words:   582
+		worklib.Multiplier:sv <0x35ed401e>
+			streams:   3, words:  1051
+		worklib.tb_Multiplier:sv <0x6731535a>
+			streams:   5, words: 11758
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                  Instances  Unique
+		Modules:                194       7
+		Registers:                7       6
+		Scalar wires:          1008       -
+		Expanded wires:          48       2
+		Vectored wires:         290       -
+		Initial blocks:           2       2
+		Cont. assignments:      287      19
+		Pseudo assignments:       2       2
+		Simulation timescale:   1ns
+	Writing initial simulation snapshot: worklib.tb_Multiplier:sv
+Loading snapshot worklib.tb_Multiplier:sv .................... Done
+SVSEED default: 1
+xmsim: *W,RNDXCELON: A newer version of the SystemVerilog constraint solver is being used which has better support for array-solving, new solve-order mechanism, and seed stability enhancements..
+xmsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+xcelium> source /opt/cadence/XCELIUM2009/tools/xcelium/files/xmsimrc
+xcelium> run
+--------------------------------------------------
+--- BẮT ĐẦU MÔ PHỎNG BỘ NHÂN 24-BIT ---
+--------------------------------------------------
+--- Chạy 100 mẫu thử ngẫu nhiên... ---
+--------------------------------------------------
+--- PASSED: Tất cả các test đều chính xác! ---
+--------------------------------------------------
+Simulation complete via $finish(1) at time 1030 NS + 0
+../MUL_UNSIGNED/tb_Multiplier.sv:71         $finish;
+xcelium> exit
+TOOL:	xrun(64)	20.09-s001: Exiting on Jan 04, 2026 at 14:10:01 EST  (total: 00:00:03)

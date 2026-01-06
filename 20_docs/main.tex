@@ -6,16 +6,12 @@
 \usepackage[T5]{fontenc}
 \usepackage[vietnamese]{babel}
 
-%\usepackage{tcolorbox}           % tạo box đẹp
-%\usepackage{microtype}
-%\usepackage{ragged2e}            % \justifying nếu cần canh đều
-
-\usepackage{textcomp}
+%\usepackage{textcomp}
 % =========================
 % Cover page information
 % =========================
 
-\selectlanguage{vietnamese}
+%\selectlanguage{vietnamese}
 \NameUpperUniname{Vietnam National University Ho Chi Minh City}
 \NameUniname{Ho Chi Minh City University of Technology}
 \NameDeptname{Faculty of Electrical and Electronics Engineering}
@@ -47,8 +43,8 @@
 \pagestyle{empty}
 \MycoverFinalProject % Cover page
 \newpage
-\selectlanguage{vietnamese}
-\renewcommand{\arraystretch}{1.5} % tăng khoảng cách dòng (row height)
+%\selectlanguage{vietnamese}
+\renewcommand{\arraystretch}{1.5}
 \setlength{\parindent}{1cm}
 \onehalfspacing
 \setlength{\parskip}{6pt} 
@@ -61,8 +57,10 @@
 \MycountPages{number}
 \fancyfoot[L]{\includegraphics[width=.02\linewidth]{./my-chapters/my-images/logo_DEE.png}\text{ Department of Electronics}}
 
+% Sua lai bao cao
 \include{./my-chapters/theorical_background.tex}
 \include{./my-chapters/RTL_design.tex}
 \include{./my-chapters/Verification.tex}
+\include{./my-chapters/synth.tex}
 
 \end{document}

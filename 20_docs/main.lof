@@ -1,10 +1,13 @@
 \babel@toc {vietnamese}{}\relax 
-\babel@toc {vietnamese}{}\relax 
-\babel@toc {vietnamese}{}\relax 
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Sơ đồ cấu trúc Butterfly Radix-2}}{2}{figure.caption.1}%
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Algorithmic flowchart of the IEEE 754 Floating-Point Adder/Subtractor.}}{4}{figure.caption.2}%
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Top-level hardware architecture of the 32-bit Floating-Point Adder/Subtractor.}}{5}{figure.caption.3}%
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Algorithmic flowchart of the IEEE 754 Floating-Point Multiplier.}}{6}{figure.caption.4}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces Top-level hardware architecture of the 32-bit Floating-Point Multiplier.}}{7}{figure.caption.5}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces Structure of Radix-2 Butterfly Processing Unit (BPU).}}{8}{figure.caption.6}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Structure of Radix-2 Butterfly Processing Unit (BPU).}}{8}{figure.caption.7}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Structure of 8-Point FFT Processor Original.}}{9}{figure.caption.8}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Bộ BFP ở tầng 1 của bộ FFT.}}{10}{figure.caption.10}%
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Bộ BFP ở tầng 2 của bộ FFT.}}{11}{figure.caption.12}%
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Bộ Complex Multiplier.}}{12}{figure.caption.14}%
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Bộ BFP ở tầng 3 của bộ FFT.}}{13}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Thiết kế của bộ FFT-8Point sau khi tối ưu hóa.}}{13}{figure.caption.16}%
